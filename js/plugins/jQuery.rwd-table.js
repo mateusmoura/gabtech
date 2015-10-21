@@ -123,7 +123,7 @@
         this.$btnToolbar = $('<div class="btn-toolbar" />');
 
         this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right dropdown right" />');
-        this.$dropdownBtn = $('<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Display <span class="caret"></span></button>');
+        this.$dropdownBtn = $('<button class="btn btn-white dropdown-toggle" data-toggle="dropdown"><i class="icon icon-gear-inactive"></i><i class="icon icon-gear"></i></button>');
         this.$dropdownContainer = $('<ul class="dropdown-menu"/>');
 
         // Focus btn
@@ -397,7 +397,7 @@
 
             // create the hide/show toggle for the current column
             if ( $th.is('[data-priority]') ) {
-                var $toggle = $('<li class="checkbox-row"><input type="checkbox" name="toggle-'+id+'" id="toggle-'+id+'" value="'+id+'" /> <label for="toggle-'+id+'">'+ thText +'</label></li>');
+                var $toggle = $('<li class="checkbox-row"><div class="checkbox"><input type="checkbox" name="toggle-'+id+'" id="toggle-'+id+'" value="'+id+'"><label for="toggle-'+id+'">&nbsp;</label></div> <label for="toggle-'+id+'">'+ thText +'</label></li>');
                 var $checkbox = $toggle.find('input');
 
                 that.$dropdownContainer.append($toggle);

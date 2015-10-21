@@ -12,6 +12,7 @@ ________________________________________________________________ */
 .dropdown {
 	display: inline-block;
 	position: relative;
+	z-index: 1000;
 
 	&:hover, &:focus, &:active {
 		ul {
@@ -31,18 +32,58 @@ ________________________________________________________________ */
 
 	ul {
 		.transition(all 0.5s ease-in-out 0s);
+		.box-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
 		.opacity(0.0);
+		background-color: @cor-branco;
 		list-style: none;
 		left: 0;
 		margin: 0;
-		padding: 0;
+		padding: 18px 17px;
 		position: absolute;
 		top: 100%;
 		visibility: hidden;
-		width: 100%;
+		min-width: 160px;
+
+		&:hover, &:focus, &:active {
+			.transition(all 0.5s easi-in-out 0s);
+			.opacity(1);
+			visibility: visible;
+		}
+
+		li, li.checkbox-row{
+			padding: 0;
+			margin-top: 20px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.checkbox {
+				float: left;
+			}
+
+			> label {
+				color: #7a8796;
+				font-family: @font-family-gotham-light;
+				font-size: 14px;
+				padding-bottom: 0;
+				position: relative;
+				top: -3px;
+			}
+		}
 	}
 
 	> a, > button {
+		margin-bottom: 8px;
+		
+		.icon-gear {
+			display: none;
+
+			&-inactive {
+				display: block;
+			}
+		}
+
 		&:hover, &:focus, &:active {
 			~ ul {
 				.transition(all 0.5s easi-in-out 0s);
@@ -50,9 +91,24 @@ ________________________________________________________________ */
 				visibility: visible;
 			}
 
-			i {
-				.transform(rotate(-180deg));
+			// i {
+			// 	.transform(rotate(-180deg));
+			// }
+
+			.icon-gear {
+				display: block;
+
+				&-inactive {
+					display: none;
+				}
 			}
+		}
+	}
+
+	&.right {
+		ul {
+			right: 0;
+			left: auto;
 		}
 	}
 }
