@@ -27,8 +27,6 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	* Funcionalidade que mostra o formulário de busca.
 	*/
 	BlockFilterForm.fn.toggleOpen = function(){
-		console.log(this);
-
 		this.form.toggleClass('block__filter--form-active');
 
 		return false;

@@ -5341,8 +5341,11 @@ ________________________________________________________________ */
   width: 100%;
 }
 .dropdown > a:hover ~ ul,
+.dropdown > button:hover ~ ul,
 .dropdown > a:focus ~ ul,
-.dropdown > a:active ~ ul {
+.dropdown > button:focus ~ ul,
+.dropdown > a:active ~ ul,
+.dropdown > button:active ~ ul {
   /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
   transition: all 0.5s easi-in-out 0s;
   /*, @type2 @time2 @tm2*/
@@ -5357,8 +5360,11 @@ ________________________________________________________________ */
   visibility: visible;
 }
 .dropdown > a:hover i,
+.dropdown > button:hover i,
 .dropdown > a:focus i,
-.dropdown > a:active i {
+.dropdown > button:focus i,
+.dropdown > a:active i,
+.dropdown > button:active i {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);

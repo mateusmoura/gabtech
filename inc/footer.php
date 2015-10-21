@@ -21,7 +21,6 @@
 
 		<script src="js/plugins/module.js"></script>
 		<script src="js/plugins/jQuery-1.11.0.min.js"></script>
-		<script src="js/plugins/rwd-table.min.js"></script>
 		
 		<script src="js/Modulos/MM.Mascarar.js"></script>
 		<script src="js/Modulos/MM.Mensagem.js"></script>
@@ -31,6 +30,7 @@
 		<script src="js/Modulos/MM.Collapsible.js"></script>
 		<script src="js/Modulos/MM.Feedback.js"></script>
 		<script src="js/Modulos/MM.BlockFilterForm.js"></script>
+		<script src="js/Modulos/MM.ResponsiveTables.js"></script>
 
 
 		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>

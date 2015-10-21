@@ -52,7 +52,7 @@
 						</div>
 
 						<div class="block__table">
-							<div class="table-responsive" data-pattern="priority-columns">
+							<div class="table-responsive">
 								<table cellspacing="0" id="tech-companies-1" class="table table-small-font table-bordered table-striped">
 									<thead>
 										<tr>

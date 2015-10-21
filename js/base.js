@@ -42,9 +42,11 @@ var site = {
 		var _collapse				= $('.collapse'),
 			_blockFilterForm		= $('.block__filter');
 
-		console.log(_blockFilterForm);
-
 		MM.Mascarar();
+		MM.ResponsiveTables({
+			addFocusBtn					: false,
+			addDisplayAllBtn			: false
+		});
 
 		for (var i = _collapse.length - 1; i >= 0; i--) {
 			MM.Collapsible(_collapse.eq(i), true);
