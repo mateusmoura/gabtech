@@ -43,7 +43,23 @@ Module('MM.ResponsiveTables', function(ResponsiveTables){
 		var defaults = { },
 			settings = $.extend({}, defaults, this.settings||{});
 
+		this.container = $('.table-responsive');
 
-		$('.table-responsive').responsiveTable(settings);
+		this.container.responsiveTable(settings);
+
+		this.addEventListeners();
+	};
+	/**
+	* Adiciona os eventos necessários.
+	*/
+	ResponsiveTables.fn.addEventListeners = function(){
+		$('.checkbox input', this.container)
+			.unbind().on('click', this.toggleActive);
+	};
+	/**
+	* Funcionalidade para ativar linha selecionada.
+	*/
+	ResponsiveTables.fn.toggleActive = function(){
+		$(this).parents('tr').toggleClass('active');
 	};
 });

@@ -1,0 +1,65 @@
+/**
+* Arquivo responsavel pelo estilo das TABELAS do projeto
+*
+* @version: 1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* INHERIT
+	>> Tables
+________________________________________________________________ */
+
+.table-responsive, .table-responsive[data-pattern="priority-columns"] {
+	border: none;
+}
+
+table {
+	thead {
+		th {
+			color: #a4b4ba;
+			font-family: @font-family-gotham-light;
+			font-size: 14px;
+			line-height: 33px;
+		}
+	}
+
+	tbody {
+		tr {
+			&:nth-child(even) {
+				background-color: #fff;
+			}
+
+			&:nth-child(odd) {
+				background-color: #f2f5f5;
+			}
+
+			&:hover, &:focus, &:active {
+				background-color: #deeaf3;
+			}
+
+			&.active {
+				background-color: @cor-verde-claro;
+			}
+
+			td, a {
+				color: #56606b;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 33px;
+			}
+
+			td {
+				padding: 20px 0;
+				&:first-child {
+					padding-left: 15px;
+
+					.checkbox {
+						margin-left: 5px;
+						top: 3px;
+					}
+				}
+			}
+		}
+	}
+}
