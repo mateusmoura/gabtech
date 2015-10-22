@@ -223,10 +223,10 @@ body {
   position: relative;
 }
 body {
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-color: #ffffff;
   color: #333333;
   font-family: 'Open Sans', sans-serif;
@@ -4368,6 +4368,38 @@ ________________________________________________________________ */
   background-color: transparent;
   border-color: #2eb773;
 }
+.btn-gray {
+  background-color: #e1e4e6;
+  color: #5e5e60;
+}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray.focus,
+.btn-gray:active,
+.btn-gray.active {
+  color: #5e5e60;
+  background-color: #c5cbcf;
+  background-color: #e1e4e6;
+}
+.btn-gray:active,
+.btn-gray.active {
+  background-image: none;
+}
+.btn-gray.disabled,
+.btn-gray[disabled],
+.btn-gray.disabled:hover,
+.btn-gray[disabled]:hover,
+.btn-gray.disabled:focus,
+.btn-gray[disabled]:focus,
+.btn-gray.disabled.focus,
+.btn-gray[disabled].focus,
+.btn-gray.disabled:active,
+.btn-gray[disabled]:active,
+.btn-gray.disabled.active,
+.btn-gray[disabled].active {
+  background-color: #e1e4e6;
+  border-color: none;
+}
 /*
 *	BOTÃO SIMULANDO LINK
 */
@@ -4706,6 +4738,21 @@ ________________________________________________________________ */
   background-color: #f9f9f1;
   color: #777777;
   cursor: not-allowed;
+}
+/*
+*	PAGINACAO DO PROJETO
+*/
+.block__pagination {
+  position: relative;
+}
+.block__pagination button,
+.block__pagination .btn {
+  display: inline-block;
+  padding: 8px 23px;
+}
+.block__pagination p {
+  display: inline-block;
+  padding: 0 23px;
 }
 /**
 * Arquivo responsavel pelo estilo da Galeria de Imagens
@@ -5450,39 +5497,66 @@ ________________________________________________________________ */
 }
 .icon-clip {
   background-image: url("../img/ico/icon-clip.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 18px;
   width: 10px;
 }
 .icon-filter {
   background-image: url("../img/ico/icon-filter.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 14px;
   width: 14px;
 }
 .icon-search {
   background-image: url("../img/ico/icon-search.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 20px;
   width: 20px;
 }
 .icon-close {
   background-image: url("../img/ico/icon-close.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 15px;
   width: 15px;
 }
 .icon-gear {
   background-image: url("../img/ico/icon-gear.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 16px;
   width: 16px;
 }
 .icon-gear-inactive {
   background-image: url("../img/ico/icon-gear-inactive.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-size: 100% 100%;
   height: 16px;
   width: 16px;
+}
+.icon-arrow-left {
+  background-image: url("../img/ico/icon-arrow-left.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 8px;
+  width: 14px;
 }
 /**
 * Arquivo responsavel pelo estilo das TABELAS do projeto

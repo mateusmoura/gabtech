@@ -158,7 +158,11 @@
 							</div>
 
 							<div class="block__table--actions">
-
+								<div class="block__pagination align-center">
+									<button type="button" class="btn btn-icon btn-gray"><i class="icon icon-arrow-right"></i></button>
+									<p class="block__pagination--index"><span>1 - 5</span> de 11</p>
+									<button type="button" class="btn btn-icon btn-gray"><i class="icon icon-arrow-left"></i></button>
+								</div>
 							</div>
 						</div>
 					</div>
