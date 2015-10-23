@@ -9,7 +9,7 @@
 									<h2>Demandas</h2>
 								</div>
 
-								<div class="col-5">
+								<div class="col-5 align-right">
 									<a href="#this" class="btn btn-success">Nova demanda</a>
 								</div>
 							</div>
