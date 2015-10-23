@@ -40,7 +40,8 @@ var site = {
 	*/
 	global: function(){
 		var _collapse				= $('.collapse'),
-			_blockFilterForm		= $('.block__filter');
+			_blockFilterForm		= $('.block__filter'),
+			_autocomplete			= $('.autocomplete');
 
 		MM.Mascarar();
 		MM.ResponsiveTables({
@@ -54,6 +55,10 @@ var site = {
 
 		for (var i = _blockFilterForm.length - 1; i >= 0; i--) {
 			MM.BlockFilterForm(_blockFilterForm.eq(i));
+		};
+
+		for (var i = _autocomplete.length - 1; i >= 0; i--) {
+			MM.InputMultipleSelect(_autocomplete.eq(i));
 		};
 
 		MM.ValidarFormularios($('form.validate'));

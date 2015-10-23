@@ -1,0 +1,55 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Input
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__INPUT
+____________________________________________________________________________________ */
+
+.block__input {
+	&--includes {
+		position: relative;
+	}
+
+	&--data {
+		position: relative;
+
+		.btn-more {
+			.transform(translateY(-50%));
+			color: #4c5760;
+			font-family: @font-family-gotham-medium;
+			font-size: 20px;
+			position: absolute;
+			right: 6px;
+			text-transform: uppercase;
+			top: 50%;
+		}
+	}
+
+	&--list {
+		position: relative;
+
+		&-item {
+			.border-radius(34px);
+			background-color: @cor-roxa;
+			display: inline-block;
+			color: @cor-branco;
+			font-size: 14px;
+			font-weight: 400;
+			margin: 10px 5px 0 0;
+			padding: 0 35px 0 15px;
+			position: relative;
+			line-height: 40px;
+
+			.btn-icon {
+				.transform(translateY(-50%));
+				position: absolute;
+				right: 5px;
+				top: 50%;
+			}
+		}
+	}
+}

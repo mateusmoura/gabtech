@@ -58,7 +58,7 @@ ________________________________________________________________ */
 
 @cor-azul						: #194dae;
 @cor-azul-claro					: #dfebf4;
-@cor-roxa						: #6a154a;
+@cor-roxa						: #646bad;
 @cor-amarela					: #cac439;
 @cor-vermelha					: #ba3925;
 @cor-rosa						: #b80d8c;
@@ -97,9 +97,9 @@ ________________________________________________________________ */
 @line-height-pequeno:			1.5;
 
 // Variação do Border radius do projeto
-@border-radius-base:			4px;
-@border-radius-grande:			6px;
-@border-radius-pequeno:			3px;
+@border-radius-base:			5px;
+@border-radius-grande:			7px;
+@border-radius-pequeno:			4px;
 
 // CURSOR DESATIVADO
 @curso-desativado:				not-allowed;
@@ -186,18 +186,18 @@ ________________________________________________________________ */
 
 /* INPUTS */
 // Background-color dos inputs
-@input-bg:						#fefefe;
+@input-bg:						#fcfeff;
 @input-bg-desativado:			@cinza-lighter;
 
 // Tamanho font no Intpu
-@font-size-input:				@font-size-base;
+@font-size-input:				14px; //@font-size-base;
 
 // Cor do Input
 @input-color:					@cinza;
 // Cor da borda do Input
 @input-border:					#d0d9db;
 // Tamanho das Border radius do Input
-@input-border-radius:			4px;
+@input-border-radius:			@border-radius-base;
 @input-border-radius-grande:	@border-radius-grande;
 @input-border-radius-pequeno:	@border-radius-pequeno;
 
@@ -208,7 +208,7 @@ ________________________________________________________________ */
 @input-color-placeholder:		#c2cacc;
 
 // Tamanho do input
-@input-height-base:				( @line-height-computed + ( @padding-base-vertical * 2 ) + 10 );
+@input-height-base:				50px; //( @line-height-computed + ( @padding-base-vertical * 2 ) + 10 );
 @input-height-grande:			( ceil( @font-size-grande * @line-height-grande ) + ( @padding-grande-vertical * 2 ) + 10 );
 @input-height-pequeno:			( floor( @font-size-pequeno * @line-height-pequeno ) + ( @padding-pequeno-vertical * 2 ) + 10 );
 
@@ -227,7 +227,7 @@ ________________________________________________________________ */
 @select-border-focus:			#1cb3e8;
 
 // Ativa ou desativa o Border radius EX: true ou false;
-@border-radius-input:			false;
+@border-radius-input:			true;
 // Ativa a animação ou não no Focus
 @animate-focus-input:			true;
 // Ativa ou desativa o Shadow no Input EX: true ou false;

@@ -32,7 +32,7 @@ ________________________________________________________________ */
 .form-style{
 	background-color: @input-bg;
 	background-image: none;
-	border: 1px solid @input-border;
+	border: 2px solid @input-border;
 	color: @input-color;
 	display: block;
 	font-size: @font-size-base;
@@ -123,10 +123,11 @@ textarea.form-style{
 	}
 
 	.fa, .icon{
+		.transform(translateY(-50%));
 		position: absolute;
 		left: 4%;
 		font-size: @font-size-base + 6;
-		top: 23%;
+		top: 50%;
 
 		&.right{
 			left: auto;

@@ -31,6 +31,7 @@
 							<div class="row">
 								<div class="col-6">
 									<button type="button" class="btn btn-white btn-icon"><i class="icon icon-filter"></i> Filtros</button>
+									<button type="button" class="btn btn-white btn-icon"><i class="icon icon-arrow-top"></i> Fechar filtro</button>
 								</div>
 
 								<div class="col-6 align-right">
@@ -47,6 +48,98 @@
 											</div>
 										</div>
 									</form>
+								</div>
+							</div>
+
+							<div class="block__filter--options">
+								<div class="block__collapse block__collapse--open">
+									<div class="block__collapse--title">
+										<a href="#this">Informações gerais</a>
+										<span class="block__collapse--less">-</span>
+										<span class="block__collapse--more">+</span>
+									</div>
+
+									<div class="block__collapse--content">
+										<div class="row">
+											<div class="col-12">
+												<label>Palavras-chave</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Obra, Construção, etc.">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Tipo de cadastro</label>
+
+												<select name="label17" id="dado-label17" class="form-style">
+													<option value="">Selecione</option>
+													<option>Valor 1</option>
+													<option>Valor 2</option>
+													<option>Valor 3</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Data de entrada</label>
+
+												<div class="input-icon right">
+													<i class="icon icon-calendar"></i>
+													<input type="text" name="label26" id="dado-label26" class="form-style required mask-data" placeholder="Ex: 15/08/2015">
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Data limite</label>
+
+												<div class="input-icon right">
+													<i class="icon icon-calendar"></i>
+													<input type="text" name="label27" id="dado-label27" class="form-style required mask-data" placeholder="Ex: 19/08/2015">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="block__collapse">
+									<div class="block__collapse--title">
+										<a href="#this">Tipo de demanda</a>
+										<span class="block__collapse--less">-</span>
+										<span class="block__collapse--more">+</span>
+									</div>
+								</div>
+
+								<div class="block__collapse">
+									<div class="block__collapse--title">
+										<a href="#this">Solicitante</a>
+										<span class="block__collapse--less">-</span>
+										<span class="block__collapse--more">+</span>
+									</div>
+								</div>
+
+								<div class="block__collapse">
+									<div class="block__collapse--title">
+										<a href="#this">Informações adicionais</a>
+										<span class="block__collapse--less">-</span>
+										<span class="block__collapse--more">+</span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-12">
+										<button type="button" class="btn btn-blue btn-full">Filtrar</button>
+									</div>
 								</div>
 							</div>
 						</div>

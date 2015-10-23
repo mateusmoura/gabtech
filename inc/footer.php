@@ -31,6 +31,7 @@
 		<script src="js/Modulos/MM.Feedback.js"></script>
 		<script src="js/Modulos/MM.BlockFilterForm.js"></script>
 		<script src="js/Modulos/MM.ResponsiveTables.js"></script>
+		<script src="js/Modulos/MM.InputMultipleSelect.js"></script>
 
 
 		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>

@@ -1,0 +1,62 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Collapse
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__COLLAPSE
+____________________________________________________________________________________ */
+
+.block__collapse {
+	&--less {
+		display: none;
+	}
+
+	&--title {
+		background-color: #f1f3f4;
+		border-top: solid 1px #d9e1e2;
+		position: relative;
+
+		a, button {
+			color: #7a8796;
+			display: block;
+			font-family: @font-family-gotham-medium;
+			font-size: 12px;
+			padding: 18px 20px;
+			position: relative;
+			text-transform: uppercase;
+			z-index: 2;
+		}
+
+		.block__collapse--less, .block__collapse--more {
+			.transform(translateY(-50%));
+			color: #7a8796;
+			font-family: @font-family-gotham-medium;
+			font-size: 20px;
+			position: absolute;
+			right: 20px;
+			text-transform: uppercase;
+			top: 50%;
+			z-index: 1;
+		}
+	}
+
+	&--content {
+		padding: 27px 20px;
+
+		.col-12 {
+			margin-bottom: 25px;
+		}
+
+		label {
+			color: #4c5761;
+			font-family: @font-family-gotham-medium;
+			font-size: 14px;
+			padding-bottom: 17px;
+		}
+	}
+
+
+}
