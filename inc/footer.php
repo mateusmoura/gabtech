@@ -1,11 +1,16 @@
-			<footer>
+			<footer class="footer">
 				<div class="center">
 					<div class="row">
 						<div class="col-6">
-							<h2 class="footer__logo"><a href="#this"><i class="icon icon-clip-green"></i> NossoGabinete</a></h2>
+							<h2 class="footer__logo">
+								<a href="#this">
+									<i class="icon icon-clip-active"></i> 
+									<img src="img/lgo/footer__logo.png" alt="NossoGabinete">
+								</a>
+							</h2>
 						</div>
 
-						<div class="col-6">
+						<div class="col-6 align-right">
 							<a href="#this" class="btn btn-link">Precisa de ajuda?</a>
 						</div>
 					</div>

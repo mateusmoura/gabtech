@@ -244,12 +244,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #333333;
+  color: #2eb773;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ebebeb;
+  color: #269960;
   text-decoration: none;
 }
 iframe {
@@ -479,9 +479,23 @@ header .header__logo {
   overflow: hidden;
   margin-bottom: 78px;
 }
-header .header__logo .icon-clip {
+header .header__logo .icon-clip,
+header .header__logo .icon-clip-active {
   float: left;
   margin-right: 6px;
+}
+header .header__logo .icon-clip-active {
+  display: none;
+}
+header .header__logo:hover .icon-clip-active,
+header .header__logo:focus .icon-clip-active,
+header .header__logo:active .icon-clip-active {
+  display: inline-block;
+}
+header .header__logo:hover .icon-clip,
+header .header__logo:focus .icon-clip,
+header .header__logo:active .icon-clip {
+  display: none;
 }
 header .header__logo img {
   float: left;
@@ -507,6 +521,30 @@ ________________________________________________________________ */
 */
 /* FOOTER
 ________________________________________________________________ */
+.footer {
+  border-top: solid 2px #d9e1e2;
+  padding: 22px 0;
+  margin-top: 40px;
+}
+.footer__logo {
+  overflow: hidden;
+  margin: 0;
+}
+.footer__logo .icon-clip-active {
+  float: left;
+  margin-right: 6px;
+}
+.footer__logo img {
+  float: left;
+  position: relative;
+  top: 3px;
+  width: 107px;
+}
+.footer .btn-link {
+  font-family: 'GothamRounded-Light';
+  font-size: 14px;
+  padding: 0;
+}
 /* IMPORTANDO BIBLIOTECAS
 ________________________________________________________________ */
 /**
@@ -1544,7 +1582,7 @@ li > ol {
 }
 .list-custom li:before {
   content: "• ";
-  color: #e2f4df;
+  color: #269960;
 }
 .list-custom li li:before {
   font-size: 12px;
@@ -1818,7 +1856,7 @@ ________________________________________________________________ */
   width: 100%;
 }
 .feedback.sucesso {
-  background-color: #e2f4df;
+  background-color: #269960;
   border-color: #2eb773;
 }
 .feedback.sucesso p,
@@ -1942,7 +1980,7 @@ ________________________________________________________________ */
 }
 .form-style.validado {
   background-color: #e8f2d2;
-  border-color: #e2f4df;
+  border-color: #269960;
   color: #2eb773;
 }
 .form-style.erro {
@@ -4450,7 +4488,7 @@ ________________________________________________________________ */
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: #2eb773;
   font-weight: bold;
 }
 .btn-link,
@@ -4470,7 +4508,7 @@ ________________________________________________________________ */
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #ebebeb;
+  color: #269960;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4949,7 +4987,7 @@ ________________________________________________________________________________
 }
 .gallery .gallery__index a:hover,
 .gallery .gallery__index a.active {
-  color: #e2f4df;
+  color: #269960;
   text-decoration: none;
 }
 .gallery .gallery__index a.active {
@@ -5544,6 +5582,15 @@ ________________________________________________________________ */
   height: 18px;
   width: 10px;
 }
+.icon-clip-active {
+  background-image: url("../img/ico/icon-clip-active.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 18px;
+  width: 10px;
+}
 .icon-filter {
   background-image: url("../img/ico/icon-filter.svg");
   -webkit-background-size: 100% 100%;
@@ -5657,7 +5704,7 @@ table tbody tr:active {
   background-color: #deeaf3;
 }
 table tbody tr.active {
-  background-color: #e2f4df;
+  background-color: #269960;
 }
 table tbody tr td,
 table tbody tr a {

@@ -17,9 +17,23 @@ header {
 			overflow: hidden;
 			margin-bottom: 78px;
 
-			.icon-clip {
+			.icon-clip, .icon-clip-active {
 				float: left;
 				margin-right: 6px;
+			}
+
+			.icon-clip-active {
+				display: none;
+			}
+
+			&:hover, &:focus, &:active {
+				.icon-clip-active {
+					display: inline-block;
+				}
+
+				.icon-clip {
+					display: none;
+				}
 			}
 
 			img {

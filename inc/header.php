@@ -49,7 +49,13 @@
 				<div class="center">
 					<div class="row">
 						<div class="col-6">
-							<h1 class="header__logo"><a href="#this"><i class="icon icon-clip"></i> <img src="img/lgo/header__logo.png" alt="NossoGabinete"></a></h1>
+							<h1 class="header__logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<i class="icon icon-clip-active"></i>
+									<img src="img/lgo/header__logo.png" alt="NossoGabinete">
+								</a>
+							</h1>
 						</div>
 
 						<div class="col-6">
