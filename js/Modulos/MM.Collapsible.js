@@ -4,16 +4,12 @@
 * @Version: 1.0
 */
 
-Module('MM.Collapsible', function(Collapsible){
-	Collapsible.fn.initialize = function($container, $closeOthers){
-		this.container = $container;
-		this.coll_title = $container.find('.coll_title');
-		this.coll_content = $container.find('.coll_content');
-		this.colorChange = $container.hasClass('close');
-		this.closeOthers = $closeOthers;
-
-		$container.hasClass('open')
-			&& $container.removeClass('close');
+Module('MM.Collapsible', function (Collapsible) {
+	Collapsible.fn.initialize = function ($container, $closeOthers) {
+		this.container							= $container;
+		this.block__collapse_title				= $container.find('.block__collapse--title a, .block__collapse--title button');
+		this.block__collapse_content			= $container.find('.block__collapse--content');
+		this.closeOthers						= $closeOthers;
 
 		this.addEventListeners();
 	};
@@ -21,24 +17,20 @@ Module('MM.Collapsible', function(Collapsible){
 	* Adiciona os eventos necessários.
 	*/
 	Collapsible.fn.addEventListeners = function(){
-		this.coll_title
+		this.block__collapse_title
 			.on('click', this.toggleOpen.bind(this));
 	};
 	/**
 	* Funcionalidade que mostra o conteúdo.
 	*/
 	Collapsible.fn.toggleOpen = function(){
-		this.coll_content.slideToggle('500');
-		this.container.toggleClass('open');
+		this.block__collapse_content.slideToggle('500');
+		this.container.toggleClass('block__collapse--open');
 
-		if(this.colorChange){
-			this.container.toggleClass('close');
-		}
-
-		if( this.closeOthers){
-			this.coll_title.parent().siblings('.collapse.open')
-				.find('.coll_content').slideUp(function(){
-					$(this).parent().removeClass('open');
+		if(this.closeOthers){
+			this.block__collapse_title.parent().siblings('.block__collapse--open')
+				.find('.block__collapse--content').slideUp(function(){
+					$(this).parent().removeClass('block__collapse--open');
 				}).end();
 		}
 		

@@ -30,8 +30,8 @@
 						<div class="block__filter">
 							<div class="row">
 								<div class="col-6">
-									<button type="button" class="btn btn-white btn-icon"><i class="icon icon-filter"></i> Filtros</button>
-									<button type="button" class="btn btn-white btn-icon"><i class="icon icon-arrow-top"></i> Fechar filtro</button>
+									<button type="button" class="btn btn-white btn-icon block__filter--btn-open"><i class="icon icon-filter"></i> Filtros</button>
+									<button type="button" class="btn btn-white btn-icon block__filter--btn-close"><i class="icon icon-arrow-top"></i> Fechar filtro</button>
 								</div>
 
 								<div class="col-6 align-right">
@@ -52,7 +52,7 @@
 							</div>
 
 							<div class="block__filter--options">
-								<div class="block__collapse block__collapse--open">
+								<div class="block__collapse">
 									<div class="block__collapse--title">
 										<a href="#this">Informações gerais</a>
 										<span class="block__collapse--less">-</span>
@@ -118,6 +118,10 @@
 										<span class="block__collapse--less">-</span>
 										<span class="block__collapse--more">+</span>
 									</div>
+
+									<div class="block__collapse--content">
+										<p>Conteudo - Tipo de demanda</p>
+									</div>
 								</div>
 
 								<div class="block__collapse">
@@ -126,6 +130,10 @@
 										<span class="block__collapse--less">-</span>
 										<span class="block__collapse--more">+</span>
 									</div>
+
+									<div class="block__collapse--content">
+										<p>Conteudo - Solicitante</p>
+									</div>
 								</div>
 
 								<div class="block__collapse">
@@ -133,6 +141,10 @@
 										<a href="#this">Informações adicionais</a>
 										<span class="block__collapse--less">-</span>
 										<span class="block__collapse--more">+</span>
+									</div>
+
+									<div class="block__collapse--content">
+										<p>Conteudo - Informações adicionais</p>
 									</div>
 								</div>
 

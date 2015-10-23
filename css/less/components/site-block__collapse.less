@@ -44,6 +44,7 @@ ________________________________________________________________________________
 	}
 
 	&--content {
+		display: none;
 		padding: 27px 20px;
 
 		.col-12 {
@@ -58,5 +59,13 @@ ________________________________________________________________________________
 		}
 	}
 
+	&--open {
+		.block__collapse--more {
+			display: none;
+		}
 
+		.block__collapse--less, .block__collapse--content {
+			display: block;
+		}
+	}
 }

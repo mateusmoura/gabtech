@@ -39,7 +39,7 @@ var site = {
 	* Funcionalidades GLOBAL onde e chamado em todas as páginas do projeto.
 	*/
 	global: function(){
-		var _collapse				= $('.collapse'),
+		var _collapse				= $('.block__collapse'),
 			_blockFilterForm		= $('.block__filter'),
 			_autocomplete			= $('.autocomplete');
 
@@ -51,7 +51,7 @@ var site = {
 		});
 
 		for (var i = _collapse.length - 1; i >= 0; i--) {
-			MM.Collapsible(_collapse.eq(i), true);
+			MM.Collapsible(_collapse.eq(i), false);
 		}
 
 		for (var i = _blockFilterForm.length - 1; i >= 0; i--) {
