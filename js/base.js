@@ -44,6 +44,7 @@ var site = {
 			_autocomplete			= $('.autocomplete');
 
 		MM.Mascarar();
+		MM.Datepicker();
 		MM.ResponsiveTables({
 			addFocusBtn					: false,
 			addDisplayAllBtn			: false

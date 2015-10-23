@@ -94,7 +94,7 @@
 
 												<div class="input-icon right">
 													<i class="icon icon-calendar"></i>
-													<input type="text" name="label26" id="dado-label26" class="form-style required mask-data" placeholder="Ex: 15/08/2015">
+													<input type="text" name="label26" id="dado-label26" class="form-style required mask-date datepicker" placeholder="Ex: 15/08/2015">
 												</div>
 											</div>
 										</div>
@@ -105,7 +105,7 @@
 
 												<div class="input-icon right">
 													<i class="icon icon-calendar"></i>
-													<input type="text" name="label27" id="dado-label27" class="form-style required mask-data" placeholder="Ex: 19/08/2015">
+													<input type="text" name="label27" id="dado-label27" class="form-style required mask-date datepicker" placeholder="Ex: 19/08/2015">
 												</div>
 											</div>
 										</div>

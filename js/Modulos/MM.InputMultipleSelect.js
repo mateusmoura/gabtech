@@ -4,8 +4,8 @@
 * @Version: 1.0
 */
 
-Module('MM.InputMultipleSelect', function(InputMultipleSelect){
-	InputMultipleSelect.fn.initialize = function($element, $settings){
+Module('MM.InputMultipleSelect', function (InputMultipleSelect) {
+	InputMultipleSelect.fn.initialize = function ($element, $settings) {
 		this.element				= $element;
 		this.tagList				= $element.parents('.block__input--data:first').siblings('.block__input--list');
 		this.settings				= $settings;
@@ -20,7 +20,7 @@ Module('MM.InputMultipleSelect', function(InputMultipleSelect){
 	/**
 	* Carregar Scripts necessários para funcionalidade.
 	*/
-	InputMultipleSelect.fn.loadScripts = function(){
+	InputMultipleSelect.fn.loadScripts = function () {
 		var _this = this;
 
 		jQuery.ajaxSetup({
@@ -45,7 +45,7 @@ Module('MM.InputMultipleSelect', function(InputMultipleSelect){
 	/**
 	* Configuração e Inicialização do plugin.
 	*/
-	InputMultipleSelect.fn.config = function(){
+	InputMultipleSelect.fn.config = function () {
 		var defaults = {
 				minLength : 0,
 				source : this.datasource,
@@ -84,7 +84,7 @@ Module('MM.InputMultipleSelect', function(InputMultipleSelect){
 	/**
 	* Adiciona os eventos necessários.
 	*/
-	InputMultipleSelect.fn.addEventListeners = function(){
+	InputMultipleSelect.fn.addEventListeners = function () {
 		this.element
 			.on('keyup', function (event) {
 				if(event.keyCode === 13) {
@@ -121,7 +121,7 @@ Module('MM.InputMultipleSelect', function(InputMultipleSelect){
 	/**
 	* Funcionalidade para adicionar um novo item.
 	*/
-	InputMultipleSelect.fn.updateSelecteds = function(value){
+	InputMultipleSelect.fn.updateSelecteds = function (value){
 		var _template = $('<p class="block__input--list-item">'+ value +' <a href="#this" class="btn btn-icon"><i class="icon icon-remove"></i></a></p>');
 
 		this.tagList.append(_template);
@@ -129,7 +129,7 @@ Module('MM.InputMultipleSelect', function(InputMultipleSelect){
 	/**
 	* Funcionalidade para remover um item.
 	*/
-	InputMultipleSelect.fn.removeItem = function(value){
+	InputMultipleSelect.fn.removeItem = function (value){
 		this.valuesSelected.splice(value, 1);
 
 	};

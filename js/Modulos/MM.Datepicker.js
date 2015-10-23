@@ -1,11 +1,11 @@
 /**
-* Funcionalidade responsável por colocar as máscaras dos inputs no formulário
+* Funcionalidade responsável pelas funcionalidades do Datepicker
 * @author: Mateus Moura
 * @Version: 1.0
 */
 
-Module('CNA.Datepicker', function(Datepicker){
-	Datepicker.fn.initialize = function($settings){
+Module('MM.Datepicker', function (Datepicker) {
+	Datepicker.fn.initialize = function ($settings) {
 		this.settings = $settings;
 
 		//this.config();
@@ -14,7 +14,7 @@ Module('CNA.Datepicker', function(Datepicker){
 	/**
 	* Carregar Scripts necessários para funcionalidade.
 	*/
-	Datepicker.fn.loadScripts = function(){
+	Datepicker.fn.loadScripts = function () {
 		var _this = this;
 
 		jQuery.ajaxSetup({
@@ -23,13 +23,13 @@ Module('CNA.Datepicker', function(Datepicker){
 
 		if( $.datepicker === undefined ){
 			$.when(
-				$.getScript(base_url + "js/plugins/jQuery.ui.datepicker.min.js"),
-				$.Deferred(function(deferred){
+				$.getScript(base_url + "js/plugins/jQuery.ui-datepicker.js"),
+				$.Deferred(function (deferred) {
 					$(deferred.resolve)
 				})
-			).done(function(){
+			).done(function () {
 				_this.config();
-			}).fail(function() {
+			}).fail(function () {
 				console.log('Erro getScript')
 			});
 		} else{
@@ -37,14 +37,14 @@ Module('CNA.Datepicker', function(Datepicker){
 		}
 	};
 	/**
-	* Configuração do plugin para mostrar as máscaras.
+	* Configuração e Inicialização do plugin.
 	*/
-	Datepicker.fn.config = function(){
+	Datepicker.fn.config = function () {
 		var defaults = {
 				dateFormat: 'dd/mm/yy',
 				showOtherMonths: true,
-				changeMonth: false,
-				changeYear: false,
+				changeMonth: true,
+				changeYear: true,
 				dayNames: [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ],
 				dayNamesMin: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
 				dayNamesShort: [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb' ],
