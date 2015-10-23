@@ -1,0 +1,82 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Table
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__TABLE
+____________________________________________________________________________________ */
+
+.block__table {
+	&--actions {
+		float: left;
+		position: relative;
+		margin-bottom: 15px;
+
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		li {
+			float: left;
+			height: 30px;
+			border: solid 1px #d0d9db;
+			padding: 0;
+			margin: 0;
+			width: 50px;
+			text-align: center;
+
+			&:first-child {
+				.border-radius(@border-radius-base 0 0 @border-radius-base);
+			}
+
+			&:last-child {
+				.border-radius( 0 @border-radius-base @border-radius-base 0);
+			}
+		}
+
+		a, button {
+			padding: 0;
+			height: 100%;
+			width: 100%;
+
+			.icon {
+				.opacity(0.5);
+			}
+
+			&:hover, &:focus, &:active {
+				background-color: #f1f3f4;
+
+				.icon {
+					.opacity(1);
+				}
+			}
+		}
+
+		.checkbox {
+			margin: 7px 0 0 15px;
+		}
+	}
+
+	.dropdown {
+		height: 30px;
+		width: 50px;
+
+		> a, > button {
+			height: 100%;
+			padding: 0;
+			text-align: center;
+			width: 100%;
+
+			.icon {
+				margin: 0 auto;
+			}
+		}
+	}
+}

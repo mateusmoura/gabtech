@@ -58,8 +58,8 @@
 							</h1>
 						</div>
 
-						<div class="col-6">
-							<p>Menu Mova Mais</p>
+						<div class="col-6 align-right">
+							<button type="button" class="btn btn-menu"><span>Menu</span></button>
 						</div>
 					</div>
 				</div>

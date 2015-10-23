@@ -157,6 +157,28 @@
 						</div>
 
 						<div class="block__table">
+							<div class="block__table--actions">
+								<ul class="list-none">
+									<li>
+										<div class="checkbox">
+											<input type="checkbox" name="label60" id="dado-label60">
+											<label for="dado-label60">&nbsp;</label>
+										</div>
+									</li>
+									<li>
+										<button type="button" class="btn btn-icon">
+											<i class="icon icon-star"></i>
+										</button>
+									</li>
+
+									<li>
+										<button type="button" class="btn btn-icon">
+											<i class="icon icon-trash"></i>
+										</button>
+									</li>
+								</ul>
+							</div>
+
 							<div class="table-responsive">
 								<table cellspacing="0" id="tech-companies-1" class="table table-small-font table-bordered table-striped">
 									<thead>
