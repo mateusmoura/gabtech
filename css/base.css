@@ -4425,7 +4425,7 @@ ________________________________________________________________ */
 .btn-gray.active {
   color: #5e5e60;
   background-color: #c5cbcf;
-  background-color: #e1e4e6;
+  background-color: #d3d6d8;
 }
 .btn-gray:active,
 .btn-gray.active {
@@ -4829,8 +4829,16 @@ ________________________________________________________________ */
   padding: 8px 23px;
 }
 .block__pagination p {
+  color: #a4b4ba;
   display: inline-block;
+  font-family: 'GothamRounded-Light';
+  font-size: 14px;
   padding: 0 23px;
+}
+.block__pagination p span {
+  color: #56606b;
+  font-family: 'GothamRounded-Medium';
+  font-size: 14px;
 }
 /**
 * Arquivo responsavel pelo estilo da Galeria de Imagens
@@ -5642,8 +5650,17 @@ ________________________________________________________________ */
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  height: 8px;
-  width: 14px;
+  height: 14px;
+  width: 9px;
+}
+.icon-arrow-right {
+  background-image: url("../img/ico/icon-arrow-right.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 14px;
+  width: 9px;
 }
 .icon-arrow-top {
   background-image: url("../img/ico/icon-arrow-top.svg");
