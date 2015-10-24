@@ -6109,6 +6109,11 @@ ________________________________________________________________________________
   display: -ms-flex;
   display: flex;
 }
+@media (min-width: 950px) {
+  .page__menu {
+    display: inline-block;
+  }
+}
 .page__menu--item {
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
@@ -6122,6 +6127,11 @@ ________________________________________________________________________________
   padding: 0 0 20px;
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: 950px) {
+  .page__menu--item {
+    padding: 0 12px 20px;
+  }
 }
 .page__menu--item:hover {
   border-bottom: 3px solid #64758c;
