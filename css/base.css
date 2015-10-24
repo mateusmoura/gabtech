@@ -6191,6 +6191,39 @@ ________________________________________________________________________________
     padding-bottom: 12px;
   }
 }
+.block__filter--wrap {
+  position: relative;
+  top: -21px;
+}
+@media (min-width: 950px) {
+  .block__filter--wrap {
+    /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
+    transition: width 0.3s ease-in-out 0s;
+    /*, @type2 @time2 @tm2*/
+    -moz-transition: width 0.3s ease-in-out 0s;
+    /* Firefox 4 */
+    -webkit-transition: width 0.3s ease-in-out 0s;
+    /* Safari and Chrome */
+    -o-transition: width 0.3s ease-in-out 0s;
+    /* Opera */
+    width: 0;
+  }
+}
+@media (min-width: 950px) {
+  .block__filter--wrap.col-m-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 950px) and (min-width: 950px) {
+  .block__filter--wrap.col-m-3 {
+    float: left;
+    width: 25%;
+  }
+}
 .block__filter .block__filter--btn-close {
   display: none;
 }
@@ -6214,6 +6247,11 @@ ________________________________________________________________________________
   filter: alpha(opacity=100);
   height: auto;
   visibility: visible;
+}
+@media (min-width: 950px) {
+  .block__filter--open .block__filter--options {
+    display: block;
+  }
 }
 .block__filter--open .block__filter--show {
   opacity: 0.5;
@@ -6332,11 +6370,19 @@ ________________________________________________________________________________
   background-color: #ffffff;
   height: 0;
   position: absolute;
-  top: 55px;
+  top: 0;
   left: 0;
   visibility: hidden;
   width: 100%;
   z-index: 1001;
+}
+@media (min-width: 950px) {
+  .block__filter--options {
+    display: none;
+    min-width: 285px;
+    position: relative;
+    top: 30px;
+  }
 }
 .block__filter--options .btn-blue {
   display: block;
@@ -6362,6 +6408,11 @@ ________________________________________________________________________________
   background-color: #f1f3f4;
   border-top: solid 1px #d9e1e2;
   position: relative;
+}
+@media (min-width: 950px) {
+  .block__collapse--title {
+    background-color: #e6eaec;
+  }
 }
 .block__collapse--title a,
 .block__collapse--title button {
@@ -6392,6 +6443,11 @@ ________________________________________________________________________________
 .block__collapse--content {
   display: none;
   padding: 27px 20px;
+}
+@media (min-width: 950px) {
+  .block__collapse--content {
+    background-color: #f1f4f5;
+  }
 }
 .block__collapse--content .col-12 {
   margin-bottom: 25px;
@@ -6472,6 +6528,13 @@ ________________________________________________________________________________
 */
 /* Componente BLOCK__TABLE
 ____________________________________________________________________________________ */
+.block__table.col-m-9 .block__table--actions {
+  margin-top: 9px;
+}
+.block__table.col-m-9 .table-wrapper {
+  position: relative;
+  top: -11px;
+}
 .block__table--actions {
   float: left;
   position: relative;

@@ -7,6 +7,7 @@
 Module('MM.BlockFilterForm', function(BlockFilterForm){
 	BlockFilterForm.fn.initialize = function($container){
 		this.container						= $container;
+		this.wrap__options					= $container.siblings('.block__filter--wrap:first');
 		this.block__filter_form				= $container.find('.block__filter--form');
 		this.block__filter_close			= $container.find('.block__filter--close');
 		this.block__filter_show				= $container.find('.block__filter--show');
@@ -43,7 +44,13 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	* Funcionalidade que mostra o formulário de busca.
 	*/
 	BlockFilterForm.fn.toggleOpenFilter = function(){
-		this.container.toggleClass('block__filter--open');
+		if(isMobile || $(window).width() <= 750){
+			this.wrap__options.add(this.container).toggleClass('block__filter--open');
+		} else {
+			this.wrap__options.add(this.container).toggleClass('block__filter--open');
+			this.wrap__options.toggleClass('col-m-3');
+			$('.page__list .block__table').toggleClass('col-m-9');
+		}
 
 		return false;
 	};

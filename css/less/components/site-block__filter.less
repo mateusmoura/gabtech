@@ -19,6 +19,23 @@ ________________________________________________________________________________
 		padding-bottom: 12px;
 	});
 
+	&--wrap {
+		position: relative;
+		top: -21px;
+
+		.desktop({
+			.transition(width 0.3s ease-in-out 0s);
+			width: 0;
+		});
+
+		&.col-m-3 {
+			.desktop({
+				.gerar-m-coluna(3);
+				overflow: hidden;
+			});
+		}
+	}
+
 	.block__filter--btn-close {
 		display: none;
 	}
@@ -37,6 +54,10 @@ ________________________________________________________________________________
 			.opacity(1);
 			height: auto;
 			visibility: visible;
+
+			.desktop({
+				display: block;
+			});
 		}
 
 		.block__filter--show {
@@ -136,11 +157,18 @@ ________________________________________________________________________________
 		background-color: @cor-branco;
 		height: 0;
 		position: absolute;
-		top: 55px;
+		top: 0;
 		left: 0;
 		visibility: hidden;
 		width: 100%;
 		z-index: 1001;
+
+		.desktop({
+			display: none;
+			min-width: 285px;
+			position: relative;
+			top: 30px;
+		});
 
 		.btn-blue {
 			display: block;

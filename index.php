@@ -50,7 +50,9 @@
 									</form>
 								</div>
 							</div>
+						</div>
 
+						<div class="block__filter--wrap">
 							<div class="block__filter--options">
 								<div class="block__collapse">
 									<div class="block__collapse--title">
@@ -120,7 +122,46 @@
 									</div>
 
 									<div class="block__collapse--content">
-										<p>Conteudo - Tipo de demanda</p>
+										<div class="row">
+											<div class="col-12">
+												<label>Área de interesse</label>
+
+												<select name="label17" id="dado-label17" class="form-style">
+													<option value="">Selecione</option>
+													<option>Valor 1</option>
+													<option>Valor 2</option>
+													<option>Valor 3</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Tipo</label>
+
+												<select name="label17" id="dado-label17" class="form-style">
+													<option value="">Selecione</option>
+													<option>Valor 1</option>
+													<option>Valor 2</option>
+													<option>Valor 3</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Orgão reponsável</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Digite o nome">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -132,7 +173,50 @@
 									</div>
 
 									<div class="block__collapse--content">
-										<p>Conteudo - Solicitante</p>
+										<div class="row">
+											<div class="col-12">
+												<label>Solicitante</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Digite o nome">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Município</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Digite o nome">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Interessados</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Digite o nome">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -144,7 +228,20 @@
 									</div>
 
 									<div class="block__collapse--content">
-										<p>Conteudo - Informações adicionais</p>
+										<div class="row">
+											<div class="col-12">
+												<label>Responsável</label>
+
+												<div class="block__input--includes">
+													<div class="block__input--data">
+														<input type="text" class="form-style autocomplete" placeholder="Digite o nome">
+														<button type="button" class="btn btn-icon btn-more">+</button>
+													</div>
+
+													<div class="block__input--list"></div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 
