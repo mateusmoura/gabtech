@@ -8,6 +8,7 @@ Module('MM.Menu', function (Menu) {
 	Menu.fn.initialize = function ($container) {
 		this.container						= $container;
 		this.btn_menu						= $container.find('.btn-menu');
+		this.html							= $('html, body');
 
 		this.addEventListeners();
 	};
@@ -23,6 +24,7 @@ Module('MM.Menu', function (Menu) {
 	*/
 	Menu.fn.toggleOpenMenu = function () {
 		this.container.toggleClass('header__menu--active');
+		this.html.toggleClass('not-scroll');
 
 		return false;
 	};

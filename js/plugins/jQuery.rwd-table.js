@@ -122,7 +122,7 @@
 
         this.$btnToolbar = $('<div class="btn-toolbar" />');
 
-        this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right dropdown right" />');
+        this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right dropdown dropdown__right" />');
         this.$dropdownBtn = $('<button class="btn btn-white dropdown-toggle" data-toggle="dropdown"><i class="icon icon-gear-inactive"></i><i class="icon icon-gear"></i></button>');
         this.$dropdownContainer = $('<ul class="dropdown-menu"/>');
 

@@ -48,7 +48,7 @@
 			<header class="header">
 				<div class="center">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-6 col-m-8">
 							<h1 class="header__logo">
 								<a href="#this">
 									<i class="icon icon-clip"></i>
@@ -56,10 +56,43 @@
 									<img src="img/lgo/header__logo.png" alt="NossoGabinete">
 								</a>
 							</h1>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links">
+									<a href="#this">Visão Geral</a>
+									<a href="#this">Demandas</a>
+									<a href="#this">Municípios</a>
+									<a href="#this">Contatos</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this">Mais <i class="icon icon-arrow-bottom"></i> <i class="icon icon-arrow-top-active"></i></a>
+
+										<ul>
+											<li><a href="#this">Ligações</a></li>
+											<li><a href="#this">Visitas</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
 						</div>
 
-						<div class="col-6 align-right">
+						<div class="col-6 col-m-4 align-right">
 							<button type="button" class="btn btn-menu"><span>Menu</span></button>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links block__menu--links-avatar">
+									<a href="#this"><i class="icon icon-person"></i> Gerenciar gabinete</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this" class="block__menu--avatar">
+											<img src="img/fke/user-avatar.png">
+										</a>
+
+										<ul>
+											<li><a href="#this">Editar conta</a></li>
+											<li><a href="#this" class="red">Sair</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>

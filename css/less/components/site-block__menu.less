@@ -22,6 +22,10 @@ ________________________________________________________________________________
 	z-index: 1005;
 	width: 100%;
 
+	.desktop({
+		display: none;
+	});
+
 	&--wrap {
 		background-color: #222830;
 		height: 100%;
@@ -65,8 +69,70 @@ ________________________________________________________________________________
 			font-size: 18px;
 			margin-bottom: 16px;
 
+			.desktop({
+				display: inline-block;
+				color: #7a8796;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 12px;
+				margin-left: 30px;
+				margin-top: 10px;
+			});
+
+			&:first-child {
+				.desktop({
+					margin-left: 0;
+				});
+			}
+
 			&:hover, &:focus, &:active {
 				color: @cor-verde;
+
+				.desktop({
+					color: @cor-branco;
+				});
+			}
+
+			&.red {
+				color: #f4676b;
+
+				&:hover, &:focus, &:active {
+					color: #f4676b !important;
+				}
+			}
+		}
+
+		.dropdown {
+			margin-left: 30px;
+
+			&:hover, &:focus, &:active {
+				> a {
+					color: @cor-branco;
+				}
+			}
+
+			ul {
+				padding: 5px 17px;
+			}
+		}
+
+		&-avatar {
+			position: relative;
+			top: -53px;
+
+			a, button {
+
+			}
+
+			.block__menu--avatar {
+				position: relative;
+				top: 33px;
+			}
+
+			.dropdown {
+				ul {
+					top: 114%;
+				}
 			}
 		}
 	}
@@ -77,5 +143,15 @@ ________________________________________________________________________________
 		margin-bottom: 25px;
 		overflow: hidden;
 		width: 48px;
+	}
+
+	&--desktop {
+		display: none;
+		position: relative;
+		top: 18px;
+
+		.desktop({
+			display: block;
+		});
 	}
 }

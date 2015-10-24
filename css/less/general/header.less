@@ -16,6 +16,11 @@ ________________________________________________________________ */
 		overflow: hidden;
 		margin-bottom: 78px;
 
+		.desktop({
+			float: left;
+			margin-right: 60px;
+		});
+
 		.icon-clip, .icon-clip-active {
 			float: left;
 			margin-right: 6px;
@@ -40,6 +45,10 @@ ________________________________________________________________ */
 			position: relative;
 			top: 3px;
 			width: 105px;
+
+			.desktop({
+				width: 121px;
+			});
 		}
 	}
 
@@ -54,6 +63,10 @@ ________________________________________________________________ */
 		position: relative;
 		vertical-align: middle;
 		width: 22px;
+
+		.desktop({
+			display: none;
+		});
 
 		&:hover, &:active, &:focus {
 			background-color: transparent !important;
