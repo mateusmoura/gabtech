@@ -29,12 +29,12 @@
 					<div class="center">
 						<div class="block__filter">
 							<div class="row">
-								<div class="col-6">
+								<div class="col-8">
 									<button type="button" class="btn btn-white btn-icon block__filter--btn-open"><i class="icon icon-filter"></i> Filtros</button>
-									<button type="button" class="btn btn-white btn-icon block__filter--btn-close"><i class="icon icon-arrow-top"></i> Fechar filtro</button>
+									<button type="button" class="btn btn-white btn-icon block__filter--btn-close"><i class="icon icon-arrow-top"></i> <i class="icon icon-arrow-left"></i> Fechar filtro</button>
 								</div>
 
-								<div class="col-6 align-right">
+								<div class="col-4 align-right">
 									<button type="button" class="btn btn-icon block__filter--show"><i class="icon icon-search"></i></button>
 
 									<form class="block__filter--form" action="/" method="GET">
@@ -284,12 +284,10 @@
 								</table>
 							</div>
 
-							<div class="block__table--actions">
-								<div class="block__pagination align-center">
-									<button type="button" class="btn btn-icon btn-gray disabled"><i class="icon icon-arrow-left"></i></button>
-									<p class="block__pagination--index"><span>1 - 5</span> de 11</p>
-									<button type="button" class="btn btn-icon btn-gray"><i class="icon icon-arrow-right"></i></button>
-								</div>
+							<div class="block__pagination align-center">
+								<button type="button" class="btn btn-icon btn-gray disabled"><i class="icon icon-arrow-left"></i></button>
+								<p class="block__pagination--index"><span>1 - 5</span> de 11</p>
+								<button type="button" class="btn btn-icon btn-gray"><i class="icon icon-arrow-right"></i></button>
 							</div>
 						</div>
 					</div>

@@ -32,6 +32,10 @@ ________________________________________________________________________________
 			width: 50px;
 			text-align: center;
 
+			.desktop({
+				width: 70px;
+			});
+
 			&:first-child {
 				.border-radius(@border-radius-base 0 0 @border-radius-base);
 			}
@@ -77,6 +81,18 @@ ________________________________________________________________________________
 			.icon {
 				margin: 0 auto;
 			}
+		}
+
+		ul {
+			top: 120%;
+		}
+	}
+
+	table {
+		width: 100%;
+
+		thead {
+			text-align: left;
 		}
 	}
 }

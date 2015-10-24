@@ -41,6 +41,10 @@ ________________________________________________________________ */
 	padding: @padding-base-vertical @padding-base-horizontal;
 	width: 100%;
 
+	.desktop({
+		height: @input-height-base - 5;
+	});
+
 	& when( @border-radius-input = true ){
 		border-radius: @input-border-radius;
 	}
