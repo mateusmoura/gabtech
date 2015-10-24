@@ -1,0 +1,81 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Menu
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__MENU
+____________________________________________________________________________________ */
+
+.block__menu {
+	.transition(all 0.5s ease-in-out 0s);
+	.opacity(0.0);
+	background-color: rgba(red(#111418), green(#111418), blue(#111418), 0.9);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1005;
+	width: 100%;
+
+	&--wrap {
+		background-color: #222830;
+		height: 100%;
+		min-height: 100%;
+		overflow: auto;
+		padding: 0 20px;
+		width: 78%;
+	}
+
+	&--header, &--content {
+		border-bottom: solid 1px #353e4a;
+		padding: 25px 0;
+	}
+
+	&--footer {
+		padding: 25px 0;
+	}
+
+	&--logo {
+		margin: 0;
+		overflow: hidden;
+
+		.icon-clip {
+			float: left;
+			margin-right: 6px;
+		}
+
+		img {
+			float: left;
+			position: relative;
+			top: 3px;
+			width: 105px;
+		}
+	}
+
+	&--links {
+		a, button {
+			color: @cor-branco;
+			display: block;
+			font-family: @font-family-gotham-book;
+			font-size: 18px;
+			margin-bottom: 16px;
+
+			&:hover, &:focus, &:active {
+				color: @cor-verde;
+			}
+		}
+	}
+
+	&--avatar {
+		.border-radius(50%);
+		height: 48px;
+		margin-bottom: 25px;
+		overflow: hidden;
+		width: 48px;
+	}
+}

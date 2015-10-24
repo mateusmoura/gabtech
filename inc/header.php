@@ -45,7 +45,7 @@
 	<body class="ie10">
 <![endif]-->
 		<div id="global">
-			<header>
+			<header class="header">
 				<div class="center">
 					<div class="row">
 						<div class="col-6">
@@ -60,6 +60,42 @@
 
 						<div class="col-6 align-right">
 							<button type="button" class="btn btn-menu"><span>Menu</span></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="block__menu">
+					<div class="block__menu--wrap">
+						<div class="block__menu--header">
+							<h4 class="block__menu--logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<img src="img/lgo/menu__logo.png" alt="NossoGabinete">
+								</a>
+							</h4>
+						</div>
+
+						<div class="block__menu--content">
+							<nav class="block__menu--links">
+								<a href="#this">Visão Geral</a>
+								<a href="#this">Demandas</a>
+								<a href="#this">Municípios</a>
+								<a href="#this">Contatos</a>
+								<a href="#this">Ligações</a>
+								<a href="#this">Visitas</a>
+							</nav>
+						</div>
+
+						<div class="block__menu--footer">
+							<figure class="block__menu--avatar">
+								<img src="img/fke/user-avatar.png">
+							</figure>
+
+							<nav class="block__menu--links">
+								<a href="#this">Gerenciar gabinete</a>
+								<a href="#this">Editar conta</a>
+								<a href="#this">Sair</a>
+							</nav>
 						</div>
 					</div>
 				</div>

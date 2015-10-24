@@ -63,6 +63,7 @@ var site = {
 		};
 
 		MM.ValidarFormularios($('form.validate'));
+		MM.Menu($('header'));
 	}
 }
 
