@@ -5,11 +5,11 @@
 					<div class="page__title">
 						<div class="center">
 							<div class="row">
-								<div class="col-7">
+								<div class="col-7 col-m-9">
 									<h2>Demandas</h2>
 								</div>
 
-								<div class="col-5 align-right">
+								<div class="col-5 col-m-3 align-right">
 									<a href="#this" class="btn btn-success">Nova demanda</a>
 								</div>
 							</div>

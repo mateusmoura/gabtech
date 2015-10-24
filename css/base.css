@@ -4215,13 +4215,19 @@ ________________________________________________________________ */
   touch-action: manipulation;
   vertical-align: middle;
   max-width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857143;
   padding: 13px 10px;
 }
 .btn.btn-error {
   text-shadow: 0.7px 0.7px 0 #84180d;
   box-shadow: 0 1px 0 #801d13;
+}
+@media (min-width: 950px) {
+  .btn {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
 }
 .btn:hover,
 .btn:focus,
@@ -4676,19 +4682,37 @@ ________________________________________________________________ */
 *	TAMANHO DOS BOTÕES
 */
 .btn-gr {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33;
   padding: 10px 16px;
 }
+@media (min-width: 950px) {
+  .btn-gr {
+    font-size: 22px;
+    padding: 12px 36px;
+  }
+}
 .btn-pq {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   padding: 9px 20px;
 }
+@media (min-width: 950px) {
+  .btn-pq {
+    font-size: 16px;
+    padding: 11px 40px;
+  }
+}
 .btn-base {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.33;
   padding: 13px 10px;
+}
+@media (min-width: 950px) {
+  .btn-base {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
 }
 /**
 * Arquivo responsavel pelo estilo das PAGINAÇÃO do projeto
@@ -6066,14 +6090,17 @@ ________________________________________________________________________________
 .page__header {
   background-color: #222830;
 }
-.page__title {
+.page__title h2 {
   color: #ffffff;
   font-family: 'GothamRounded-Light';
   font-size: 35px;
   font-weight: 300;
-}
-.page__title h2 {
   margin-top: 7px;
+}
+@media (min-width: 950px) {
+  .page__title h2 {
+    font-size: 48px;
+  }
 }
 .page__menu {
   display: -webkit-flex;

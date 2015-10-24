@@ -25,13 +25,16 @@ ________________________________________________________________________________
 	}
 
 	&__title {
-		color: @cor-branco;
-		font-family: @font-family-gotham-light;
-		font-size: 35px;
-		font-weight: 300;
-
 		h2 {
+			color: @cor-branco;
+			font-family: @font-family-gotham-light;
+			font-size: 35px;
+			font-weight: 300;
 			margin-top: 7px;
+
+			.desktop({
+				font-size: 48px;
+			});
 		}
 	}
 
