@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 		&.col-m-3 {
 			.desktop({
-				.gerar-m-coluna(3);
+				.gerar-m-coluna(3, @grid-separacao-3);
 				overflow: hidden;
 			});
 		}
@@ -165,6 +165,7 @@ ________________________________________________________________________________
 
 		.desktop({
 			display: none;
+			left: -(@grid-separacao-3 / 2);
 			min-width: 285px;
 			position: relative;
 			top: 30px;
@@ -177,6 +178,12 @@ ________________________________________________________________________________
 			margin: 20px auto;
 			padding: 25px 10px;
 			width: 90%;
+
+			.desktop({
+				margin-bottom: 30px;
+				padding: 15px 10px;
+				width: 100%;
+			});
 		}
 	}
 }
