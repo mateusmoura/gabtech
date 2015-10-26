@@ -46,6 +46,12 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	BlockFilterForm.fn.toggleOpenFilter = function(){
 		if(isMobile || $(window).width() <= 750){
 			this.wrap__options.add(this.container).toggleClass('block__filter--open');
+
+			if(!this.wrap__options.hasClass('block__filter--open')) {
+				$('.block__collapse .block__collapse--content', this.wrap__options).slideUp();
+				$('.block__collapse', this.wrap__options).removeClass('block__collapse--open');
+
+			}
 		} else {
 			this.wrap__options.add(this.container).toggleClass('block__filter--open');
 			this.wrap__options.toggleClass('col-m-3');
