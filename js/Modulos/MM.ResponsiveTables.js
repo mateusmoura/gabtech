@@ -58,14 +58,16 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 
 		$('.block__table')
 			.on('click', '.dropdown-toggle', function (event) {
-				$(this).siblings('.dropdown-menu').toggleClass('dropdown-open').fadeToggle();
+				if(isMobile || $(window).width() <= 1034){
+					$(this).siblings('.dropdown-menu').toggleClass('dropdown-open').fadeToggle();
+				}
 			});
 
 		$(document).on('click', function(event) {
-			console.log($(event.target).parents('.btn-toolbar').length);
-
-			if(!$(event.target).parents('.btn-toolbar').length) {
-				$('.btn-toolbar .dropdown-menu').removeClass('dropdown-open').fadeOut();
+			if(isMobile || $(window).width() <= 1034){
+				if(!$(event.target).parents('.btn-toolbar').length) {
+					$('.btn-toolbar .dropdown-menu').removeClass('dropdown-open').fadeOut();
+				}
 			}
 		});
 	};

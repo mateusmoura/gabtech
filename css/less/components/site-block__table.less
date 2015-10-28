@@ -101,7 +101,11 @@ ________________________________________________________________________________
 
 			&:hover, &:focus, &:active {
 				~ ul {
-				 	display: none;
+					display: none;
+
+					.desktop({
+						display: block;
+					});
 				}
 			}
 

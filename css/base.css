@@ -5582,46 +5582,48 @@ ________________________________________________________________ */
   position: relative;
   z-index: 1000;
 }
-.dropdown:hover ul,
-.dropdown:focus ul,
-.dropdown:active ul {
-  /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-  transition: all 0.5s easi-in-out 0s;
-  /*, @type2 @time2 @tm2*/
-  -moz-transition: all 0.5s easi-in-out 0s;
-  /* Firefox 4 */
-  -webkit-transition: all 0.5s easi-in-out 0s;
-  /* Safari and Chrome */
-  -o-transition: all 0.5s easi-in-out 0s;
-  /* Opera */
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
-}
-.dropdown:hover > a,
-.dropdown:focus > a,
-.dropdown:active > a {
-  color: #333333;
-}
-.dropdown:hover > a i.icon-arrow-bottom,
-.dropdown:focus > a i.icon-arrow-bottom,
-.dropdown:active > a i.icon-arrow-bottom {
-  display: none;
-}
-.dropdown:hover > a i.icon-arrow-top-active,
-.dropdown:focus > a i.icon-arrow-top-active,
-.dropdown:active > a i.icon-arrow-top-active {
-  display: inline-block;
+@media (min-width: 1034px) {
+  .dropdown:hover ul,
+  .dropdown:focus ul,
+  .dropdown:active ul {
+    /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
+    transition: all 0.1s easi-in-out 0s;
+    /*, @type2 @time2 @tm2*/
+    -moz-transition: all 0.1s easi-in-out 0s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.1s easi-in-out 0s;
+    /* Safari and Chrome */
+    -o-transition: all 0.1s easi-in-out 0s;
+    /* Opera */
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+  }
+  .dropdown:hover > a,
+  .dropdown:focus > a,
+  .dropdown:active > a {
+    color: #333333;
+  }
+  .dropdown:hover > a i.icon-arrow-bottom,
+  .dropdown:focus > a i.icon-arrow-bottom,
+  .dropdown:active > a i.icon-arrow-bottom {
+    display: none;
+  }
+  .dropdown:hover > a i.icon-arrow-top-active,
+  .dropdown:focus > a i.icon-arrow-top-active,
+  .dropdown:active > a i.icon-arrow-top-active {
+    display: inline-block;
+  }
 }
 .dropdown ul {
   /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
   /*, @type2 @time2 @tm2*/
-  -moz-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
   /* Firefox 4 */
-  -webkit-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
   /* Safari and Chrome */
-  -o-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
   /* Opera */
   -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -5641,21 +5643,23 @@ ________________________________________________________________ */
   visibility: hidden;
   min-width: 160px;
 }
-.dropdown ul:hover,
-.dropdown ul:focus,
-.dropdown ul:active {
-  /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-  transition: all 0.5s easi-in-out 0s;
-  /*, @type2 @time2 @tm2*/
-  -moz-transition: all 0.5s easi-in-out 0s;
-  /* Firefox 4 */
-  -webkit-transition: all 0.5s easi-in-out 0s;
-  /* Safari and Chrome */
-  -o-transition: all 0.5s easi-in-out 0s;
-  /* Opera */
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
+@media (min-width: 1034px) {
+  .dropdown ul:hover,
+  .dropdown ul:focus,
+  .dropdown ul:active {
+    /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
+    transition: all 0.1s easi-in-out 0s;
+    /*, @type2 @time2 @tm2*/
+    -moz-transition: all 0.1s easi-in-out 0s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.1s easi-in-out 0s;
+    /* Safari and Chrome */
+    -o-transition: all 0.1s easi-in-out 0s;
+    /* Opera */
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+  }
 }
 .dropdown ul li,
 .dropdown ul li.checkbox-row {
@@ -5703,13 +5707,13 @@ ________________________________________________________________ */
   .dropdown > a:active ~ ul,
   .dropdown > button:active ~ ul {
     /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-    transition: all 0.5s easi-in-out 0s;
+    transition: all 0.1s easi-in-out 0s;
     /*, @type2 @time2 @tm2*/
-    -moz-transition: all 0.5s easi-in-out 0s;
+    -moz-transition: all 0.1s easi-in-out 0s;
     /* Firefox 4 */
-    -webkit-transition: all 0.5s easi-in-out 0s;
+    -webkit-transition: all 0.1s easi-in-out 0s;
     /* Safari and Chrome */
-    -o-transition: all 0.5s easi-in-out 0s;
+    -o-transition: all 0.1s easi-in-out 0s;
     /* Opera */
     opacity: 1;
     filter: alpha(opacity=100);
@@ -6677,6 +6681,16 @@ ________________________________________________________________________________
 .block__table .dropdown > a:active ~ ul,
 .block__table .dropdown > button:active ~ ul {
   display: none;
+}
+@media (min-width: 1034px) {
+  .block__table .dropdown > a:hover ~ ul,
+  .block__table .dropdown > button:hover ~ ul,
+  .block__table .dropdown > a:focus ~ ul,
+  .block__table .dropdown > button:focus ~ ul,
+  .block__table .dropdown > a:active ~ ul,
+  .block__table .dropdown > button:active ~ ul {
+    display: block;
+  }
 }
 .block__table .dropdown > a .icon,
 .block__table .dropdown > button .icon {
