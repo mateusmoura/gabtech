@@ -6799,11 +6799,11 @@ ________________________________________________________________________________
 }
 .block__menu--links-avatar {
   position: relative;
-  top: -53px;
+  top: -40px;
 }
 .block__menu--links-avatar .block__menu--avatar {
   position: relative;
-  top: 33px;
+  top: 28px;
 }
 .block__menu--links-avatar .dropdown ul {
   top: 114%;
@@ -6816,6 +6816,12 @@ ________________________________________________________________________________
   margin-bottom: 25px;
   overflow: hidden;
   width: 48px;
+}
+@media (min-width: 950px) {
+  .block__menu--avatar {
+    height: 34px;
+    width: 34px;
+  }
 }
 .block__menu--desktop {
   display: none;
