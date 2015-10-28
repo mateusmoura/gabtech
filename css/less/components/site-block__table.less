@@ -85,6 +85,10 @@ ________________________________________________________________________________
 		}
 	}
 
+	.btn-toolbar {
+		.clearfix;
+	}
+
 	.dropdown {
 		height: 30px;
 		width: 50px;
@@ -94,6 +98,12 @@ ________________________________________________________________________________
 			padding: 0;
 			text-align: center;
 			width: 100%;
+
+			&:hover, &:focus, &:active {
+				~ ul {
+				 	display: none;
+				}
+			}
 
 			.icon {
 				margin: 0 auto;

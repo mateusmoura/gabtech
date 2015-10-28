@@ -97,25 +97,27 @@ ________________________________________________________________ */
 			display: none;
 		}
 
-		&:hover, &:focus, &:active {
-			~ ul {
-				.transition(all 0.5s easi-in-out 0s);
-				.opacity(1);
-				visibility: visible;
-			}
+		.desktop({
+			&:hover, &:focus, &:active {
+				~ ul {
+					.transition(all 0.5s easi-in-out 0s);
+					.opacity(1);
+					visibility: visible;
+				}
 
-			// i {
-			// 	.transform(rotate(-180deg));
-			// }
+				// i {
+				// 	.transform(rotate(-180deg));
+				// }
 
-			.icon-gear {
-				display: block;
+				.icon-gear {
+					display: block;
 
-				&-inactive {
-					display: none;
+					&-inactive {
+						display: none;
+					}
 				}
 			}
-		}
+		});
 	}
 
 	&.dropdown__right {

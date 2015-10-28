@@ -31,7 +31,6 @@
 }
 .btn-toolbar {
   margin-bottom: 20px;
-  overflow: hidden;
 }
 .lt-ie8 .btn-toolbar {
   display: none;

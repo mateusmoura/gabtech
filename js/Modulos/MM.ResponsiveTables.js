@@ -5,8 +5,8 @@
 * @require: Load CSS in HEADER (rwd-table.css)
 */
 
-Module('MM.ResponsiveTables', function(ResponsiveTables){
-	ResponsiveTables.fn.initialize = function($settings){
+Module('MM.ResponsiveTables', function (ResponsiveTables) {
+	ResponsiveTables.fn.initialize = function ($settings) {
 		this.settings = $settings;
 
 		this.loadScripts();
@@ -14,7 +14,7 @@ Module('MM.ResponsiveTables', function(ResponsiveTables){
 	/**
 	* Carregar Scripts necessários para funcionalidade.
 	*/
-	ResponsiveTables.fn.loadScripts = function(){
+	ResponsiveTables.fn.loadScripts = function() {
 		var _this = this;
 
 		jQuery.ajaxSetup({
@@ -24,12 +24,12 @@ Module('MM.ResponsiveTables', function(ResponsiveTables){
 		if( $.fn.responsiveTable === undefined ){
 			$.when(
 				$.getScript(base_url + "js/plugins/jQuery.rwd-table.js"),
-				$.Deferred(function(deferred){
+				$.Deferred(function (deferred) {
 					$(deferred.resolve)
 				})
-			).done(function(){
+			).done(function () {
 				_this.config();
-			}).fail(function() {
+			}).fail(function () {
 				console.log('Erro getScript');
 			});
 		} else{
@@ -39,7 +39,7 @@ Module('MM.ResponsiveTables', function(ResponsiveTables){
 	/**
 	* Configuração e Inicialização do plugin.
 	*/
-	ResponsiveTables.fn.config = function(){
+	ResponsiveTables.fn.config = function () {
 		var defaults = { },
 			settings = $.extend({}, defaults, this.settings||{});
 
@@ -52,14 +52,27 @@ Module('MM.ResponsiveTables', function(ResponsiveTables){
 	/**
 	* Adiciona os eventos necessários.
 	*/
-	ResponsiveTables.fn.addEventListeners = function(){
+	ResponsiveTables.fn.addEventListeners = function () {
 		$('.checkbox input', this.container)
 			.unbind().on('click', this.toggleActive);
+
+		$('.block__table')
+			.on('click', '.dropdown-toggle', function (event) {
+				$(this).siblings('.dropdown-menu').toggleClass('dropdown-open').fadeToggle();
+			});
+
+		$(document).on('click', function(event) {
+			console.log($(event.target).parents('.btn-toolbar').length);
+
+			if(!$(event.target).parents('.btn-toolbar').length) {
+				$('.btn-toolbar .dropdown-menu').removeClass('dropdown-open').fadeOut();
+			}
+		});
 	};
 	/**
 	* Funcionalidade para ativar linha selecionada.
 	*/
-	ResponsiveTables.fn.toggleActive = function(){
+	ResponsiveTables.fn.toggleActive = function () {
 		$(this).parents('tr').toggleClass('active');
 	};
 });

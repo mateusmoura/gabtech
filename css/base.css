@@ -55,6 +55,9 @@ ________________________________________________________________ */
 /* VARIÁVEIS
 	>>> Váriaveis globais para a NAVEGAÇÃO POR PÁGINA
 ________________________________________________________________ */
+/* VARIAVEIS
+	>> Dropdown
+________________________________________________________________ */
 /* IMPORTANDO MIXINS
 ________________________________________________________________ */
 /**
@@ -5692,40 +5695,42 @@ ________________________________________________________________ */
 .dropdown > button .icon-arrow-top-active {
   display: none;
 }
-.dropdown > a:hover ~ ul,
-.dropdown > button:hover ~ ul,
-.dropdown > a:focus ~ ul,
-.dropdown > button:focus ~ ul,
-.dropdown > a:active ~ ul,
-.dropdown > button:active ~ ul {
-  /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-  transition: all 0.5s easi-in-out 0s;
-  /*, @type2 @time2 @tm2*/
-  -moz-transition: all 0.5s easi-in-out 0s;
-  /* Firefox 4 */
-  -webkit-transition: all 0.5s easi-in-out 0s;
-  /* Safari and Chrome */
-  -o-transition: all 0.5s easi-in-out 0s;
-  /* Opera */
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
-}
-.dropdown > a:hover .icon-gear,
-.dropdown > button:hover .icon-gear,
-.dropdown > a:focus .icon-gear,
-.dropdown > button:focus .icon-gear,
-.dropdown > a:active .icon-gear,
-.dropdown > button:active .icon-gear {
-  display: block;
-}
-.dropdown > a:hover .icon-gear-inactive,
-.dropdown > button:hover .icon-gear-inactive,
-.dropdown > a:focus .icon-gear-inactive,
-.dropdown > button:focus .icon-gear-inactive,
-.dropdown > a:active .icon-gear-inactive,
-.dropdown > button:active .icon-gear-inactive {
-  display: none;
+@media (min-width: 1034px) {
+  .dropdown > a:hover ~ ul,
+  .dropdown > button:hover ~ ul,
+  .dropdown > a:focus ~ ul,
+  .dropdown > button:focus ~ ul,
+  .dropdown > a:active ~ ul,
+  .dropdown > button:active ~ ul {
+    /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
+    transition: all 0.5s easi-in-out 0s;
+    /*, @type2 @time2 @tm2*/
+    -moz-transition: all 0.5s easi-in-out 0s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.5s easi-in-out 0s;
+    /* Safari and Chrome */
+    -o-transition: all 0.5s easi-in-out 0s;
+    /* Opera */
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+  }
+  .dropdown > a:hover .icon-gear,
+  .dropdown > button:hover .icon-gear,
+  .dropdown > a:focus .icon-gear,
+  .dropdown > button:focus .icon-gear,
+  .dropdown > a:active .icon-gear,
+  .dropdown > button:active .icon-gear {
+    display: block;
+  }
+  .dropdown > a:hover .icon-gear-inactive,
+  .dropdown > button:hover .icon-gear-inactive,
+  .dropdown > a:focus .icon-gear-inactive,
+  .dropdown > button:focus .icon-gear-inactive,
+  .dropdown > a:active .icon-gear-inactive,
+  .dropdown > button:active .icon-gear-inactive {
+    display: none;
+  }
 }
 .dropdown.dropdown__right ul {
   right: 0;
@@ -5965,6 +5970,7 @@ table thead th {
   font-family: 'GothamRounded-Light';
   font-size: 14px;
   line-height: 33px;
+  padding: 0 15px;
 }
 table tbody tr:nth-child(even) {
   background-color: #fff;
@@ -5988,12 +5994,7 @@ table tbody tr a {
   line-height: 33px;
 }
 table tbody tr td {
-  padding: 20px 0;
-}
-@media (min-width: 1034px) {
-  table tbody tr td {
-    padding: 20px 15px 20px 0;
-  }
+  padding: 20px 15px;
 }
 table tbody tr td:first-child {
   padding-left: 15px;
@@ -6128,9 +6129,11 @@ ________________________________________________________________________________
     font-size: 48px;
   }
 }
-.page__title .btn-success {
-  font-size: 16px;
-  padding: 15px 30px;
+@media (min-width: 1034px) {
+  .page__title .btn-success {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
 }
 .page__menu {
   display: -webkit-flex;
@@ -6287,6 +6290,15 @@ ________________________________________________________________________________
   .block__filter--show {
     display: none;
   }
+}
+.block__filter--close {
+  height: 30px;
+  width: 30px;
+  -webkit-background-size: 50% 50%;
+  -moz-background-size: 50% 50%;
+  -o-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-position: center;
 }
 @media (min-width: 1034px) {
   .block__filter--close {
@@ -6640,6 +6652,14 @@ ________________________________________________________________________________
 .block__table--actions .checkbox {
   margin: 7px 0 0 15px;
 }
+.block__table .btn-toolbar:before,
+.block__table .btn-toolbar:after {
+  content: " ";
+  display: table;
+}
+.block__table .btn-toolbar:after {
+  clear: both;
+}
 .block__table .dropdown {
   height: 30px;
   width: 50px;
@@ -6650,6 +6670,14 @@ ________________________________________________________________________________
   padding: 0;
   text-align: center;
   width: 100%;
+}
+.block__table .dropdown > a:hover ~ ul,
+.block__table .dropdown > button:hover ~ ul,
+.block__table .dropdown > a:focus ~ ul,
+.block__table .dropdown > button:focus ~ ul,
+.block__table .dropdown > a:active ~ ul,
+.block__table .dropdown > button:active ~ ul {
+  display: none;
 }
 .block__table .dropdown > a .icon,
 .block__table .dropdown > button .icon {
