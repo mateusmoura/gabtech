@@ -4248,12 +4248,6 @@ ________________________________________________________________ */
   text-shadow: 0.7px 0.7px 0 #84180d;
   box-shadow: 0 1px 0 #801d13;
 }
-@media (min-width: 950px) {
-  .btn {
-    font-size: 16px;
-    padding: 15px 30px;
-  }
-}
 .btn:hover,
 .btn:focus,
 .btn.focus {
@@ -4711,33 +4705,15 @@ ________________________________________________________________ */
   line-height: 1.33;
   padding: 10px 16px;
 }
-@media (min-width: 950px) {
-  .btn-gr {
-    font-size: 24px;
-    padding: 12px 36px;
-  }
-}
 .btn-pq {
   font-size: 14px;
   line-height: 1.5;
   padding: 9px 20px;
 }
-@media (min-width: 950px) {
-  .btn-pq {
-    font-size: 18px;
-    padding: 11px 40px;
-  }
-}
 .btn-base {
   font-size: 12px;
   line-height: 1.33;
   padding: 13px 10px;
-}
-@media (min-width: 950px) {
-  .btn-base {
-    font-size: 16px;
-    padding: 15px 30px;
-  }
 }
 /**
 * Arquivo responsavel pelo estilo das PAGINAÇÃO do projeto
@@ -6151,6 +6127,10 @@ ________________________________________________________________________________
   .page__title h2 {
     font-size: 48px;
   }
+}
+.page__title .btn-success {
+  font-size: 16px;
+  padding: 15px 30px;
 }
 .page__menu {
   display: -webkit-flex;
