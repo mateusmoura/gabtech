@@ -13,6 +13,7 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 		this.block__filter_show				= $container.find('.block__filter--show');
 		this.block__filter_btn_open			= $container.find('.block__filter--btn-open');
 		this.block__filter_btn_close		= $container.find('.block__filter--btn-close');
+		this.footer							= $('footer');
 
 		this.addEventListeners();
 	};
@@ -48,11 +49,11 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 			this.wrap__options.add(this.container).toggleClass('block__filter--open');
 
 			if(!this.wrap__options.hasClass('block__filter--open')) {
-				$('.block__collapse .block__collapse--content', this.wrap__options).slideUp();
-				$('.block__collapse', this.wrap__options).removeClass('block__collapse--open');
-				this.wrap__options.siblings('.block__table').show();
+				$('.block__collapse:not(:first) .block__collapse--content', this.wrap__options).slideUp();
+				$('.block__collapse:not(:first)', this.wrap__options).removeClass('block__collapse--open');
+				this.wrap__options.siblings('.block__table').add(this.footer).show();
 			} else {
-				this.wrap__options.siblings('.block__table').hide();
+				this.wrap__options.siblings('.block__table').add(this.footer).hide();
 			}
 		} else {
 			this.wrap__options.add(this.container).toggleClass('block__filter--open');

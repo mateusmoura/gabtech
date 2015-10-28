@@ -285,9 +285,9 @@
 									<thead>
 										<tr>
 											<th></th>
-											<th data-priority="1">Protocolo</th>
+											<th data-priority="1" >Protocolo</th>
 											<th data-priority="1">Título</th>
-											<th data-priority="2">Tipo</th>
+											<th data-priority="1">Tipo</th>
 											<th data-priority="3">Solicitante</th>
 											<th data-priority="3">Município</th>
 											<th data-priority="6">Data limite</th>
