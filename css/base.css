@@ -6123,8 +6123,10 @@ ________________________________________________________________________________
     margin-bottom: 12px;
   }
 }
-.page__list .block__pagination {
-  text-align: right;
+@media (min-width: 1034px) {
+  .page__list .block__pagination {
+    text-align: right;
+  }
 }
 .page__header {
   background-color: #222830;
@@ -6628,7 +6630,6 @@ ________________________________________________________________________________
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 .block__table--actions li {
   float: left;
