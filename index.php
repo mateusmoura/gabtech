@@ -249,7 +249,9 @@
 
 								<div class="row">
 									<div class="col-12">
-										<button type="button" class="btn btn-blue btn-full">Filtrar</button>
+										<button type="button" class="btn btn-blue btn-full btn-filter">Filtrar</button>
+
+										<button type="button" class="btn btn-icon btn-blue btn-full btn-label">Gerar etiquetas <i class="icon icon-label"></i></button>
 									</div>
 								</div>
 							</div>

@@ -5954,6 +5954,15 @@ ________________________________________________________________ */
   height: 15px;
   width: 18px;
 }
+.icon-label {
+  background-image: url("../img/ico/icon-label.svg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 14px;
+  width: 17px;
+}
 /**
 * Arquivo responsavel pelo estilo das TABELAS do projeto
 *
@@ -6439,6 +6448,27 @@ ________________________________________________________________________________
     margin-bottom: 30px;
     padding: 15px 10px;
     width: 100%;
+  }
+}
+@media (min-width: 1034px) {
+  .block__filter--options .btn-filter {
+    display: none;
+  }
+}
+.block__filter--options .btn-label {
+  display: none;
+  font-size: 11px;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  text-align: left;
+}
+@media (min-width: 1034px) {
+  .block__filter--options .btn-label {
+    display: block;
+  }
+  .block__filter--options .btn-label .icon-label {
+    float: right;
+    top: 0;
   }
 }
 /**
