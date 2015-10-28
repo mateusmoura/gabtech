@@ -4206,11 +4206,13 @@ ________________________________________________________________ */
 .badge {
   font-family: 'GothamRounded-Book';
   display: inline;
-  min-width: 10px;
-  padding: 4px 6px;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 6px 6px 3px;
   font-size: 12px;
   font-weight: 700;
   color: #fff;
+  line-height: 7px;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
@@ -4218,6 +4220,11 @@ ________________________________________________________________ */
   border-radius: 30px;
   position: relative;
   top: -10px;
+}
+@media (min-width: 1034px) {
+  .badge {
+    padding: 4px 6px;
+  }
 }
 /**
 * Arquivo responsavel pelo estilo dos BOTÕES do projeto
@@ -6747,13 +6754,13 @@ ________________________________________________________________________________
 ____________________________________________________________________________________ */
 .block__menu {
   /*, @type2: display, @time2: 0, @tm2: 0s   @type: opacity, @time: 0.5s, @anim: ease-in-out, @tm: 0.5s*/
-  transition: all 0.5s ease-in-out 0s;
+  transition: left 0.5s ease-in-out 0s, right 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
   /*, @type2 @time2 @tm2*/
-  -moz-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: left 0.5s ease-in-out 0s, right 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
   /* Firefox 4 */
-  -webkit-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: left 0.5s ease-in-out 0s, right 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
   /* Safari and Chrome */
-  -o-transition: all 0.5s ease-in-out 0s;
+  -o-transition: left 0.5s ease-in-out 0s, right 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
   /* Opera */
   opacity: 0;
   filter: alpha(opacity=0);

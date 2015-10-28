@@ -50,12 +50,13 @@ ________________________________________________________________ */
 .badge{
 	font-family: @font-family-gotham-book;
 	display: inline;
-	min-width: 10px;
-	padding: 4px 6px;
+	min-width: 20px;
+	min-height: 20px;
+	padding: 6px 6px 3px;
 	font-size: 12px;
 	font-weight: 700;
 	color: #fff;
-	//line-height: 1;
+	line-height: 7px;
 	vertical-align: baseline;
 	white-space: nowrap;
 	text-align: center;
@@ -63,4 +64,8 @@ ________________________________________________________________ */
 	border-radius: 30px;
 	position: relative;
 	top: -10px;
+
+	.desktop({
+		padding: 4px 6px;
+	});
 }
