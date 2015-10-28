@@ -5757,7 +5757,6 @@ ________________________________________________________________ */
 }
 .dropdown.dropdown__center ul li a:hover {
   color: #7a8796;
-  text-decoration: underline;
 }
 /**
 * Arquivo responsavel pelo estilo dos ICONES do projeto
@@ -6833,8 +6832,18 @@ ________________________________________________________________________________
   position: relative;
   top: 28px;
 }
+@media (min-width: 1034px) {
+  .block__menu--links-avatar .block__menu--avatar:hover {
+    border: 2px solid #34d183;
+  }
+}
 .block__menu--links-avatar .dropdown ul {
-  top: 114%;
+  top: 111%;
+}
+@media (min-width: 1034px) {
+  .block__menu--links-avatar .dropdown:hover .block__menu--avatar {
+    border: 2px solid #34d183;
+  }
 }
 .block__menu--avatar {
   -webkit-border-radius: 50%;

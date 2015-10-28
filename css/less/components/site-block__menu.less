@@ -127,11 +127,29 @@ ________________________________________________________________________________
 			.block__menu--avatar {
 				position: relative;
 				top: 28px;
+
+				.desktop({
+					&:hover {
+						border: 2px solid #34d183;
+					}
+				});
 			}
 
 			.dropdown {
 				ul {
-					top: 114%;
+					top: 111%;
+				}
+
+				.desktop({
+					&:hover {
+						.block__menu--avatar {
+							border: 2px solid #34d183;
+						}
+					}
+				});
+
+				&:hover {
+
 				}
 			}
 		}
