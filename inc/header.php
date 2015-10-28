@@ -53,7 +53,7 @@
 								<a href="#this">
 									<i class="icon icon-clip"></i>
 									<i class="icon icon-clip-active"></i>
-									<img src="img/lgo/header__logo.png" alt="NossoGabinete">
+									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
 								</a>
 							</h1>
 
@@ -103,7 +103,7 @@
 							<h4 class="block__menu--logo">
 								<a href="#this">
 									<i class="icon icon-clip"></i>
-									<img src="img/lgo/menu__logo.png" alt="NossoGabinete">
+									<img src="img/lgo/menu__logo.svg" alt="NossoGabinete">
 								</a>
 							</h4>
 						</div>

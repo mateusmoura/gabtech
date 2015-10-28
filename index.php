@@ -19,13 +19,15 @@
 					<div class="center">
 						<div class="page__menu">
 							<a href="#" class="page__menu--item page__menu--item-active">Todas</a>
-							<a href="#" class="page__menu--item">Atrasadas</a>
+							<a href="#" class="page__menu--item">Atrasadas <span class="badge bg-verde">3</span></a>
 							<a href="#" class="page__menu--item">Concluídas</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="page__content">
+					<hr class="block__filter--line">
+
 					<div class="center">
 						<div class="block__filter">
 							<div class="row">

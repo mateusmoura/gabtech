@@ -10,18 +10,30 @@
 ____________________________________________________________________________________ */
 
 .block__filter {
-	border-bottom: solid 1px rgba(red(#d0d9db), green(#d0d9db), blue(#d0d9db), .8);
-	padding: 0 0 10px 0;
+	//border-bottom: solid 1px rgba(red(#d0d9db), green(#d0d9db), blue(#d0d9db), .8);
+	padding: 0 0 0 0;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 
 	.desktop({
-		padding-bottom: 12px;
+		padding-bottom: 0;
+		margin-bottom: 12px;
 	});
+
+	&--line {
+		left: 0;
+		position: absolute;
+		top: 56px;
+		width: 100%;
+
+		.desktop({
+			top: 57px;
+		});
+	}
 
 	&--wrap {
 		position: relative;
-		top: -21px;
+		//top: -21px;
 
 		.desktop({
 			.transition(width 0.3s ease-in-out 0s);
@@ -164,9 +176,11 @@ ________________________________________________________________________________
 		z-index: 1001;
 
 		.desktop({
+			.border-radius(5px);
 			display: none;
 			left: -(@grid-separacao-3 / 2);
 			min-width: 285px;
+			overflow: hidden;
 			position: relative;
 			top: 30px;
 		});

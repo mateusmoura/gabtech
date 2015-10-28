@@ -53,6 +53,10 @@ ________________________________________________________________________________
 			display: inline-block;
 		});
 
+		a:has(span) {
+			border: solid 1px red;
+		}
+
 		&--item {
 			.flex-grow(1);
 			color: #7a8796;
@@ -61,6 +65,7 @@ ________________________________________________________________________________
 			font-size: 12px;
 			line-height: 6px;
 			padding: 0 0 20px;
+			position: relative;
 			text-transform: uppercase;
 			text-align: center;
 
@@ -83,6 +88,14 @@ ________________________________________________________________________________
 					color: @cor-verde;
 				}
 			}
+
+			.badge {
+				
+			}
 		}
+	}
+
+	&__content {
+		position: relative;
 	}
 }
