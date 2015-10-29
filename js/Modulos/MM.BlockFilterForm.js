@@ -45,7 +45,7 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	* Funcionalidade que mostra o formulário de busca.
 	*/
 	BlockFilterForm.fn.toggleOpenFilter = function(){
-		if(isMobile || $(window).width() <= 1034){
+		if(isMobile || $(window).width() <= 1024){
 			this.wrap__options.add(this.container).toggleClass('block__filter--open');
 
 			if(!this.wrap__options.hasClass('block__filter--open')) {

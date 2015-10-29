@@ -58,13 +58,13 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 
 		$('.block__table')
 			.on('click', '.dropdown-toggle', function (event) {
-				if(isMobile || $(window).width() <= 1034){
+				if(isMobile || $(window).width() <= 1024){
 					$(this).siblings('.dropdown-menu').toggleClass('dropdown-open').fadeToggle('fast');
 				}
 			});
 
 		$(document).on('click', function(event) {
-			if(isMobile || $(window).width() <= 1034){
+			if(isMobile || $(window).width() <= 1024){
 				if(!$(event.target).parents('.btn-toolbar').length) {
 					$('.btn-toolbar .dropdown-menu').removeClass('dropdown-open').fadeOut('fast');
 				}
