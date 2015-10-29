@@ -118,7 +118,21 @@ ________________________________________________________________________________
 
 		&-avatar {
 			position: relative;
-			top: -40px;
+			//top: -40px;
+
+			a {
+				position: relative;
+				//top: -14px;
+
+				.desktop({
+					top: -14px;
+					margin: 0;
+				});
+
+				.tablet-landscape({
+					top: 2px;
+				});
+			}
 
 			a, button {
 
@@ -126,9 +140,12 @@ ________________________________________________________________________________
 
 			.block__menu--avatar {
 				position: relative;
-				top: 28px;
+				//top: 28px;
+				margin: 0;
 
 				.desktop({
+					top: 0;
+
 					&:hover {
 						border: 2px solid #34d183;
 					}
@@ -137,7 +154,7 @@ ________________________________________________________________________________
 
 			.dropdown {
 				ul {
-					top: 111%;
+					top: 88%;
 
 					.tablet-landscape({
 						.transform(translateX(0));

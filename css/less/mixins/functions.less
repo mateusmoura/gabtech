@@ -106,7 +106,7 @@ ________________________________________________________________ */
 }
 
 .tablet-landscape (@rules) {
-	@media (min-width: @conteudo-tablet) and (@landscape) {
+	@media (min-width: @conteudo-tablet) and (max-width: @conteudo-desktop)  and (@landscape) {
 		@rules();
 	}
 }
