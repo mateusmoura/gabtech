@@ -1,4 +1,18 @@
-<!-- Generator: Avocode undefined - http://avocode.com -->
-<svg height="36" width="19" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 36">
-    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAkCAYAAABrLwHZAAACrElEQVRIS+2WTUgUYRzGn2fXr0qIojyEEIkEHTTsFEiJ4KFLUYelTyqqk7tJmuXObB+D1oySZqWzB4WwEAo8RIeIAmHFCPMQqBBEH0cNVzsUqbuu84/dddZxETc679ze//v+f+/MMzPv8xD/dlHRu88A9BKsAMQlxGcIni6EI12dnQ3zcQwzsTwej7u0orqfxIm11orI+LxEDz0I1E9lhCl69w3S1ZJh0xE9Ml25Luy8phXsyNseBllow0TkLcCfoBwjmO+oe9aFNd3pPuh2u4YcDe2G6r0WHyt6VyXoHuayVCJ4HodRvRssiyzOTXZojTPOx1H04FESL1I1y6rRA75Be6wY5jjBssRYMEpFD/aROCfAb2sxdqDtVt1YanEazIotVbfevBxamTdDJKuSLIxRMYIxAu5EQaAbam3gv2GqERS72YI8bFW8V7Kw9V9AVjOk/wEZP9qsZlnNkueKoqedZ9lPI+5AR0j3yxV3svYbqu+D4yR+R6LS6QFRArlJD5Bnhuo9ZS9uvH2vKLdg0wSBIgBfJiPT5X2atmDPq7r5HeSu5d4hKro5RrI8SZcfXz+GigcGBpbshqta+7bc/A37/kSWRrq0ul923W8ES1zAN4en9sYDSQfpakiZimVdbA34HmeIA1CNYC+ASw5PPc7rLeaenBx+Su2whn+mg/2GedoF9jt6pqci0zsT8UA1zCcAzzqBYlkNI4szfSFNi9n1Ws0s3JyHAMgmOxYk5izLpwd8ZgLmN4JbKDJKstR5FyISBjAMYJZkMQRVIDauvlN5pSvew3HJU8HFb5ilBN8QKMmkl0P0wdlo+EiPps3Fa6tSUL12f2tBXn43yZPrAgVRiLS9Xww3O2VYM1I1NT/a68pxXwBYQ8hukDkQzAlkQojXC1a0J54U0zf8CxcHgvkXyS3+AAAAAElFTkSuQmCC" height="36" width="19" y="0" x="0" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="320.7px" height="610.3px" viewBox="0 0 320.7 610.3" style="enable-background:new 0 0 320.7 610.3;" xml:space="preserve"
+	>
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#8998A9;}
+]]>
+</style>
+<g>
+	<path class="st0" d="M160.3,610.3C71.3,610.3,0,537.9,0,450V128.2c0-16.5,13.5-30,30-30c16.5,0,30,13.5,30,30V450
+		c0,55.8,45.6,100.4,100.4,100.4c55.8,0,100.4-45.6,100.4-100.4V98.2c0-20.7-17.6-38.2-38.2-38.2c-17.6,0-32.1,14.5-32.1,32.1v358
+		c0,16.5-13.5,30-30,30s-30-13.5-30-30v-358c0-50.6,41.5-92.1,92.1-92.1c53.9,0,98.2,44.5,98.2,98.2V450
+		C320.7,537.9,249.4,610.3,160.3,610.3z"/>
+</g>
 </svg>

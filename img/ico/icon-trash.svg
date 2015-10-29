@@ -1,4 +1,17 @@
-<!-- Generator: Avocode undefined - http://avocode.com -->
-<svg height="15" width="12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 15">
-    <path fill="#4c5761" fill-rule="evenodd" d="M 0 4 C 0 4 0 1 0 1 C 0 1 4 1 4 1 C 4 1 4 0 4 0 C 4 0 8 0 8 0 C 8 0 8 1 8 1 C 8 1 12 1 12 1 C 12 1 12 4 12 4 C 12 4 0 4 0 4 Z M 11 15 C 11 15 1 15 1 15 C 1 15 1 5.01 1 5.01 C 1 5.01 11 5.01 11 5.01 C 11 5.01 11 15 11 15 Z" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="483.5px" height="604.4px" viewBox="0 0 483.5 604.4" style="enable-background:new 0 0 483.5 604.4;" xml:space="preserve"
+	>
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#4C5760;}
+]]>
+</style>
+<g>
+	<g>
+		<path class="st0" d="M40.2,604.4h403V201.7h-403V604.4z M322.4,40.4V0H161.1v40.4H0v121h483.5v-121H322.4z"/>
+	</g>
+</g>
 </svg>

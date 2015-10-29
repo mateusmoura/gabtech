@@ -94,17 +94,28 @@ ________________________________________________________________ */
 
 	> a, > button {
 		margin-bottom: 8px;
-		
-		.icon-gear {
-			display: none;
 
-			&-inactive {
-				display: block;
-			}
+		.icon-gear {
+			.opacity(0.5);
+			display: block;
 		}
+		
+		// .icon-gear {
+		// 	display: none;
+
+		// 	&-inactive {
+		// 		display: block;
+		// 	}
+		// }
 
 		.icon-arrow-top-active {
 			display: none;
+		}
+
+		&:hover, &:focus, &:active {
+			.icon-gear {
+				.opacity(1);
+			}
 		}
 
 		.desktop({
@@ -120,12 +131,16 @@ ________________________________________________________________ */
 				// }
 
 				.icon-gear {
-					display: block;
-
-					&-inactive {
-						display: none;
-					}
+					.opacity(1);
 				}
+
+				// .icon-gear {
+				// 	display: block;
+
+				// 	&-inactive {
+				// 		display: none;
+				// 	}
+				// }
 			}
 		});
 	}
