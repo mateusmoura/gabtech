@@ -386,6 +386,11 @@ ________________________________________________________________ */
     width: 730px;
   }
 }
+@media (min-width: 730px) and (orientation: landscape) {
+  .center {
+    width: 1014px;
+  }
+}
 @media (min-width: 1034px) {
   .center {
     width: 1034px;
@@ -413,6 +418,11 @@ ________________________________________________________________ */
 @media (min-width: 730px) {
   .center--small {
     width: 730px;
+  }
+}
+@media (min-width: 730px) and (orientation: landscape) {
+  .center--small {
+    width: 1014px;
   }
 }
 @media (min-width: 1034px) {
@@ -6154,7 +6164,7 @@ ________________________________________________________________________________
 .page__title h2 {
   color: #ffffff;
   font-family: 'GothamRounded-Light';
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 300;
   margin-top: 7px;
 }

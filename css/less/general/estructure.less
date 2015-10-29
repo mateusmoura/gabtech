@@ -214,12 +214,24 @@ ________________________________________________________________ */
 .center {
 	.conteudo-fixo();
 
-	@media (min-width: @resolucao-p-min) {
+	.tablet({
 		width: @conteudo-tablet;
-	}
-	@media (min-width: @resolucao-m-min) {
+	});
+
+	.tablet-landscape({
+		width: @conteudo-desktop - 20;
+	});
+
+	.desktop({
 		width: @conteudo-desktop;
-	}
+	});
+
+	// @media (min-width: @resolucao-p-min) {
+	// 	width: @conteudo-tablet;
+	// }
+	// @media (min-width: @resolucao-m-min) {
+	// 	width: @conteudo-desktop;
+	// }
 	@media (min-width: @resolucao-g-min) {
 		width: @conteudo-desktop-grande;
 	}
