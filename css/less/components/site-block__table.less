@@ -43,6 +43,7 @@ ________________________________________________________________________________
 			float: left;
 			height: 30px;
 			border: solid 1px #d0d9db;
+			border-left: 0;
 			padding: 0;
 			margin: 0;
 			width: 50px;
@@ -54,6 +55,7 @@ ________________________________________________________________________________
 
 			&:first-child {
 				.border-radius(@border-radius-base 0 0 @border-radius-base);
+				border-left: solid 1px #d0d9db;
 			}
 
 			&:last-child {

@@ -56,7 +56,7 @@
 
 						<div class="block__filter--wrap">
 							<div class="block__filter--options">
-								<div class="block__collapse block__collapse--open">
+								<div class="block__collapse block__collapse--first block__collapse--open">
 									<div class="block__collapse--title">
 										<a href="#this">Informações gerais</a>
 										<span class="block__collapse--less">-</span>
@@ -222,7 +222,7 @@
 									</div>
 								</div>
 
-								<div class="block__collapse">
+								<div class="block__collapse block__collapse--last">
 									<div class="block__collapse--title">
 										<a href="#this">Informações adicionais</a>
 										<span class="block__collapse--less">-</span>
