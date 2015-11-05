@@ -12,8 +12,21 @@ ________________________________________________________________________________
 .block__view {
 	padding-top: 8px;
 
-	&--list {
+	.desktop({
+		padding-top: 3px;
+	});
 
+	.block__table--actions {
+		.desktop({
+			margin-bottom: 10px;
+		});
+	}
+
+	&--list {
+		.desktop({
+			padding-top: 25px;
+			padding-right: 30px;
+		});
 	}
 
 	&--title {

@@ -19,11 +19,21 @@ ________________________________________________________________________________
 	font-size: 14px;
 	padding: 20px 17px;
 
+	.desktop({
+		background: transparent;
+		display: inline-block;
+		padding: 0;
+	});
+
 	&:hover {
 		color: #4c5761;
 	}
 
 	.icon {
 		float: right;
+
+		.desktop({
+			display: none;
+		});
 	}
 }

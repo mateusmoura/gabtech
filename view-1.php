@@ -1,6 +1,6 @@
 <?php include("inc/header.php"); ?>
 
-			<main role="main" class="page__list">
+			<main role="main" class="page__view">
 				<div class="page__header">
 					<div class="page__title">
 						<div class="center">
@@ -63,7 +63,7 @@
 							</div>
 
 							<div class="row">
-								<div class="col-12">
+								<div class="col-12 col-m-9">
 									<div class="block__view--list">
 										<div class="block__view--title">
 											<h3>Informações Gerais</h3>
@@ -130,7 +130,7 @@
 									</div>
 								</div>
 
-								<div class="col-12">
+								<div class="col-12 col-m-3">
 									<aside class="block__aside">
 										<div class="block__view--title">
 											<h3>Responsáveis</h3>

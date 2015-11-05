@@ -10,7 +10,7 @@
 ____________________________________________________________________________________ */
 
 .page {
-	&__list {
+	&__list, &__view {
 		.page__title {
 			margin-bottom: 39px;
 		}
@@ -26,6 +26,20 @@ ________________________________________________________________________________
 		.block__pagination {
 			.desktop({
 				text-align: right;
+			});
+		}
+	}
+
+	&__view {
+		.block__filter--line {
+			.desktop({
+				top: 47px;
+			});
+		}
+
+		.page__content {
+			.desktop({
+				
 			});
 		}
 	}
