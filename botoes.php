@@ -103,13 +103,13 @@
 					<br><br>
 					<div class="linha">
 						<h3>Botão pequeno</h3>
-						<p>Usar somente a classe: btn-pq</p>
+						<p>Usar somente a classe: btn-sm</p>
 						<hr><br>
 						<div class="col-24">
-							<button type="button" class="btn btn-padrao btn-pq">Botão tag button</button>
-							<a class="btn btn-padrao btn-pq" href="#" role="button">Botão tag a</a>
-							<input class="btn btn-padrao btn-pq" type="button" value="Botão tag input">
-							<input class="btn btn-padrao btn-pq" type="submit" value="Botão tag input com submit">
+							<button type="button" class="btn btn-padrao btn-sm">Botão tag button</button>
+							<a class="btn btn-padrao btn-sm" href="#" role="button">Botão tag a</a>
+							<input class="btn btn-padrao btn-sm" type="button" value="Botão tag input">
+							<input class="btn btn-padrao btn-sm" type="submit" value="Botão tag input com submit">
 						</div>
 					</div>
 					<br><br>

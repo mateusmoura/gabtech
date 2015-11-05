@@ -1,0 +1,123 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco List
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__LIST
+____________________________________________________________________________________ */
+
+.block__list {
+	dl {
+		border-top: solid 1px #d7e1e3;
+	}
+
+	dt {
+		color: #7e8e9e;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 11px;
+		padding-top: 12px;
+	}
+
+	dd {
+		border-bottom: solid 1px #d7e1e3;
+		color: #4c5761;
+		font-family: @font-family-gotham-medium;
+		font-size: 14px;
+		padding-bottom: 17px;
+	}
+
+	&--user {
+		border-top: solid 1px #d7e1e3;
+		padding-top: 20px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			.border-radius(10px);
+			.clearfix();
+			background-color: #89d795;
+			margin-bottom: 5px;
+			padding: 10px 15px;
+		}
+
+		.block__menu--avatar {
+			margin-bottom: 0;
+			display: block;
+		}
+
+		&-data {
+			padding-left: 23px;
+
+			a {
+				color: @cor-branco;
+				display: inline-block;
+				font-family: @font-family-gotham-medium;
+				font-size: 18px;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			span {
+				color: #4e6548;
+				display: block;
+				font-size: 15px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	&--archives {
+		border-top: solid 1px #d7e1e3;
+		padding-top: 20px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			.border-radius(10px);
+			.clearfix();
+			background-color: #8f7ed0;
+			margin-bottom: 5px;
+			padding: 10px 15px;
+		}
+
+		&-ext {
+			border-right: solid 1px #7c6db7;
+			color: @cor-branco;
+			display: block;
+			font-family: @font-family-gotham-bold;
+			font-size: 15px;
+			padding: 9px 0;
+			text-transform: uppercase;
+		}
+
+		&-name {
+			color: @cor-branco;
+			display: block;
+			overflow: hidden;
+			padding: 8px 0;
+			font-size: 14px;
+			text-overflow: ellipsis;
+			width: 230px;
+			white-space: nowrap;
+
+			&:hover {
+				color: @cor-branco;
+				text-decoration: underline;
+			}
+		}
+	}
+}
