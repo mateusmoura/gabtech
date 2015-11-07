@@ -171,11 +171,11 @@
 										</div>
 
 										<div class="block__view--title">
-											<div class="col-7">
+											<div class="col-7 col-m-5">
 												<h3>Anexos</h3>
 											</div>
 
-											<div class="col-5 align-right">
+											<div class="col-5 col-m-7 align-right">
 												<a href="#this" class="btn btn-blue btn-link">Enviar novo</a>
 											</div>
 										</div>
@@ -183,21 +183,21 @@
 										<div class="block__list--archives">
 											<ul>
 												<li>
-													<div class="col-2">
+													<div class="col-2 col-m-3">
 														<span class="block__list--archives-ext">DOC</span>
 													</div>
 
-													<div class="col-10">
+													<div class="col-10 col-m-9">
 														<a href="#this" class="block__list--archives-name">nome-do-arquivo.doc</a>
 													</div>
 												</li>
 
 												<li>
-													<div class="col-2">
+													<div class="col-2 col-m-3">
 														<span class="block__list--archives-ext">PDF</span>
 													</div>
 
-													<div class="col-10">
+													<div class="col-10 col-m-9">
 														<a href="#this" class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</a>
 													</div>
 												</li>

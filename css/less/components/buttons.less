@@ -210,6 +210,10 @@ ________________________________________________________________ */
 // Pequeno
 .btn-sm{
 	.tamanho-botoes( @padding-pequeno-vertical, @padding-pequeno-horizontal, @font-size-pequeno, @line-height-base, @border-radius-pequeno );
+
+	.desktop({
+		.tamanho-botoes( @padding-pequeno-vertical, @padding-pequeno-horizontal + 15, @font-size-pequeno, @line-height-base, @border-radius-pequeno );
+	});
 }
 
 // Tamanho Normal

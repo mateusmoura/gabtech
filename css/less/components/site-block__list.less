@@ -20,6 +20,14 @@ ________________________________________________________________________________
 		font-weight: 400;
 		margin-bottom: 11px;
 		padding-top: 12px;
+
+		.desktop({
+			clear: both;
+			float: left;
+			font-size: 15px;
+			padding-top: 17px;
+			width: 35%;
+		});
 	}
 
 	dd {
@@ -28,6 +36,11 @@ ________________________________________________________________________________
 		font-family: @font-family-gotham-medium;
 		font-size: 14px;
 		padding-bottom: 17px;
+
+		.desktop({
+			font-size: 15px;
+			padding-top: 17px;
+		});
 	}
 
 	&--user {
@@ -46,21 +59,39 @@ ________________________________________________________________________________
 			background-color: #89d795;
 			margin-bottom: 5px;
 			padding: 10px 15px;
+
+			.desktop({
+				padding: 16px 17px;
+			});
 		}
 
 		.block__menu--avatar {
 			margin-bottom: 0;
 			display: block;
+
+			.desktop({
+				height: 38px;
+				width: 38px;
+			});
 		}
 
 		&-data {
 			padding-left: 23px;
+
+			.desktop({
+				padding-left: 14px;
+			});
 
 			a {
 				color: @cor-branco;
 				display: inline-block;
 				font-family: @font-family-gotham-medium;
 				font-size: 18px;
+
+				.desktop({
+					line-height: 1;
+					font-size: 17px;
+				});
 
 				&:hover {
 					text-decoration: underline;
@@ -72,6 +103,10 @@ ________________________________________________________________________________
 				display: block;
 				font-size: 15px;
 				font-weight: 400;
+
+				.desktop({
+					font-size: 12px;
+				});
 			}
 		}
 	}
@@ -113,6 +148,10 @@ ________________________________________________________________________________
 			text-overflow: ellipsis;
 			width: 230px;
 			white-space: nowrap;
+
+			.desktop({
+				width: 190px;
+			});
 
 			&:hover {
 				color: @cor-branco;
