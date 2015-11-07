@@ -158,5 +158,32 @@ ________________________________________________________________________________
 				text-decoration: underline;
 			}
 		}
+
+		&-empty {
+			margin-top: 17px;
+			text-align: center;
+
+			div {
+				.border-radius(50%);
+				background-color: #f2f0f9;
+				height: 110px;
+				margin: 0 auto 12px;
+				position: relative;
+				width: 110px;
+
+				.icon {
+					.transform(translateY(-50%) translateX(-50%));
+					position: absolute;
+					left: 50%;
+					top: 50%;
+				}
+			}
+
+			p {
+				color: #897dcc;
+				font-family: @font-family-gotham-medium;
+				font-size: 15px;
+			}
+		}
 	}
 }

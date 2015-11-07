@@ -203,6 +203,25 @@
 												</li>
 											</ul>
 										</div>
+
+										<div class="block__view--title">
+											<div class="col-7 col-m-5">
+												<h3>Anexos</h3>
+											</div>
+
+											<div class="col-5 col-m-7 align-right">
+												<a href="#this" class="btn btn-blue btn-link">Enviar novo</a>
+											</div>
+										</div>
+
+										<div class="block__list--archives">
+											<div class="block__list--archives-empty">
+												<div>
+													<i class="icon icon-clip-b"></i>
+												</div>
+												<p>Nenhum anexo</p>
+											</div>
+										</div>
 									</aside>
 								</div>
 							</div>
