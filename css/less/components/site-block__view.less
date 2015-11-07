@@ -44,14 +44,23 @@ ________________________________________________________________________________
 		}
 
 		.btn-blue {
-			color: @cor-azul;
 			font-family: @font-family-gotham-medium;
 			font-size: 16px;
-			margin-top: 11px;
+			margin-top: 18px;
+
+			&.btn-link {
+				color: @cor-azul;
+				margin-top: 11px;
+			}
 
 			.desktop({
 				font-size: 15px;
 			});
+		}
+
+		&.borderline {
+			border-bottom: solid 1px #dae1e2;
+			margin-bottom: 25px;
 		}
 	}
 }
