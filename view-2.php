@@ -71,6 +71,30 @@
 								<div class="col-12">
 									<div class="block__view--title borderline">
 										<div class="col-7 col-m-5">
+											<h3>Táxi</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo táxi</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-car-b"></i>
+											</div>
+
+											<p>Nenhum táxi cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
 											<h3>Hotel</h3>
 										</div>
 
@@ -107,6 +131,30 @@
 									</div>
 								</div>
 
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
+											<h3>Hotel</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hotel</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-hotel-b"></i>
+											</div>
+
+											<p>Nenhum hotel cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
 										<div class="col-7 col-m-5">
@@ -149,6 +197,30 @@
 								<div class="col-12">
 									<div class="block__view--title borderline">
 										<div class="col-7 col-m-5">
+											<h3>Restaurante</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo restaurante</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-restaurant-b"></i>
+											</div>
+
+											<p>Nenhum restaurante cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
 											<h3>Hospital</h3>
 										</div>
 
@@ -185,6 +257,30 @@
 									</div>
 								</div>
 
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
+											<h3>Hospital</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hospital</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-hospital-b"></i>
+											</div>
+
+											<p>Nenhum hospital cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
 										<div class="col-7 col-m-5">
@@ -227,6 +323,30 @@
 								<div class="col-12">
 									<div class="block__view--title borderline">
 										<div class="col-7 col-m-5">
+											<h3>Andamentos</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo andamentos</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-sheet-b"></i>
+											</div>
+
+											<p>Nenhum andamento cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
 											<h3>Lembretes</h3>
 										</div>
 
@@ -257,6 +377,28 @@
 													<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus.</dd>
 												</dl>
 											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-7 col-m-5">
+											<h3>Lembretes</h3>
+										</div>
+
+										<div class="col-5 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo lembrete</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-reminder-b"></i>
+											</div>
+
+											<p>Nenhum lembrete cadastrado</p>
 										</div>
 									</div>
 								</div>
