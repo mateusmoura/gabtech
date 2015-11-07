@@ -23,6 +23,10 @@ ________________________________________________________________________________
 			padding-top: 0;
 			padding-bottom: 0;
 
+			& + a {
+				border-left: solid 1px #6eac76;
+			}
+
 			&:hover {
 				color: @cor-branco;
 				text-decoration: underline;
@@ -68,7 +72,9 @@ ________________________________________________________________________________
 
 		.block__list {
 			dt {
-				width: 12%;
+				.desktop({
+					width: 12%;
+				});
 			}
 
 			dl {
@@ -76,11 +82,36 @@ ________________________________________________________________________________
 			}
 
 			dd {
-				padding-left: 12%;
+				.desktop({
+					padding-left: 12%;
+				});
 
 				&:last-child {
 					border-bottom: 0;
 				}
+			}
+		}
+
+		form {
+			.row {
+				margin-bottom: 25px;
+			}
+
+			label {
+				color: #515860;
+				font-family: @font-family-gotham-medium;
+				font-size: 14px;
+				margin-bottom: 17px;
+			}
+
+			a {
+				display: inline-block;
+				margin-top: 10px;
+			}
+
+			button {
+				font-family: @font-family-gotham-medium;
+				font-size: 15px;
 			}
 		}
 	}
