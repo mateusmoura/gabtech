@@ -39,6 +39,10 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	BlockFilterForm.fn.toggleOpenForm = function(){
 		this.block__filter_form.toggleClass('block__filter--form-active');
 
+		setTimeout(function() {
+			this.block__filter_form.find('input').focus();
+		}.bind(this), 100);
+
 		return false;
 	};
 	/**
