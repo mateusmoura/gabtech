@@ -56,9 +56,19 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 				this.wrap__options.siblings('.block__table').add(this.footer).hide();
 			}
 		} else {
-			this.wrap__options.add(this.container).toggleClass('block__filter--open');
-			this.wrap__options.toggleClass('col-m-3');
-			$('.page__list .block__table').toggleClass('col-m-9');
+			if(this.wrap__options.hasClass('block__filter--open')) {
+				this.wrap__options.addClass('block__filter--closing');
+
+				setTimeout(function () {
+					this.wrap__options.add(this.container).toggleClass('block__filter--open').removeClass('block__filter--closing');
+					this.wrap__options.toggleClass('col-m-3');
+					$('.page__list .block__table').toggleClass('col-m-9');
+				}.bind(this), 400);
+			} else {
+				this.wrap__options.add(this.container).toggleClass('block__filter--open');
+				this.wrap__options.toggleClass('col-m-3');
+				$('.page__list .block__table').toggleClass('col-m-9');
+			}
 		}
 
 		return false;
