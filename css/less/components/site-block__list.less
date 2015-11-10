@@ -10,6 +10,10 @@
 ____________________________________________________________________________________ */
 
 .block__list {
+	.desktop({
+		margin-bottom: 3px;
+	});
+
 	dl {
 		border-top: solid 1px #d7e1e3;
 	}
@@ -31,7 +35,7 @@ ________________________________________________________________________________
 	}
 
 	dd {
-		border-bottom: solid 1px #d7e1e3;
+		border-bottom: dashed 1px #d7e1e3;
 		color: #4c5761;
 		font-family: @font-family-gotham-medium;
 		font-size: 14px;
@@ -46,6 +50,7 @@ ________________________________________________________________________________
 	&--user {
 		border-top: solid 1px #d7e1e3;
 		padding-top: 20px;
+		margin-bottom: 15px;
 
 		ul {
 			list-style: none;
@@ -54,15 +59,22 @@ ________________________________________________________________________________
 		}
 
 		li {
-			.border-radius(10px);
-			.clearfix();
-			background-color: #89d795;
-			margin-bottom: 5px;
-			padding: 10px 15px;
+			a {
+				.border-radius(5px);
+				.clearfix();
+				background-color: #89d795;
+				display: block;
+				margin-bottom: 5px;
+				padding: 10px 15px;
 
-			.desktop({
-				padding: 16px 17px;
-			});
+				&:hover {
+					background-color: #92d681;
+				}
+
+				.desktop({
+					padding: 16px 17px;
+				});
+			}
 		}
 
 		.block__menu--avatar {
@@ -82,11 +94,12 @@ ________________________________________________________________________________
 				padding-left: 14px;
 			});
 
-			a {
+			p {
 				color: @cor-branco;
 				display: inline-block;
 				font-family: @font-family-gotham-medium;
 				font-size: 18px;
+				margin: 0;
 
 				.desktop({
 					line-height: 1;
@@ -94,7 +107,7 @@ ________________________________________________________________________________
 				});
 
 				&:hover {
-					text-decoration: underline;
+					//text-decoration: underline;
 				}
 			}
 

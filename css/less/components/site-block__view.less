@@ -44,7 +44,7 @@ ________________________________________________________________________________
 		}
 
 		.btn-blue {
-			font-family: @font-family-gotham-medium;
+			font-family: @font-family-gotham-book;
 			font-size: 16px;
 			margin-top: 18px;
 
@@ -54,13 +54,29 @@ ________________________________________________________________________________
 			}
 
 			.desktop({
-				font-size: 15px;
+				font-size: 14px;
 			});
 		}
 
 		&.borderline {
 			border-bottom: solid 1px #dae1e2;
 			margin-bottom: 25px;
+		}
+	}
+
+	.block__aside {
+		margin-top: 25px;
+
+		.block__view--title {
+			h3 {
+				font-family: @font-family-gotham-medium;
+				font-size: 16px;
+				text-transform: uppercase;
+
+				.desktop({
+					font-size: 13px;
+				});
+			}
 		}
 	}
 }

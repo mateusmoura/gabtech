@@ -37,14 +37,13 @@
 									<div class="block__table--actions">
 										<ul class="list-none">
 											<li>
-												<div class="checkbox">
-													<input type="checkbox" name="label60" id="dado-label60">
-													<label for="dado-label60">&nbsp;</label>
-												</div>
+												<button type="button" class="btn btn-icon">
+													<i class="icon icon-star"></i>
+												</button>
 											</li>
 											<li>
 												<button type="button" class="btn btn-icon">
-													<i class="icon icon-star"></i>
+													<i class="icon icon-print"></i>
 												</button>
 											</li>
 
@@ -139,33 +138,37 @@
 										<div class="block__list--user">
 											<ul>
 												<li>
-													<div class="col-2">
-														<a href="#this" class="block__menu--avatar">
-															<img src="img/fke/user-avatar.png">
-														</a>
-													</div>
-
-													<div class="col-10">
-														<div class="block__list--user-data">
-															<a href="#this">Fernanda Oliveira</a>
-															<span>Chefe de Gabinete</span>
+													<a href="#this">
+														<div class="col-2">
+															<div class="block__menu--avatar">
+																<img src="img/fke/user-avatar.png">
+															</div>
 														</div>
-													</div>
+
+														<div class="col-10">
+															<div class="block__list--user-data">
+																<p>Fernanda Oliveira</p>
+																<span>Chefe de Gabinete</span>
+															</div>
+														</div>
+													</a>
 												</li>
 
 												<li>
-													<div class="col-2">
-														<a href="#this" class="block__menu--avatar">
-															<img src="img/fke/user-avatar.png">
-														</a>
-													</div>
-
-													<div class="col-10">
-														<div class="block__list--user-data">
-															<a href="#this">Otávio Ribeiro</a>
-															<span>Assessor Parlamentar</span>
+													<a href="#this">
+														<div class="col-2">
+															<div class="block__menu--avatar">
+																<img src="img/fke/user-avatar.png">
+															</div>
 														</div>
-													</div>
+
+														<div class="col-10">
+															<div class="block__list--user-data">
+																<p>Otávio Ribeiro</p>
+																<span>Assessor Parlamentar</span>
+															</div>
+														</div>
+													</a>
 												</li>
 											</ul>
 										</div>
