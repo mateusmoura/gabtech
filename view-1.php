@@ -186,23 +186,27 @@
 										<div class="block__list--archives">
 											<ul>
 												<li>
-													<div class="col-2 col-m-3">
-														<span class="block__list--archives-ext">DOC</span>
-													</div>
+													<a href="#this">
+														<div class="col-2 col-m-3">
+															<span class="block__list--archives-ext">DOC</span>
+														</div>
 
-													<div class="col-10 col-m-9">
-														<a href="#this" class="block__list--archives-name">nome-do-arquivo.doc</a>
-													</div>
+														<div class="col-10 col-m-9">
+															<p class="block__list--archives-name">nome-do-arquivo.doc</p>
+														</div>
+													</a>
 												</li>
 
 												<li>
-													<div class="col-2 col-m-3">
-														<span class="block__list--archives-ext">PDF</span>
-													</div>
+													<a href="#this">
+														<div class="col-2 col-m-3">
+															<span class="block__list--archives-ext">PDF</span>
+														</div>
 
-													<div class="col-10 col-m-9">
-														<a href="#this" class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</a>
-													</div>
+														<div class="col-10 col-m-9">
+															<p class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</p>
+														</div>
+													</a>
 												</li>
 											</ul>
 										</div>
