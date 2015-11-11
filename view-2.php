@@ -31,11 +31,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Táxi</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo táxi</a>
 										</div>
 									</div>
@@ -70,11 +70,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Táxi</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo táxi</a>
 										</div>
 									</div>
@@ -94,11 +94,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Hotel</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo hotel</a>
 										</div>
 									</div>
@@ -133,11 +133,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Hotel</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo hotel</a>
 										</div>
 									</div>
@@ -157,11 +157,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Restaurante</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo restaurante</a>
 										</div>
 									</div>
@@ -196,11 +196,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Restaurante</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo restaurante</a>
 										</div>
 									</div>
@@ -220,11 +220,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Hospital</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo hospital</a>
 										</div>
 									</div>
@@ -259,11 +259,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Hospital</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo hospital</a>
 										</div>
 									</div>
@@ -283,11 +283,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Andamentos</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo andamento</a>
 										</div>
 									</div>
@@ -322,11 +322,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Andamentos</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo andamentos</a>
 										</div>
 									</div>
@@ -346,11 +346,11 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Lembretes</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo lembrete</a>
 										</div>
 									</div>
@@ -383,11 +383,11 @@
 
 								<div class="col-12">
 									<div class="block__view--title borderline">
-										<div class="col-7 col-m-5">
+										<div class="col-6 col-m-5">
 											<h3>Lembretes</h3>
 										</div>
 
-										<div class="col-5 col-m-7 align-right">
+										<div class="col-6 col-m-7 align-right">
 											<a href="#this" class="btn btn-blue btn-sm">Novo lembrete</a>
 										</div>
 									</div>
