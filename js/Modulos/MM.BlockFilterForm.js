@@ -25,7 +25,7 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 			.on('click', this.toggleOpenForm.bind(this));
 
 		this.block__filter_show
-			.on('click', this.toggleOpenForm.bind(this));
+			.on('click mousedown touchstart', this.toggleOpenForm.bind(this));
 
 		this.block__filter_btn_open
 			.on('click', this.toggleOpenFilter.bind(this));
@@ -36,11 +36,27 @@ Module('MM.BlockFilterForm', function(BlockFilterForm){
 	/**
 	* Funcionalidade que mostra o formulário de busca.
 	*/
-	BlockFilterForm.fn.toggleOpenForm = function(){
+	BlockFilterForm.fn.toggleOpenForm = function(event){
 		this.block__filter_form.toggleClass('block__filter--form-active');
 
 		setTimeout(function() {
-			this.block__filter_form.find('input').focus();
+			event.stopPropagation();
+			event.preventDefault();
+
+			var input = this.block__filter_form.find('input')[0],
+				clone = input.cloneNode(true),
+				parent = input.parentElement;
+
+			parent.appendChild(clone);
+			parent.replaceChild(clone, input);
+
+			input = clone;
+
+			window.setTimeout(function() {
+				input.value = input.value || "";
+				input.focus();
+				this.block__filter_form.find('input').trigger('touchstart');
+			}.bind(this), 0);
 		}.bind(this), 100);
 
 		return false;

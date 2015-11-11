@@ -27,7 +27,7 @@ ________________________________________________________________________________
 		width: 100%;
 
 		.desktop({
-			top: 57px;
+			top: 47px;
 		});
 	}
 
@@ -76,10 +76,6 @@ ________________________________________________________________________________
 			.opacity(0.5);
 			pointer-events: none;
 		}
-
-		.block__collapse--title:first-child {
-			border-top: 0;
-		}
 	}
 
 	&--closing {
@@ -117,7 +113,7 @@ ________________________________________________________________________________
 	&--btn-open, &--btn-close {
 		.desktop({
 			font-size: 15px;
-			padding: 10px 20px;
+			padding: 7px 20px;
 		});
 	}
 
@@ -135,8 +131,6 @@ ________________________________________________________________________________
 				display: none;
 			});
 		}
-
-
 	}
 
 	&--form {
@@ -172,6 +166,7 @@ ________________________________________________________________________________
 			.desktop({
 				.border-radius(23px);
 				border: 1px solid #d0d9db;
+				height: 35px;
 
 				&:focus{ // FAZER MIXER PARA O FOCUS PARA SER USADO EM OUTROS ELEMENTOS
 					//@color-rgba: rgba(red(@input-border-focus), green(@input-border-focus), blue(@input-border-focus), .6);
