@@ -107,6 +107,7 @@ ________________________________________________________________ */
 
 textarea.form-style{
 	height: auto;
+	min-height: 175px;
 }
 
 // Input com Icones
@@ -315,29 +316,35 @@ a.label {
 // Personalizando os Radios.
 .radio{
 	display: inline-block;
-	line-height: 1em;
-	min-height: 1.25em;
-	min-width: 1em;
+	line-height: 1.5em;
+	min-height: 1.5em;
+	min-width: 1.5em;
 	outline: 0 none;
 	position: relative;
 	vertical-align: middle;
+
+	.desktop({
+		line-height: 1.3em;
+		min-height: 1.3em;
+		min-width: 1.3em;
+	});
 
 	label{
 		color: rgba(0, 0, 0, 0.6);
 		cursor: pointer;
 		display: block;
-		line-height: 1.2em;
+		line-height: 1.7em;
 		outline: 0 none;
-		padding-left: 1.5em;
+		padding-left: 2.1em;
 
 		&:before{
 			background: #FFF;
 			border-radius: 500px;
 			content: '';
-			height: 1.0em;
+			height: 1.5em;
 			left: 0;
-			line-height: 1;
-			min-width: 1.0em;
+			line-height: 1.5;
+			min-width: 1.5em;
 			position: absolute;
 			top: 0;
 			width: 1.0em;
@@ -350,6 +357,12 @@ a.label {
 			-moz-transform: none;
 			-ms-transform: none;
 			transform: none;
+
+			.desktop({
+				height: 1.3em;
+				line-height: 1.3;
+				min-width: 1.3em;
+			});
 		}
 
 		&:after{
@@ -360,11 +373,11 @@ a.label {
 			border: none;
 			border-radius: 500px;
 			content: '';
-			height: 0.65em;
-			left: 0.22em;
+			height: 1.08em;
+			left: 0.25em;
 			position: absolute;
 			top: 0.20em;
-			width: 0.62em;
+			width: 1em;
 			-webkit-transform: none;
 			-moz-transform: none;
 			-ms-transform: none;
@@ -379,6 +392,11 @@ a.label {
 			background-image: -o-linear-gradient(bottom, rgba(0,0,0,.08), rgba(255,255,255,.08));
 			background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.08), rgba(255,255,255,.08));
 			background-image: linear-gradient(to top, rgba(0,0,0,.08), rgba(255,255,255,.08));
+
+			.desktop({
+				height: 0.88em;
+				width: 0.85em;
+			});
 		}
 
 		&:hover{

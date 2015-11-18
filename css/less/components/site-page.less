@@ -140,4 +140,158 @@ ________________________________________________________________________________
 	&__content {
 		position: relative;
 	}
+
+	&__form {
+		&--header {
+			h2 {
+				color: #3c454c;
+				font-family: @font-family-gotham-medium;
+				font-size: 25px;
+				margin: 42px 0 28px;
+
+				.desktop({
+					font-family: @font-family-gotham-book;
+					font-size: 40px;
+					margin: 68px 0 32px;
+				});
+			}
+		}
+
+		&--content {
+			.block__collapse {
+				> .row {
+					border-top: solid 1px #d9e1e2;
+				}
+
+				&--title {
+					background-color: @cor-branco;
+
+					.desktop({
+						border-top: 0;
+					});
+
+					a {
+						color: #3c454c;
+						font-family: @font-family-gotham-light;
+						font-size: 20px;
+						padding: 31px 0 28px;
+						text-transform: none;
+
+						.desktop({
+							font-size: 24px;
+							padding: 60px 0;
+						});
+					}
+				}
+
+				&--content {
+					padding: 0 5px;
+
+					.desktop({
+						background-color: @cor-branco;
+						padding-top: 48px;
+					});
+
+					.row {
+						border-top: dashed 1px #d7e1e3;
+						padding: 20px 0 20px;
+
+						.desktop({
+							&:first-child {
+								border-top: none;
+							}
+						});
+					}
+
+					.col-12 {
+						margin-bottom: 0;
+					}
+
+					label {
+						color: #515860;
+						font-family: @font-family-gotham-medium;
+						margin-bottom: 13px;
+						padding-bottom: 0;
+
+						.desktop({
+							font-size: 15px;
+							text-align: left;
+						});
+
+						span {
+							color: #59606a;
+							font-family: @font-family-sans-serif;
+							font-size: 10px;
+							font-weight: 400;
+
+							.desktop({
+								color: #7a8796;
+								display: block;
+								font-size: 13px;
+							});
+						}
+					}
+
+					.form-style {
+						margin-bottom: 18px;
+					}
+
+					.radio {
+						margin-right: 20px;
+
+						label {
+							margin-bottom: 0;
+
+							.desktop({
+								font-size: 14px;
+							})
+						}
+					}
+
+					input, textarea, select {
+						background-color: @cor-branco;
+					}
+
+					.block__list--archives {
+						margin-bottom: 18px;
+					}
+
+					.btn-next, .btn-save {
+						display: block;
+						font-family: @font-family-gotham-medium;
+						font-size: 15px;
+						margin: 20px auto;
+						padding: 25px 10px;
+						width: 100%;
+
+						.icon {
+							margin-right: 5px;
+						}
+					}
+				}
+
+				&--open {
+					.row {
+						// & > .col-12:first-child {
+						// 	.desktop({
+						// 		.gerar-m-coluna(4, 0);
+						// 	});
+						// }
+
+						.col-m-4 {
+							.desktop({
+								//padding: 0;
+							});
+						}
+
+						.col-m-8 {
+							.desktop({
+								//padding: 0;
+							});
+						}
+					}
+				}
+			}
+		}
+	}
 }

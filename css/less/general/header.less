@@ -12,7 +12,7 @@ ________________________________________________________________ */
 .header {
 	background-color: @cor-header;
 
-	&__logo {
+	&__logo, &__logo--form {
 		overflow: hidden;
 		margin-bottom: 78px;
 
@@ -56,6 +56,10 @@ ________________________________________________________________ */
 				width: 121px;
 			});
 		}
+	}
+
+	&__logo--form {
+		margin-bottom: 22px;
 	}
 
 	.btn-menu {
@@ -119,6 +123,14 @@ ________________________________________________________________ */
 		background-color: transparent;
 		left: -100%;
 		right: auto;
+	}
+
+	.btn-close-b {
+		margin-top: 7px;
+
+		.desktop({
+			margin-top: 11px;
+		});
 	}
 
 	&__menu--active {
