@@ -73,8 +73,6 @@ ________________________________________________________________ */
 		//-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @color-rgba;
 		//-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @color-rgba;
 		//box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @color-rgba;
-
-
 	}
 
 	&[disabled],
@@ -86,22 +84,25 @@ ________________________________________________________________ */
 		opacity: 1;
 	}
 
-	&.validado{ // FAZER MIXER PARA O STATUS VALIDADO PARA SER USADO EM OUTROS ELEMENTOS
-		background-color: #e8f2d2;
-		border-color: @cor-verde-claro;
-		color: @cor-verde;
+	&.valid{ // FAZER MIXER PARA O STATUS VALIDADO PARA SER USADO EM OUTROS ELEMENTOS
+		//background-color: #e8f2d2;
+		//border-color: @cor-verde-claro;
+		//color: @cor-verde;
 	}
 
-	&.erro{
-		background-color: #fbebec;
+	&.error{
+		//background-color: #fbebec;
 		border-color: @cor-erro;
 		color: #b53641;
 	}
 
-	&.verificar{
-		background-color: #f8f4cf;
-		border-color: @cor-alerta;
-		color: #c07408;
+	&.checker{
+		// background-color: #f8f4cf;
+		// border-color: @cor-alerta;
+		// color: #c07408;
+		//background-color: #fbebec;
+		border-color: @cor-erro;
+		color: #b53641;
 	}
 }
 
@@ -500,7 +501,7 @@ div.erro-msg, div.val_verificar{
 	}
 }
 
-div.verificar{
+div.checker{
 	background-color: #fef2d1;
 
 	&:after{
@@ -508,7 +509,7 @@ div.verificar{
 	}
 }
 
-.verificando{
+.checking{
 	input{
 		border: solid 2px #fbaf1e;
 	}

@@ -13,34 +13,25 @@
 
 				<div class="page__form--content">
 					<div class="center">
-						<div class="block__collapse block__collapse--open">
+						<div class="block__collapse block__collapse--open" data-closeothers="true">
 							<div class="row">
 								<div class="col-12 col-m-4">
 									<div class="block__collapse--title">
 										<a href="#this"><i class="bullet bullet-num border-blue">1</i> Informações gerais <span class="btn-edit">Editar</span></a>
-
-										<div class="block__collapse--form-data">
-											<ul>
-												<li><p><strong>Tipo de recurso:</strong> Recurso</p></li>
-												<li><p><strong>Título:</strong> Construção da Quadra</p></li>
-												<li><p><strong>Data de entrada:</strong> 27/03/2015</p></li>
-												<li><p><strong>Data de entrada:</strong> 27/03/2015</p></li>
-											</ul>
-										</div>
 									</div>
 								</div>
 
 								<div class="col-12 col-m-8">
 									<div class="block__collapse--content">
-										<form class="validate" action="#" method="POST">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
 											<div class="row">
 												<div class="col-12 col-m-3">
-													<label>Tipo de cadastro</label>
+													<label class="no-margin-top">Tipo de cadastro</label>
 												</div>
 
-												<div class="col-12 col-m-9">
+												<div class="col-12 col-m-7">
 													<div class="radio">
-														<input type="radio" name="tipo" id="dado-recurso">
+														<input type="radio" name="tipo" id="dado-recurso" checked="checked">
 														<label for="dado-recurso" class="sublabel">Recurso</label>
 													</div>
 
@@ -53,11 +44,11 @@
 
 											<div class="row">
 												<div class="col-12 col-m-3">
-													<label>Título <span>Campo obrigatório</span></label>
+													<label>Título<span>Campo obrigatório</span></label>
 												</div>
 
-												<div class="col-12 col-m-9">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
 												</div>
 											</div>
 
@@ -87,8 +78,11 @@
 												</div>
 											</div>
 
-											<div class="row">
-												<div class="col-12">
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
 													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
 												</div>
 											</div>
@@ -98,24 +92,24 @@
 							</div>
 						</div>
 
-						<div class="block__collapse">
+						<div class="block__collapse" data-closeothers="true">
 							<div class="row">
-								<div class="col-12">
+								<div class="col-12 col-m-4">
 									<div class="block__collapse--title">
 										<a href="#this"><i class="bullet bullet-num border-blue">2</i> Tipo de demanda</a>
 									</div>
 								</div>
 
-								<div class="col-12">
+								<div class="col-12 col-m-8">
 									<div class="block__collapse--content">
-										<form class="validate" action="#" method="POST">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Tipo</label>
 												</div>
 
-												<div class="col-12">
-													<select name="label17" id="dado-label17" class="form-style">
+												<div class="col-12 col-m-7">
+													<select name="label17" id="dado-label17" class="form-style required">
 														<option value="">Selecione</option>
 														<option>Valor 1</option>
 														<option>Valor 2</option>
@@ -127,12 +121,12 @@
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Área de interesse</label>
 												</div>
 
-												<div class="col-12">
-													<select name="label18" id="dado-label18" class="form-style">
+												<div class="col-12 col-m-7">
+													<select name="label18" id="dado-label18" class="form-style required">
 														<option value="">Selecione</option>
 														<option>Valor 1</option>
 														<option>Valor 2</option>
@@ -144,12 +138,12 @@
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Orgão responsável</label>
 												</div>
 
-												<div class="col-12">
-													<select name="label19" id="dado-label19" class="form-style">
+												<div class="col-12 col-m-7">
+													<select name="label19" id="dado-label19" class="form-style required">
 														<option value="">Selecione</option>
 														<option>Valor 1</option>
 														<option>Valor 2</option>
@@ -159,13 +153,13 @@
 											</div>
 
 											<div class="row">
-												<div class="col-12">
-													<label>Finalidade do recurso</label>
+												<div class="col-12 col-m-3">
+													<label class="no-margin-top">Finalidade do recurso</label>
 												</div>
 
-												<div class="col-12">
+												<div class="col-12 col-m-7">
 													<div class="radio">
-														<input type="radio" name="tipo" id="dado-aquisicao">
+														<input type="radio" name="tipo" id="dado-aquisicao" checked="checked">
 														<label for="dado-aquisicao" class="sublabel">Aquisição de bens</label>
 													</div>
 
@@ -177,17 +171,20 @@
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Valor do recurso</label>
 												</div>
 
-												<div class="col-12">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-3">
+													<input type="text" class="form-style mask-money required" placeholder="">
 												</div>
 											</div>
 
-											<div class="row">
-												<div class="col-12">
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
 													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
 												</div>
 											</div>
@@ -197,53 +194,56 @@
 							</div>
 						</div>
 
-						<div class="block__collapse">
+						<div class="block__collapse" data-closeothers="true">
 							<div class="row">
-								<div class="col-12">
+								<div class="col-12 col-m-4">
 									<div class="block__collapse--title">
 										<a href="#this"><i class="bullet bullet-num border-blue">3</i> Solicitante</a>
 									</div>
 								</div>
 
-								<div class="col-12">
+								<div class="col-12 col-m-8">
 									<div class="block__collapse--content">
-										<form class="validate" action="#" method="POST">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Solicitante</label>
 												</div>
 
-												<div class="col-12">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
 
 													<a href="#this">+ Adicionar novo solicitante</a>
 												</div>
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Município</label>
 												</div>
 
-												<div class="col-12">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
 												</div>
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Interessado</label>
 												</div>
 
-												<div class="col-12">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
 
 													<a href="#this">+ Adicionar novo interessado</a>
 												</div>
 											</div>
 
-											<div class="row">
-												<div class="col-12">
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
 													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
 												</div>
 											</div>
@@ -253,45 +253,45 @@
 							</div>
 						</div>
 
-						<div class="block__collapse">
+						<div class="block__collapse" data-closeothers="true">
 							<div class="row">
-								<div class="col-12">
+								<div class="col-12 col-m-4">
 									<div class="block__collapse--title">
 										<a href="#this"><i class="bullet bullet-num border-blue">4</i> Informações adicionais</a>
 									</div>
 								</div>
 
-								<div class="col-12">
+								<div class="col-12 col-m-8">
 									<div class="block__collapse--content">
-										<form class="validate" action="#" method="POST">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Responsável</label>
 												</div>
 
-												<div class="col-12">
-													<input type="text" class="form-style" placeholder="">
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
 
 													<a href="#this">+ Adicionar outro responsável</a>
 												</div>
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Informações adicionais</label>
 												</div>
 
-												<div class="col-12">
+												<div class="col-12 col-m-7">
 													<textarea class="form-style" col="5" row="10"></textarea>
 												</div>
 											</div>
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-m-3">
 													<label>Anexos</label>
 												</div>
 
-												<div class="col-12">
+												<div class="col-12 col-m-7">
 													<div class="block__list--archives">
 														<ul>
 															<li>
@@ -300,11 +300,11 @@
 																		<span class="block__list--archives-ext">DOC</span>
 																	</div>
 
-																	<div class="col-9 col-m-9">
+																	<div class="col-9 col-m-8">
 																		<p class="block__list--archives-name">nome-do-arquivo.doc</p>
 																	</div>
 
-																	<div class="col-1">
+																	<div class="col-1 col-m-1">
 																		<a href="#this" class="btn btn-link btn-icon btn-remove"><i class="icon icon-close-b"></i></a>
 																	</div>
 																</div>
@@ -316,11 +316,11 @@
 																		<span class="block__list--archives-ext">PDF</span>
 																	</div>
 
-																	<div class="col-9 col-m-9">
+																	<div class="col-9 col-m-8">
 																		<p class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</p>
 																	</div>
 
-																	<div class="col-1">
+																	<div class="col-1 col-m-1">
 																		<a href="#this" class="btn btn-link btn-icon btn-remove"><i class="icon icon-close-b"></i></a>
 																	</div>
 																</div>
@@ -332,8 +332,11 @@
 												</div>
 											</div>
 
-											<div class="row">
-												<div class="col-12">
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
 													<button type="submit" class="btn btn-blue btn-full btn-save"><i class="icon icon-check"></i>Salvar</button>
 												</div>
 											</div>

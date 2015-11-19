@@ -41,13 +41,13 @@ if (!Function.prototype.bind) {
 
 		return fBound;
 	};
-}
+};
 
 var site = {
 	/*
 	* Funcionalidades GLOBAL onde e chamado em todas as páginas do projeto.
 	*/
-	global: function(){
+	global: function () {
 		var _collapse				= $('.block__collapse'),
 			_blockFilterForm		= $('.block__filter'),
 			_autocomplete			= $('.autocomplete');
@@ -60,7 +60,7 @@ var site = {
 		});
 
 		for (var i = _collapse.length - 1; i >= 0; i--) {
-			MM.Collapsible(_collapse.eq(i), false);
+			MM.Collapsible(_collapse.eq(i), _collapse.eq(i).data('closeothers'));
 		}
 
 		for (var i = _blockFilterForm.length - 1; i >= 0; i--) {
@@ -71,9 +71,33 @@ var site = {
 			MM.InputMultipleSelect(_autocomplete.eq(i));
 		};
 
-		MM.ValidarFormularios($('form.validate'));
+		$('form.validate').each(function(index, el) {
+			var obj_temp = $(el).data('settings'),
+				callback  = $(el).data('callfn');
+
+			MM.ValidarFormularios($(el), obj_temp, callback);
+		});
+
 		MM.Menu($('header'));
-	}
+	},
+	/*
+	* Funcionalidade de troca de passo na página de Cadastro.
+	*/
+	registerChangeStep: function ($form, $resp) {
+		var _blockCollapse				= $form.parents('.block__collapse--open:first'),
+			_blockCollapseTitle			= _blockCollapse.find('.block__collapse--title');
+
+		$('.block__collapse--form-data', _blockCollapseTitle).remove();
+
+		// Adiciona o conteúdo salvo na View
+		$($resp).appendTo(_blockCollapseTitle);
+		$('a', _blockCollapseTitle).trigger('click');
+		_blockCollapse.addClass('block__collapse--saved');
+
+		if(_blockCollapse.next('.block__collapse').length) {
+			_blockCollapse.next('.block__collapse').find('.block__collapse--title a').trigger('click');
+		}
+	},
 }
 
 

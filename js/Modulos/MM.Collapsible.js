@@ -28,9 +28,9 @@ Module('MM.Collapsible', function (Collapsible) {
 		this.container.toggleClass('block__collapse--open');
 
 		if(this.closeOthers){
-			this.block__collapse_title.parent().siblings('.block__collapse--open')
-				.find('.block__collapse--content').slideUp(function(){
-					$(this).parent().removeClass('block__collapse--open');
+			this.container.siblings('.block__collapse--open')
+				.find('.block__collapse--content').slideUp('500', function () {
+					$(this).parents('.block__collapse:first').removeClass('block__collapse--open');
 				}).end();
 		}
 		

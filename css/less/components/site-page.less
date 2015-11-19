@@ -163,6 +163,13 @@ ________________________________________________________________________________
 					border-top: solid 1px #d9e1e2;
 				}
 
+				&:not(.block__collapse--open) {
+					.col-m-4 {
+						.transition(width 0.0s ease 0.6s);
+						.gerar-m-coluna(12, @grid-separacao);
+					}
+				}
+
 				&--title {
 					background-color: @cor-branco;
 
@@ -215,20 +222,39 @@ ________________________________________________________________________________
 
 						.desktop({
 							font-size: 15px;
+							margin-bottom: 0;
+							margin-top: 17px;
 							text-align: left;
+
+							&.no-margin-top {
+								margin-top: 0;
+							}
 						});
 
 						span {
 							color: #59606a;
+							display: inline-block;
 							font-family: @font-family-sans-serif;
 							font-size: 10px;
 							font-weight: 400;
+							margin-left: 6px;
 
 							.desktop({
 								color: #7a8796;
 								display: block;
 								font-size: 13px;
+								margin-left: 0;
 							});
+
+							&.error {
+								color: @cor-erro;
+								font-size: 10px;
+								font-weight: 400;
+
+								.desktop({
+									font-size: 13px;
+								});
+							}
 						}
 					}
 
@@ -244,6 +270,7 @@ ________________________________________________________________________________
 
 							.desktop({
 								font-size: 14px;
+								margin-top: 0;
 							})
 						}
 					}
@@ -254,6 +281,12 @@ ________________________________________________________________________________
 
 					.block__list--archives {
 						margin-bottom: 18px;
+
+						&-item {
+							.desktop({
+								padding-bottom: 7px;
+							});
+						}
 					}
 
 					.btn-next, .btn-save {
@@ -264,8 +297,27 @@ ________________________________________________________________________________
 						padding: 25px 10px;
 						width: 100%;
 
+						.desktop({
+							padding: 15px 10px;
+						});
+
 						.icon {
 							margin-right: 5px;
+						}
+					}
+
+					.message-to-save {
+						display: none;
+
+						.desktop({
+							display: block;
+						});
+
+						p {
+							color: #7a8796;
+							font-size: 13px;
+							font-weight: 400;
+							margin-top: 32px;
 						}
 					}
 				}
