@@ -1,0 +1,59 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco de mensagem
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__MESSAGE
+____________________________________________________________________________________ */
+
+.block__message {
+	.transition(~"top 0.3s ease-in-out 0.0s, opacity 0.3s ease-in-out 0.0s, visibility 0.3s ease-in-out 0.0s");
+	.border-radius(5px);
+	.opacity(0);
+	background-color: #9fd092;
+	position: relative;
+	top: -50px;
+	visibility: hidden;
+	margin-bottom: 10px;
+
+	&.animated {
+		.transition(~"top 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s, visibility 0.5s ease-in-out 0.5s");
+		.opacity(1);
+		top: 0;
+		visibility: visible;
+		.box-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+	}
+
+	&--text {
+		color: @cor-branco;
+		padding: 18px 15px;
+		font-family: @font-family-gotham-medium;
+		font-size: 14px;
+
+		.desktop({
+			font-size: 15px;
+			padding: 18px 15px 15px;
+		});
+
+		p{
+			color: @cor-branco;
+			font-family: @font-family-gotham-medium;
+			font-size: 14px;
+			margin: 0;
+
+			.desktop({
+				font-size: 15px;
+			});
+		}
+	}
+
+	.btn-close {
+		.transform(translateY(-50%));
+		position: absolute;
+		right: 5px;
+		top: 50%;
+	}
+}

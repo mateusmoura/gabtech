@@ -6,6 +6,20 @@
 						<div class="row">
 							<div class="col-12">
 								<h2>Nova Demanda</h2>
+
+								<!-- <div class="block__message">
+									<div class="row">
+										<div class="col-11">
+											<div class="block__message--text">
+												<p>Dados salvos com sucesso.</p>
+											</div>
+										</div>
+
+										<div class="col-1">
+											<a href="#this" class="btn btn-link btn-icon btn-close" title="Fechar"><i class="icon icon-close-c"></i></a>
+										</div>
+									</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
