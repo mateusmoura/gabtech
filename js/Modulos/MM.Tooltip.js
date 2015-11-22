@@ -45,8 +45,6 @@ Module('MM.Tooltip', function (Tooltip) {
 			autoClose: true,
 			delay: 200,
 			theme: 'tooltipster-default',
-			touchDevices: true,
-			iconTouch: true,
 			position: 'left',
 			functionBefore: function (origin, continueTooltip) {
 				if(isMobile || $(window).width() < 1024){
