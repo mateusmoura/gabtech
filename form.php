@@ -59,6 +59,16 @@
 											<div class="row">
 												<div class="col-12 col-m-3">
 													<label>Título<span>Campo obrigatório</span></label>
+
+													<div class="icon-question tooltip">
+														<p>Descreva brevemente do que se trata esta demanda.</p>
+														<p>Exemplos:</p>
+														<ul>
+															<li><p><strong>Construção de quadra na praça São José</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+														</ul>
+													</div>
 												</div>
 
 												<div class="col-12 col-m-7">
@@ -82,6 +92,16 @@
 											<div class="row">
 												<div class="col-12 col-m-3">
 													<label>Data Limite</label>
+
+													<div class="icon-question tooltip">
+														<p>Descreva brevemente do que se trata esta demanda.</p>
+														<p>Exemplos:</p>
+														<ul>
+															<li><p><strong>Construção de quadra na praça São José</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+														</ul>
+													</div>
 												</div>
 
 												<div class="col-12 col-m-3">
@@ -130,7 +150,7 @@
 														<option>Valor 3</option>
 													</select>
 
-													<a href="#this">+ Incluir novo tipo</a>
+													<a href="#this" class="btn-more">+ Incluir novo tipo</a>
 												</div>
 											</div>
 
@@ -147,7 +167,7 @@
 														<option>Valor 3</option>
 													</select>
 
-													<a href="#this">+ Incluir nova área de interesse</a>
+													<a href="#this" class="btn-more">+ Incluir nova área de interesse</a>
 												</div>
 											</div>
 
@@ -227,7 +247,7 @@
 												<div class="col-12 col-m-7">
 													<input type="text" class="form-style required" placeholder="">
 
-													<a href="#this">+ Adicionar novo solicitante</a>
+													<a href="#this" class="btn-more">+ Adicionar novo solicitante</a>
 												</div>
 											</div>
 
@@ -249,7 +269,7 @@
 												<div class="col-12 col-m-7">
 													<input type="text" class="form-style required" placeholder="">
 
-													<a href="#this">+ Adicionar novo interessado</a>
+													<a href="#this" class="btn-more">+ Adicionar novo interessado</a>
 												</div>
 											</div>
 
@@ -286,7 +306,7 @@
 												<div class="col-12 col-m-7">
 													<input type="text" class="form-style required" placeholder="">
 
-													<a href="#this">+ Adicionar outro responsável</a>
+													<a href="#this" class="btn-more">+ Adicionar outro responsável</a>
 												</div>
 											</div>
 

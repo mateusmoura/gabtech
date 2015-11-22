@@ -4,42 +4,63 @@
 * @Version: 1.0
 */
 
-Module('CNA.Tooltip', function(Tooltip){
-	Tooltip.fn.initialize = function(){
-		this.tips = $('.btn-tooltip:not([disabled])');
+Module('MM.Tooltip', function (Tooltip) {
+	Tooltip.fn.initialize = function ($tooltip) {
+		this.$container = $tooltip;
 
-		//this.conteudo.hide();
-		for (var i = this.tips.length - 1; i >= 0; i--) {
-			this.building(this.tips.eq(i));
-		};
-
-		this.addEventListeners();
-	};
-	Tooltip.fn.building = function($elem){
-		!$elem.find('.tooltip').length
-			&& $('<div class="tooltip"><p></p><i class="icon icon-setabaixo-azulescuro2x"></i></div>"').find('p').text($elem.attr('title')).end().appendTo($elem)
-					.css('margin-left', - ( $elem.find('.tooltip').width() / 2) );
+		this.loadScripts();
 	};
 	/**
-	* Adiciona os eventos necessários.
+	* Carregar Scripts necessários para funcionalidade.
 	*/
-	Tooltip.fn.addEventListeners = function(){
-		this.tips
-			.on('mouseenter', this.onLinkMouseEnter)
-			.on('mouseleave', this.onLinkMouseLeave);
-	};
-	/**
-	* Funcionalidade que mostra o tooltip.
-	*/
-	Tooltip.fn.onLinkMouseEnter = function(event){
-		var _this = $(this);
+	Tooltip.fn.loadScripts = function(){
+		var _this = this;
 
-		_this.find('.tooltip').css('margin-left', - ( _this.find('.tooltip').width() / 2) ).stop(0, 0).fadeIn();
+		jQuery.ajaxSetup({
+			cache: true
+		});
+
+		if($.mask === undefined){
+			$.when(
+				$.getScript(base_url + "js/plugins/jQuery.tooltipster.min.js"),
+				$.Deferred(function(deferred){
+					$(deferred.resolve)
+				})
+			).done(function(){
+				_this.config();
+			}).fail(function() {
+				console.log('Erro getScript')
+			});
+		} else{
+			_this.config();
+		}
 	};
 	/**
-	* Funcionalidade que esconde o tooltip.
+	* Configuração do plugin para mostrar os Tooltips.
 	*/
-	Tooltip.fn.onLinkMouseLeave = function(event){
-		$(this).find('.tooltip').stop(0, 0).fadeOut();
+	Tooltip.fn.config = function(){
+		this.$container.tooltipster({
+			content: $(this.$container.html()),
+			animation: 'fade',
+			autoClose: true,
+			delay: 200,
+			theme: 'tooltipster-default',
+			touchDevices: true,
+			iconTouch: true,
+			position: 'left',
+			functionBefore: function (origin, continueTooltip) {
+				if(isMobile || $(window).width() < 1024){
+					$('#overlay').fadeIn(200);
+				}
+				$(this).addClass('oppened');
+				continueTooltip();
+			},
+			functionAfter: function (origin) {
+				if(isMobile || $(window).width() < 1024){
+					$('#overlay').fadeOut(100);
+				}
+				$(this).removeClass('oppened');
+			}
+		});
 	};
 });

@@ -50,7 +50,8 @@ var site = {
 	global: function () {
 		var _collapse				= $('.block__collapse'),
 			_blockFilterForm		= $('.block__filter'),
-			_autocomplete			= $('.autocomplete');
+			_autocomplete			= $('.autocomplete'),
+			_tooltip				= $('.tooltip:not([disabled])');
 
 		MM.Mascarar();
 		MM.Datepicker();
@@ -69,6 +70,10 @@ var site = {
 
 		for (var i = _autocomplete.length - 1; i >= 0; i--) {
 			MM.InputMultipleSelect(_autocomplete.eq(i));
+		};
+
+		for (var i = _tooltip.length - 1; i >= 0; i--) {
+			MM.Tooltip(_tooltip.eq(i));
 		};
 
 		$('form.validate').each(function(index, el) {
