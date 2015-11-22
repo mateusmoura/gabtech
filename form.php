@@ -7,7 +7,7 @@
 							<div class="col-12">
 								<h2>Nova Demanda</h2>
 
-								<!-- <div class="block__message">
+								<div class="block__message animated">
 									<div class="row">
 										<div class="col-11">
 											<div class="block__message--text">
@@ -19,7 +19,7 @@
 											<a href="#this" class="btn btn-link btn-icon btn-close" title="Fechar"><i class="icon icon-close-c"></i></a>
 										</div>
 									</div>
-								</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -330,11 +330,11 @@
 														<ul>
 															<li>
 																<div class="block__list--archives-item">
-																	<div class="col-2 col-m-3">
+																	<div class="col-2 col-m-2">
 																		<span class="block__list--archives-ext">DOC</span>
 																	</div>
 
-																	<div class="col-9 col-m-8">
+																	<div class="col-9 col-m-9">
 																		<p class="block__list--archives-name">nome-do-arquivo.doc</p>
 																	</div>
 
@@ -346,11 +346,11 @@
 
 															<li>
 																<div class="block__list--archives-item">
-																	<div class="col-2 col-m-3">
+																	<div class="col-2 col-m-2">
 																		<span class="block__list--archives-ext">PDF</span>
 																	</div>
 
-																	<div class="col-9 col-m-8">
+																	<div class="col-9 col-m-9">
 																		<p class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</p>
 																	</div>
 

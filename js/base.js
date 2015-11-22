@@ -84,6 +84,8 @@ var site = {
 		});
 
 		MM.Menu($('header'));
+
+		this.closeMessages();
 	},
 	/*
 	* Funcionalidade de troca de passo na página de Cadastro.
@@ -103,6 +105,22 @@ var site = {
 			_blockCollapse.next('.block__collapse').find('.block__collapse--title a').trigger('click');
 		}
 	},
+	/*
+	* Funcionalidade para fechar as mensagem do block__message.
+	*/
+	closeMessages: function () {
+		$('.block__message').on('click', '.btn-close', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			var _parent = $(this).parents('.block__message');
+
+			_parent.removeClass('animated');
+
+			setTimeout(function () {
+				_parent.remove();
+			}, 800)
+		});
+	}
 }
 
 
