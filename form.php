@@ -362,7 +362,7 @@
 														</ul>
 													</div>
 
-													<a href="#this">+ Anexar novo arquivo</a>
+													<a href="#this" class="btn-more">+ Anexar novo arquivo</a>
 												</div>
 											</div>
 

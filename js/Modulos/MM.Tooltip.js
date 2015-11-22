@@ -29,7 +29,7 @@ Module('MM.Tooltip', function (Tooltip) {
 			).done(function(){
 				_this.config();
 			}).fail(function() {
-				console.log('Erro getScript')
+				console.log('Erro getScript');
 			});
 		} else{
 			_this.config();

@@ -78,6 +78,7 @@
 						</div>
 
 						<div class="col-6 col-m-4 align-right">
+							<label class="header__saved"><i class="icon icon-check-b"></i> Salvo automáticamento</label>
 							<button type="button" class="btn btn-link btn-icon btn-close-b"><i class="icon icon-close-b"></i></button>
 						</div>
 					</div>
