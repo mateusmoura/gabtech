@@ -78,7 +78,7 @@
 
 							<div class="block__menu--desktop">
 								<nav class="block__menu--links">
-									<a href="#this">Visão Geral</a>
+									<a href="dashboard.php">Visão Geral</a>
 									<a href="#this">Demandas</a>
 									<a href="#this">Municípios</a>
 									<a href="#this">Contatos</a>

@@ -1,0 +1,84 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Overview
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__OVERVIEW
+____________________________________________________________________________________ */
+
+.block__overview {
+	.flex-display;
+	.flex-flow('row');
+	width: (165px * 4px);
+
+	&--item {
+		.flex(1);
+		.border-radius(5px);
+		margin-left: 10px;
+		overflow: hidden;
+		padding: 20px 15px;
+		position: relative;
+		width: 155px;
+
+		span {
+			color: @cor-branco;
+			margin: 0;
+			font-family: @font-family-gotham-light;
+			font-size: 30px;
+		}
+
+		p {
+			color: @cor-branco;
+			font-family: @font-family-gotham-medium;
+			font-size: 9px;
+			line-height: 11px;
+			max-width: 73px;
+			text-transform: uppercase;
+		}
+
+		.icon {
+			bottom: 0;
+			position: absolute;
+			right: 0;
+
+			&-sheet-c {
+				right: -10px;
+			}
+
+			&-person-b {
+				right: -25px;
+			}
+
+			&-clip-c {
+				right: -10px;
+			}
+
+			&-sheet-d {
+				right: -10px;
+			}
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&-green {
+			background-color: #86d190;
+		}
+
+		&-black {
+			background-color: #34495e;
+		}
+
+		&-purple {
+			background-color: #8f7ed0;
+		}
+
+		&-blue {
+			background-color: #64beea;
+		}
+	}
+}
