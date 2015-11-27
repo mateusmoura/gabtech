@@ -245,15 +245,15 @@
 									</div>
 
 									<div class="block__links">
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-sheet-c"></i> Demandas</a>
+										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-sheet-e"></i> Demandas</a>
 										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-marker"></i> Municípios</a>
 										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-person-c"></i> Contatos</a>
 										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-phone-b"></i> Ligações</a>
 										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-door"></i> Visitas</a>
 
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-archive"></i> Arquivos <span class="badge">Em desenvolvimento</span></a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-email"></i> Email marketing <span class="badge">Em breve</span></a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-send"></i> Envio de sms <span class="badge">Em breve</span></a>
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-archive"></i> Arquivos <span class="badge">Em desenvolvimento</span></a>
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-email"></i> Email marketing <span class="badge">Em breve</span></a>
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-send"></i> Envio de sms <span class="badge">Em breve</span></a>
 									</div>
 								</aside>
 							</div>

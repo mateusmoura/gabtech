@@ -1,0 +1,46 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Links
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__LINKS
+____________________________________________________________________________________ */
+
+.block__links {
+	a, button {
+		color: #4c5761;
+		text-align: left;
+		margin-bottom: 10px;
+		padding: 16px 16px;
+		padding-left: 44px;
+		position: relative;
+		text-transform: uppercase;
+		width: 100%;
+
+		.icon {
+			.transform(translateY(-50%));
+			position: absolute;
+			left: 16px;
+			top: 50%;
+		}
+
+		.badge {
+			background-color: #87d190;
+			float: right;
+			font-size: 10px;
+			line-height: 11px;
+			min-height: auto;
+			padding: 3px 6px;
+			top: 0;
+		}
+
+		&.btn-disabled {
+			color: #a1a8b1;
+			cursor: @curso-desativado;
+			pointer-events: none;
+		}
+	}
+}
