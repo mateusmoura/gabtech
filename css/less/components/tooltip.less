@@ -83,3 +83,47 @@ ________________________________________________________________ */
 	}
 }
 
+.tooltipster-noir {
+	.border-radius(10px);
+	background-color: #86d190;
+	border-color: #86d190;
+	max-width: 275px;
+	z-index: 99999;
+
+	.tooltipster-content {
+		color: @cor-branco;
+		font-size: 10px;
+		padding: 10px;
+		overflow: hidden;
+		text-transform: uppercase;
+		white-space: nowrap;
+		z-index: 9999;
+
+		p, ul, li, span {
+			color: #56606b;
+			font-size: 15px;
+			font-weight: 400;
+		}
+
+		p {
+			font-family: @font-family-sans-serif;
+		}
+
+		ul, li, {
+			color: #4c5761;
+			font-family: @font-family-gotham-medium;
+
+			p, strong {
+				color: #4c5761;
+				font-family: @font-family-gotham-medium;
+			}
+		}
+	}
+
+	.tooltipster-arrow-left {
+		.tooltipster-arrow-border {
+			border-color: #86d190;
+		}
+	}
+}
+

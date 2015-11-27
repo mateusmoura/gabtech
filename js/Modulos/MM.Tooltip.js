@@ -7,6 +7,11 @@
 Module('MM.Tooltip', function (Tooltip) {
 	Tooltip.fn.initialize = function ($tooltip) {
 		this.$container = $tooltip;
+		this.defaults = {
+			animation: 'fade',
+			autoClose: true,
+			delay: 200,
+		};
 
 		this.loadScripts();
 	};
@@ -39,26 +44,33 @@ Module('MM.Tooltip', function (Tooltip) {
 	* Configuração do plugin para mostrar os Tooltips.
 	*/
 	Tooltip.fn.config = function(){
-		this.$container.tooltipster({
-			content: $(this.$container.html()),
-			animation: 'fade',
-			autoClose: true,
-			delay: 200,
-			theme: 'tooltipster-default',
-			position: 'left',
-			functionBefore: function (origin, continueTooltip) {
-				if(isMobile || $(window).width() < 1024){
-					$('#overlay').fadeIn(200);
-				}
-				$(this).addClass('oppened');
-				continueTooltip();
-			},
-			functionAfter: function (origin) {
-				if(isMobile || $(window).width() < 1024){
-					$('#overlay').fadeOut(100);
-				}
-				$(this).removeClass('oppened');
+		if(this.$container.hasClass('tooltip__title')) {
+			this.settings = {
+				theme: 'tooltipster-noir'
 			}
-		});
+		} else {
+			this.settings = {
+				theme: 'tooltipster-default',
+				content: $(this.$container.html()),
+				position: 'left',
+				functionBefore: function (origin, continueTooltip) {
+					if(isMobile || $(window).width() < 1024){
+						$('#overlay').fadeIn(200);
+					}
+					$(this).addClass('oppened');
+					continueTooltip();
+				},
+				functionAfter: function (origin) {
+					if(isMobile || $(window).width() < 1024){
+						$('#overlay').fadeOut(100);
+					}
+					$(this).removeClass('oppened');
+				}
+			}
+		}
+
+		this.settings = $.extend({}, this.defaults, this.settings||{});
+
+		this.$container.tooltipster(this.settings);
 	};
 });

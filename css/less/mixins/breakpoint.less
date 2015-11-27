@@ -1,0 +1,39 @@
+
+/* BREAKPOINT
+________________________________________________________________ */
+
+.tablet (@rules) {
+	@media  (min-width: @conteudo-tablet) {
+		@rules();
+	}
+}
+
+.tablet-landscape (@rules) {
+	@media (min-width: @conteudo-tablet) and (max-width: @conteudo-desktop)  and (@landscape) {
+		@rules();
+	}
+}
+
+.desktop (@rules) {
+	@media (min-width: @conteudo-desktop) {
+		@rules();
+	}
+}
+
+.large-desktop (@rules) {
+	@media (min-width: @conteudo-desktop-grande) {
+		@rules();
+	}
+}
+
+.retina (@rules) {
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+		@rules();
+	}
+}

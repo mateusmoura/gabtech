@@ -79,9 +79,29 @@
 														<div class="block__notes--avatars-scrolling">
 															<ul>
 																<li>
-																	<a href="#this" class="block__menu--avatar">
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
 																		<img src="img/fke/user-avatar.png">
-																		<span>DEP</span>
+																	</a>
+																	<span>DEP</span>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar block__menu--avatar-selected tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
 																	</a>
 																</li>
 																<li>

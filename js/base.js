@@ -51,7 +51,7 @@ var site = {
 		var _collapse				= $('.block__collapse'),
 			_blockFilterForm		= $('.block__filter'),
 			_autocomplete			= $('.autocomplete'),
-			_tooltip				= $('.tooltip:not([disabled])');
+			_tooltip				= $('.tooltip:not([disabled]), .tooltip__title:not([disabled])');
 
 		MM.Mascarar();
 		MM.Datepicker();
