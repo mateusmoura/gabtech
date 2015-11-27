@@ -14,6 +14,10 @@ ________________________________________________________________________________
 	.flex-flow('row');
 	width: (165px * 4px);
 
+	.desktop({
+		width: 100%;
+	});
+
 	&--item {
 		.flex(1);
 		.border-radius(5px);
@@ -23,11 +27,23 @@ ________________________________________________________________________________
 		position: relative;
 		width: 155px;
 
+		.desktop({
+			margin-left: 30px;
+			padding: 28px 30px;
+			width: 270px;
+		});
+
 		span {
 			color: @cor-branco;
 			margin: 0;
 			font-family: @font-family-gotham-light;
 			font-size: 30px;
+			position: relative;
+			z-index: 2;
+
+			.desktop({
+				font-size: 36px;
+			});
 		}
 
 		p {
@@ -37,27 +53,51 @@ ________________________________________________________________________________
 			line-height: 11px;
 			max-width: 73px;
 			text-transform: uppercase;
+			position: relative;
+			z-index: 2;
+
+			.desktop({
+				font-size: 11px;
+				max-width: inherit;
+			});
 		}
 
 		.icon {
 			bottom: 0;
 			position: absolute;
 			right: 0;
+			z-index: 1;
 
 			&-sheet-c {
 				right: -10px;
+
+				.desktop({
+					right: 14px;
+				});
 			}
 
 			&-person-b {
 				right: -25px;
+
+				.desktop({
+					right: 14px;
+				});
 			}
 
 			&-clip-c {
 				right: -10px;
+
+				.desktop({
+					right: 16px;
+				});
 			}
 
 			&-sheet-d {
 				right: -10px;
+
+				.desktop({
+					right: 14px;
+				});
 			}
 		}
 

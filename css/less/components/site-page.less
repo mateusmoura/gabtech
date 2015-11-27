@@ -388,5 +388,52 @@ ________________________________________________________________________________
 	&__overview {
 		background-color: #11212f;
 		padding: 35px 0;
+
+		.desktop({
+			padding: 40px 0;
+		});
+	}
+
+	&__dash {
+		.block__aside {
+			padding: 0 10px;
+		}
+
+		.page__title {
+			.desktop({
+				padding-top: 8px;
+			});
+			.col-12 {
+				text-align: center;
+
+				.desktop({
+					text-align: left;
+				});
+			}
+
+			.block__menu--avatar {
+				height: 71px;
+				width: 71px;
+
+				.desktop({
+					margin-bottom: 40px;
+				});
+			}
+
+			h2 {
+				.desktop({
+					font-size: 36px;
+				});
+			}
+		}
+
+		.block__aside {
+			.block__notes--title {
+				h2, h3, h4 {
+					border: none;
+					padding-bottom: 5px;
+				}
+			}
+		}
 	}
 }

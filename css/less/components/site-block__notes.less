@@ -21,6 +21,11 @@ ________________________________________________________________________________
 			margin: 30px 0 20px 0;
 			padding: 0 0 15px 0;
 			width: 100%;
+
+			.desktop({
+				font-size: 22px;
+				padding: 0 0 24px 0;
+			});
 		}
 	}
 
@@ -29,11 +34,20 @@ ________________________________________________________________________________
 		margin-bottom: 30px;
 		padding: 0 0 20px 0;
 
+		.desktop({
+			margin-bottom: 40px;
+			padding: 0 100px 38px;
+		});
+
 		label {
 			color: #4c5761;
 			font-family: @font-family-gotham-medium;
 			font-size: 14px;
 			margin-bottom: 12px;
+
+			.desktop({
+				font-size: 15px;
+			});
 		}
 
 		textarea {
@@ -51,6 +65,10 @@ ________________________________________________________________________________
 			padding: 0 22px 0 0;
 			position: relative;
 
+			.desktop({
+				width: 52px;
+			});
+
 
 			&:after {
 				.transform(translateY(-50%));
@@ -66,6 +84,11 @@ ________________________________________________________________________________
 				height: 44px;
 				margin: 0;
 				width: 44px;
+
+				.desktop({
+					height: 34px;
+					width: 34px;
+				});
 			}
 		}
 
@@ -77,6 +100,11 @@ ________________________________________________________________________________
 			top: 5px;
 			overflow-x: scroll;
 
+			.desktop({
+				margin-left: 5px;
+				top: 0;
+			});
+
 			ul {
 				.flex-display;
 				.flex-flow('row');
@@ -84,6 +112,11 @@ ________________________________________________________________________________
 				padding: 0;
 				margin: 0;
 				width: 510px;
+
+				.desktop({
+					display: block;
+					width: auto;
+				});
 			}
 
 			li {
@@ -92,6 +125,10 @@ ________________________________________________________________________________
 				list-style: none;
 				padding: 0 5px;
 				position: relative;
+
+				.desktop({
+					float: left;
+				});
 			}
 
 			span {
@@ -111,6 +148,11 @@ ________________________________________________________________________________
 				height: 36px;
 				margin: 0;
 				width: 36px;
+
+				.desktop({
+					height: 34px;
+					width: 34px;
+				});
 			}
 		}
 	}
@@ -119,6 +161,11 @@ ________________________________________________________________________________
 		border-bottom: dashed 1px #dae0e2;
 		margin-bottom: 30px;
 
+		.desktop({
+			margin-bottom: 40px;
+			padding: 0 100px;
+		});
+
 		&-last {
 			border-bottom: none;
 		}
@@ -126,11 +173,21 @@ ________________________________________________________________________________
 		&-head {
 			margin-bottom: 25px;
 
+			.desktop({
+				margin-bottom: 27px;
+			});
+
 			.block__menu--avatar {
 				height: 36px;
 				margin: 0 7px 0 0;
 				float: left;
 				width: 36px;
+
+				.desktop({
+					margin-right: 10px;
+					height: 34px;
+					width: 34px;
+				});
 			}
 
 			a {
@@ -140,6 +197,10 @@ ________________________________________________________________________________
 				padding-bottom: 0;
 				padding-top: 0;
 				margin-top: 10px;
+
+				.desktop({
+					font-size: 15px;
+				});
 
 				&:hover {
 					color: #2e7bb6;
@@ -157,6 +218,10 @@ ________________________________________________________________________________
 				float: left;
 				margin-right: 10px;
 				text-transform: uppercase;
+
+				.desktop({
+					font-size: 15px;
+				});
 			}
 
 			.badge {
@@ -171,13 +236,27 @@ ________________________________________________________________________________
 		&-content {
 			padding-bottom: 30px;
 
+			.desktop({
+				padding-bottom: 47px;
+			});
+
 			p {
 				color: #56606b;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
+
+				.desktop({
+					font-size: 15px;
+				});
 			}
 		}
+	}
+
+	.btn-gray {
+		.desktop({
+			font-size: 15px;
+		});
 	}
 }

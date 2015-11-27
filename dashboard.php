@@ -5,14 +5,14 @@
 					<div class="page__title">
 						<div class="center">
 							<div class="row">
-								<div class="col-12 align-center">
+								<div class="col-12 col-m-10">
 									<a href="#this" class="block__menu--avatar">
 										<img src="img/fke/user-avatar.png">
 									</a>
 									<h2>Bom dia, Gustavo!</h2>
 								</div>
 
-								<div class="col-12">
+								<div class="col-12 col-m-2">
 									<a href="#this" class="btn btn-success btn-add">Adicionar</a>
 								</div>
 							</div>
@@ -56,7 +56,8 @@
 
 				<div class="page__content">
 					<div class="block__view">
-						<div class="row">
+						<div class="center">
+							<div class="row">
 							<div class="col-12 col-m-9">
 								<div class="block__notes">
 									<div class="block__notes--title">
@@ -145,7 +146,7 @@
 													<textarea class="form-style" col="5" row="10"></textarea>
 												</div>
 
-												<div class="col-5">
+												<div class="col-5 col-m-3">
 													<button type="submit" class="btn btn-full btn-blue">Criar lembrete</button>
 												</div>
 											</div>
@@ -257,6 +258,7 @@
 									</div>
 								</aside>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>
