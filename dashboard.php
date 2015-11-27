@@ -146,7 +146,7 @@
 												</div>
 
 												<div class="col-5">
-													<button type="submit" class="btn btn-blue">Criar lembrete</button>
+													<button type="submit" class="btn btn-full btn-blue">Criar lembrete</button>
 												</div>
 											</div>
 										</form>
@@ -155,7 +155,7 @@
 									<div class="block__notes--list">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-6">
+												<div class="col-7">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -165,7 +165,7 @@
 													<span class="badge">NOVO</span>
 												</div>
 
-												<div class="col-6">
+												<div class="col-5 align-right">
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
 											</div>
@@ -183,7 +183,7 @@
 									<div class="block__notes--list">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-6">
+												<div class="col-7">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -191,7 +191,7 @@
 													<h4>03/11/2015</h4>
 												</div>
 
-												<div class="col-6">
+												<div class="col-5 align-right">
 													<a href="#this" class="btn btn-link">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
@@ -207,10 +207,10 @@
 										</div>
 									</div>
 
-									<div class="block__notes--list">
+									<div class="block__notes--list block__notes--list-last">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-6">
+												<div class="col-7">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -218,7 +218,7 @@
 													<h4>03/11/2015</h4>
 												</div>
 
-												<div class="col-6">
+												<div class="col-5 align-right">
 													<a href="#this" class="btn btn-link">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
