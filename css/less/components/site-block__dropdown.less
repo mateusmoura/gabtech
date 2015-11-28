@@ -1,0 +1,88 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Dropdown
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__DROPDOWN
+____________________________________________________________________________________ */
+
+.block__dropdown {
+	position: relative;
+
+	&.block__dropdown--open {
+		.btn-dropdown {
+			background-color: #00a060;
+			color: #19623e;
+			position: relative;
+			z-index: 901;
+		}
+	}
+
+	.btn-dropdown {
+		padding: 17px 10px;
+
+		.desktop({
+			padding: 12px 10px;
+		});
+	}
+
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		.desktop({
+			text-align: center;
+		});
+
+		&:first-child {
+			a {
+				.border-radius(5px 5px 0 0);
+				border-top: 0;
+			}
+		}
+	}
+
+	&--options {
+		.border-radius(5px);
+		display: none;
+		overflow: hidden;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 901;
+
+		&:before {
+			.border-radius(5px);
+			.transform(rotate(-45deg));
+			border: solid 10px #00b86f;
+			bottom: -12px;
+			content: " ";
+			display: block;
+			height: 5px;
+			margin: 0 auto;
+			position: relative;
+			width: 5px;
+		}
+
+		a {
+			background-color: #00b86f;
+			border-top: solid 1px #009f5f;
+			color: @cor-branco;
+			display: block;
+			font-family: @font-family-gotham-medium;
+			font-size: 15px;
+			padding: 24px 0;
+			width: 100%;
+
+			.desktop({
+				padding: 18px 0;
+			});
+		}
+	}
+}

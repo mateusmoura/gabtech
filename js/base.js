@@ -51,7 +51,8 @@ var site = {
 		var _collapse				= $('.block__collapse'),
 			_blockFilterForm		= $('.block__filter'),
 			_autocomplete			= $('.autocomplete'),
-			_tooltip				= $('.tooltip:not([disabled]), .tooltip__title:not([disabled])');
+			_tooltip				= $('.tooltip:not([disabled]), .tooltip__title:not([disabled])'),
+			_dropdown				= $('.block__dropdown');
 
 		MM.Mascarar();
 		MM.Datepicker();
@@ -74,6 +75,10 @@ var site = {
 
 		for (var i = _tooltip.length - 1; i >= 0; i--) {
 			MM.Tooltip(_tooltip.eq(i));
+		};
+
+		for (var i = _dropdown.length - 1; i >= 0; i--) {
+			MM.Dropdown(_dropdown.eq(i));
 		};
 
 		$('form.validate').each(function(index, el) {

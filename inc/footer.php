@@ -41,6 +41,7 @@
 		<script src="js/Modulos/MM.Datepicker.js"></script>
 		<script src="js/Modulos/MM.Menu.js"></script>
 		<script src="js/Modulos/MM.Tooltip.js"></script>
+		<script src="js/Modulos/MM.Dropdown.js"></script>
 
 		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
 		<script>

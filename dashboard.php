@@ -13,7 +13,19 @@
 								</div>
 
 								<div class="col-12 col-m-2">
-									<a href="#this" class="btn btn-success btn-add">Adicionar</a>
+									<div class="block__dropdown">
+										<a href="#this" class="btn btn-success btn-dropdown btn-add">Adicionar</a>
+
+										<div class="block__dropdown--options">
+											<ul>
+												<li><a href="#this">Demanda</a></li>
+												<li><a href="#this">Município</a></li>
+												<li><a href="#this">Contato</a></li>
+												<li><a href="#this">Ligação</a></li>
+												<li><a href="#this">Visita</a></li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
