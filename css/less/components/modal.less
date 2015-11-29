@@ -95,8 +95,8 @@ ________________________________________________________________ */
 
 		&--form {
 			.desktop({
-				margin: 0 auto;
-				width: 310px;
+				//margin: 0 auto;
+				//width: 310px;
 			});
 
 			span {
@@ -110,6 +110,21 @@ ________________________________________________________________ */
 				.desktop({
 					font-size: 13px;
 					margin-bottom: 10px;
+				});
+			}
+
+			p {
+				color: #7a8796;
+				display: block;
+				font-size: 12px;
+				font-weight: 400;
+				margin: 13px 0 0 0;
+				text-align: center;
+
+				.desktop({
+					font-size: 13px;
+					margin-top: 18px;
+					text-align: left;
 				});
 			}
 
@@ -132,11 +147,29 @@ ________________________________________________________________ */
 					}
 				}
 			}
+
+			.form-style {
+				background-color: @cor-branco;
+				margin-bottom: 20px;
+			}
+
+			label {
+				display: inline-block;
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+
+			span.error {
+				color: #b53641;
+				display: none !important;
+				display: inline-block;
+				margin: 0 0 0 10px;
+			}
 		}
 	}
 
 	&__default {
-		.btn-success {
+		.btn-success, .btn-blue {
 			margin-top: 30px;
 			font-size: 15px;
 			padding: 22px 10px;
@@ -144,6 +177,10 @@ ________________________________________________________________ */
 			.desktop({
 				padding: 20px 10px;
 			});
+		}
+
+		.btn-blue {
+			margin-top: 0;
 		}
 	}
 }

@@ -256,11 +256,13 @@ Module('MM.ValidarFormularios', function (ValidarFormularios) {
 			showErrors: function (errors) {
 				var $elem = this.currentElements;
 
+				console.log($elem);
+
 				// if(!$elem.siblings('div.error').length){
 				// 	$elem.parent().siblings('div.error').css('top', $elem[0].offsetParent.offsetTop);
 				// }
 
-				this.defaultShowErrors();
+				this.defaultShowErrors($elem);
 
 				for (var i = $elem.length - 1; i >= 0; i--) {
 					if( $( $elem[i] ).hasClass("valid") ){
