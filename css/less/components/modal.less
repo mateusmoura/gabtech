@@ -34,11 +34,20 @@ ________________________________________________________________ */
 		border-bottom: solid 1px #cedadc;
 		padding: 10px 11px 17px;
 
+		.desktop({
+			padding: 17px 30px 21px;
+		});
+
 		h1, h2, h3, h4 {
 			color: #3c454c;
 			font-family: @font-family-gotham-light;
 			font-size: 16px;
 			margin: 13px 0 0 0;
+
+			.desktop({
+				font-size: 20px;
+				margin: 8px 0 0 0;
+			});
 		}
 
 		.btn-close {
@@ -49,51 +58,78 @@ ________________________________________________________________ */
 	&__content {
 		padding: 37px 16px 30px;
 
-		h1, h2, h3 {
-			color: #3c454c;
-			font-family: @font-family-gotham-light;
-			font-size: 21px;
-			margin: 0 0 18px 0;
+		.desktop({
+			padding: 60px 0 86px;
+		});
+
+		&--intro {
+			h1, h2, h3 {
+				color: #3c454c;
+				font-family: @font-family-gotham-light;
+				font-size: 21px;
+				margin: 0 0 18px 0;
+
+				.desktop({
+					font-size: 30px;
+				});
+			}
+
+			strong {
+				font-family: @font-family-gotham-medium;
+				color: #2eb773;
+				font-weight: 500;
+			}
+
+			p {
+				color: #56606b;
+				font-size: 14px;
+				font-weight: 400;
+				margin-bottom: 38px;
+
+				.desktop({
+					font-size: 16px;
+					margin-bottom: 63px;
+				});
+			}
 		}
 
-		strong {
-			font-family: @font-family-gotham-medium;
-			color: #2eb773;
-			font-weight: 500;
-		}
+		&--form {
+			.desktop({
+				margin: 0 auto;
+				width: 310px;
+			});
 
-		p {
-			color: #56606b;
-			font-size: 14px;
-			font-weight: 400;
-			margin-bottom: 38px;
-		}
+			span {
+				color: #7a8796;
+				display: block;
+				font-size: 12px;
+				font-weight: 400;
+				margin-bottom: 19px;
+				text-align: center;
 
-		span {
-			color: #7a8796;
-			display: block;
-			font-size: 12px;
-			font-weight: 400;
-			margin-bottom: 19px;
-			text-align: center;
-		}
+				.desktop({
+					font-size: 13px;
+					margin-bottom: 10px;
+				});
+			}
 
-		.radio {
-			label {
-				line-height: 18px;
-				padding-left: 38px;
-
-				&:before {
-					height: 18px;
+			.radio {
+				label {
 					line-height: 18px;
-					min-width: 18px;
-				}
+					padding-left: 38px;
 
-				&:after {
-					height: 10px;
-					left: 4px;
-					top: 4px;
-					width: 10px;
+					&:before {
+						height: 18px;
+						line-height: 18px;
+						min-width: 18px;
+					}
+
+					&:after {
+						height: 10px;
+						left: 4px;
+						top: 4px;
+						width: 10px;
+					}
 				}
 			}
 		}
@@ -104,6 +140,10 @@ ________________________________________________________________ */
 			margin-top: 30px;
 			font-size: 15px;
 			padding: 22px 10px;
+
+			.desktop({
+				padding: 20px 10px;
+			});
 		}
 	}
 }
