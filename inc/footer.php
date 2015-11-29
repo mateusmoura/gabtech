@@ -11,7 +11,7 @@
 						</div>
 
 						<div class="col-6 align-right">
-							<a href="#this" class="btn btn-link">Precisa de ajuda?</a>
+							<a href="inc/modal-default-1.php" class="btn btn-link btn-modal">Precisa de ajuda?</a>
 						</div>
 					</div>
 				</div>

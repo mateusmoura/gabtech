@@ -56,6 +56,7 @@ var site = {
 
 		MM.Mascarar();
 		MM.Datepicker();
+		MM.Modal();
 		MM.ResponsiveTables({
 			addFocusBtn					: false,
 			addDisplayAllBtn			: false

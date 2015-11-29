@@ -4,9 +4,9 @@
 * @Version: 1.0
 */
 
-Module('CNA.Modal', function(Modal){
-	Modal.fn.initialize = function($callfn){
-		this.modal = $('#modal').length ? $('#modal') : $('<div id="modal"><a href="#this" class="btn-fechar"><i class="icon icon-fechar2"></i></a><div class="conteudo"></div></div>').appendTo($('body'));
+Module('MM.Modal', function (Modal) {
+	Modal.fn.initialize = function ($callfn) {
+		this.modal = $('#modal').length ? $('#modal') : $('<div id="modal" class="modal"><div class="modal__container"></div></div>').appendTo($('body'));
 		this.overlay = $('#overlay').length ? $('#overlay') : $('<div id="overlay"></div>').appendTo($('body'));
 		this.call = $callfn;
 
@@ -15,32 +15,26 @@ Module('CNA.Modal', function(Modal){
 	/**
 	* Efetua o AJAX do conteúdo da modal.
 	*/
-	Modal.fn.ajax = function($url, $evt){
+	Modal.fn.ajax = function ($url, $evt) {
 		var _this = this;
 
 		$.ajax({
 			url: $url,
 			cache: true,
-			beforeSend: function(){
+			beforeSend: function () {
 				//oTalk.loading.add(oTalk.overlay).fadeIn();
 				_this.overlay.fadeIn();
 			},
-			error: function(jqXHR, textStatus, errorThrown){
+			error: function (jqXHR, textStatus, errorThrown) {
 				//console.log( "ERROR: ", jqXHR, textStatus, errorThrown );
 				//oTalk.loading.add(oTalk.overlay).fadeOut();
 				_this.overlay.fadeOut();
 			},
-			success: function( response ){
+			success: function (response) {
 				//oTalk.loading.fadeOut();
-				$(response).appendTo(_this.modal.find('.conteudo').empty());
+				$(response).appendTo(_this.modal.find('.modal__container').empty());
 
 				_this.posicionarModal($evt);
-				//oTalk.util.radio();
-				//oTalk.util.checkbox();
-
-				// if($('body').hasClass('ie7') || $('body').hasClass('ie8')){
-				// 	$('input[placeholder], textarea[placeholder]', this.modal).placeholder();
-				// }
 
 				if( _this.call != undefined ){
 					_this.call();
@@ -52,10 +46,10 @@ Module('CNA.Modal', function(Modal){
 	/**
 	* Centraliza a MODAL na página
 	*/
-	Modal.fn.posicionarModal = function($evt, $m){
+	Modal.fn.posicionarModal = function ($evt, $m) {
 		var _modal = $m != undefined ? $m : this.modal,
 			_left =  $(window).width() - _modal.width(),
-			_top = $evt.pageY - _modal.height();
+			_top = $evt.pageY - (_modal.height() + 50);
 
 		_left = _left/2;
 
@@ -75,8 +69,8 @@ Module('CNA.Modal', function(Modal){
 		$('.btn-modal')
 			.on('click', this.onButtonClick.bind(this));
 
-		this.modal.find('.btn-fechar')
-			.on('click', this.onButtonClose.bind(this));
+		this.modal
+			.on('click', '.btn-close', this.onButtonClose.bind(this));
 
 		this.overlay
 			.on('click', this.onButtonClose.bind(this));

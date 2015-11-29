@@ -240,4 +240,22 @@ ________________________________________________________________________________
 			}
 		}
 	}
+	
+	&--bordered {
+		.border-radius(10px);
+		border: solid 1px #cedadc;
+
+		.desktop({
+			.border-radius(5px);
+		});
+
+		&-item {
+			border-top: solid 1px #cedadc;
+			padding: 24px 24px 20px;
+
+			&:first-child {
+				border-top: 0;
+			}
+		}
+	}
 }
