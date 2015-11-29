@@ -46,6 +46,7 @@
 		<link rel="stylesheet" href="css/jQuery.ui-autocomplete.css">
 		<link rel="stylesheet" href="css/jQuery.ui-datepicker.css">
 		<link rel="stylesheet" href="css/jQuery.tooltipster.css">
+		<link rel="stylesheet" href="css/jQuery.owl.carousel.css">
 		<link rel="stylesheet" href="css/base.css" media="screen" />
 		<!--[if IE]><link rel="stylesheet" href="css/ie.css" media="screen" /><![endif]-->
 

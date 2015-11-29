@@ -25,7 +25,7 @@ Module('MM.Tooltip', function (Tooltip) {
 			cache: true
 		});
 
-		if($.mask === undefined){
+		if(jQuery.fn.tooltipster === undefined){
 			$.when(
 				$.getScript(base_url + "js/plugins/jQuery.tooltipster.min.js"),
 				$.Deferred(function(deferred){

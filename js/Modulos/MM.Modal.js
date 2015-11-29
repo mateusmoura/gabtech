@@ -9,6 +9,7 @@ Module('MM.Modal', function (Modal) {
 		this.modal = $('#modal').length ? $('#modal') : $('<div id="modal" class="modal"><div class="modal__container"></div></div>').appendTo($('body'));
 		this.overlay = $('#overlay').length ? $('#overlay') : $('<div id="overlay"></div>').appendTo($('body'));
 		this.call = $callfn;
+		this.modalClass = '';
 
 		this.addEventListeners();
 	};
@@ -53,9 +54,11 @@ Module('MM.Modal', function (Modal) {
 
 		_left = _left/2;
 
+		this.modal.addClass(this.modalClass);
+
 		_modal.css({
 			left: _left,
-			top: _top + 35
+			top: isNaN(top) ? 15 : _top + 35
 		}).fadeIn();
 
 		$("html, body").animate({
@@ -79,6 +82,8 @@ Module('MM.Modal', function (Modal) {
 	* Evento de CLICK do BOTÃO para mostrar a modal.
 	*/
 	Modal.fn.onButtonClick = function(event){
+		this.modalClass = event.currentTarget.rel;
+
 		if(event.currentTarget.rel != "" && event.currentTarget.cached == true){
 			this.overlay.fadeIn();
 			this.posicionarModal(event, $('div.modal.' + this.rel));
@@ -92,11 +97,10 @@ Module('MM.Modal', function (Modal) {
 	* Evento de CLICK do BOTÃO para fechar a modal.
 	*/
 	Modal.fn.onButtonClose = function(event){
-		var _this = this;
-
-		_this.modal.fadeOut(function(){
-			_this.overlay.fadeOut();
-		});
+		this.modal.fadeOut(function(){
+			this.overlay.fadeOut();
+			this.modal.removeClass(this.modalClass);
+		}.bind(this));
 
 		return false;
 	};

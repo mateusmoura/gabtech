@@ -21,6 +21,8 @@
 		<div id="loading"></div>
 		<div id="overlay"></div>
 
+		<a href="inc/modal-default-3.php" rel="modal__introduction" class="btn-introduction btn-modal"></a>
+
 		<script>
 			base_url = "";
 		</script>
@@ -42,6 +44,7 @@
 		<script src="js/Modulos/MM.Menu.js"></script>
 		<script src="js/Modulos/MM.Tooltip.js"></script>
 		<script src="js/Modulos/MM.Dropdown.js"></script>
+		<script src="js/Modulos/MM.Carousel.js"></script>
 
 		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
 		<script>

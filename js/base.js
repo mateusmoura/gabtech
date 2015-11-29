@@ -93,6 +93,8 @@ var site = {
 
 		this.closeMessages();
 		this.selectAvatar();
+
+		$('.btn-introduction').trigger('click');
 	},
 	/*
 	* Funcionalidade de troca de passo na página de Cadastro.
