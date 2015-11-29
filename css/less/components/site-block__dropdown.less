@@ -68,6 +68,7 @@ ________________________________________________________________________________
 			margin: 0 auto;
 			position: relative;
 			width: 5px;
+			z-index: 1;
 		}
 
 		a {
@@ -78,7 +79,13 @@ ________________________________________________________________________________
 			font-family: @font-family-gotham-medium;
 			font-size: 15px;
 			padding: 24px 0;
+			position: relative;
 			width: 100%;
+			z-index: 2;
+
+			&:hover, &:focus, &:active {
+				background-color: #00a060;
+			}
 
 			.desktop({
 				padding: 18px 0;

@@ -166,6 +166,18 @@
 									</div>
 
 									<div class="block__notes--list">
+										<div class="block__panel">
+											<div class="block__panel--empty">
+												<div>
+													<i class="icon icon-reminder-b"></i>
+												</div>
+
+												<p>Nenhum lembrete cadastrado</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="block__notes--list">
 										<div class="block__notes--list-head">
 											<div class="row">
 												<div class="col-7">

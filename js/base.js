@@ -91,6 +91,7 @@ var site = {
 		MM.Menu($('header'));
 
 		this.closeMessages();
+		this.selectAvatar();
 	},
 	/*
 	* Funcionalidade de troca de passo na página de Cadastro.
@@ -125,6 +126,21 @@ var site = {
 				_parent.remove();
 			}, 800)
 		});
+	},
+	/*
+	* Funcionalidade para selecionar um avatar no block__notes.
+	*/
+	selectAvatar: function () {
+		var _block__notesAvatars = $('.block__notes--avatars');
+
+		$('.block__menu--avatar', _block__notesAvatars)
+			.on('click', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+
+				$('.block__menu--avatar-selected', _block__notesAvatars).removeClass('block__menu--avatar-selected');
+				$(this).addClass('block__menu--avatar-selected');
+			});
 	}
 }
 
