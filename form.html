@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-br" class="no-js lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>NossoGabinete</title>
+		
+		<!-- meta -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/ico/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="img/ico/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/ico/manifest.json">
+		<link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'>
+		<meta name="description" content="">
+		<meta name="author" content="https://br.linkedin.com/in/mateusmouraprofile" />
+		<link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon" />
+
+		<!-- PARA QUE A MEDIA QUERIES FUNCIONE NO IE8 -->
+		<!--[if lt IE 9]>
+		<script src="js/plugins/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/rwd-table.css">
+		<link rel="stylesheet" href="css/jQuery.ui-autocomplete.css">
+		<link rel="stylesheet" href="css/jQuery.ui-datepicker.css">
+		<link rel="stylesheet" href="css/jQuery.tooltipster.css">
+		<link rel="stylesheet" href="css/base.css" media="screen" />
+		<!--[if IE]><link rel="stylesheet" href="css/ie.css" media="screen" /><![endif]-->
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+		<![endif]-->
+	</head>
+<!--[if !IE]>  -->
+	<body>
+<!-- <![endif]-->
+<!--[if IE 9]>
+	<body class="ie9">
+<![endif]-->
+<!--[if IE 10]>
+	<body class="ie10">
+<![endif]-->
+		<div id="global">
+			<header class="header">
+				<div class="center">
+					<div class="row">
+						<div class="col-6 col-m-8">
+							<h1 class="header__logo--form">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<i class="icon icon-clip-active"></i>
+									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
+								</a>
+							</h1>
+						</div>
+
+						<div class="col-6 col-m-4 align-right">
+							<label class="header__saved"><i class="icon icon-check-b"></i> Salvo automáticamento</label>
+							<button type="button" class="btn btn-link btn-icon btn-close-b"><i class="icon icon-close-b"></i></button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main role="main" class="page__form">
+				<div class="page__form--header">
+					<div class="center">
+						<div class="row">
+							<div class="col-12">
+								<h2>Nova Demanda</h2>
+
+								<div class="block__message animated">
+									<div class="row">
+										<div class="col-11">
+											<div class="block__message--text">
+												<p>Dados salvos com sucesso.</p>
+											</div>
+										</div>
+
+										<div class="col-1">
+											<a href="#this" class="btn btn-link btn-icon btn-close" title="Fechar"><i class="icon icon-close-c"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page__form--content">
+					<div class="center">
+						<div class="block__collapse block__collapse--open" data-closeothers="true">
+							<div class="row">
+								<div class="col-12 col-m-4">
+									<div class="block__collapse--title">
+										<a href="#this"><i class="bullet bullet-num border-blue">1</i> Informações gerais <span class="btn-edit">Editar</span></a>
+									</div>
+								</div>
+
+								<div class="col-12 col-m-8">
+									<div class="block__collapse--content">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label class="no-margin-top">Tipo de cadastro</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<div class="radio">
+														<input type="radio" name="tipo" id="dado-recurso" checked="checked">
+														<label for="dado-recurso" class="sublabel">Recurso</label>
+													</div>
+
+													<div class="radio">
+														<input type="radio" name="tipo" id="dado-outros">
+														<label for="dado-outros" class="sublabel">Outros</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Título<span>Campo obrigatório</span></label>
+
+													<div class="icon-question tooltip">
+														<p>Descreva brevemente do que se trata esta demanda.</p>
+														<p>Exemplos:</p>
+														<ul>
+															<li><p><strong>Construção de quadra na praça São José</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Data de entrada</label>
+												</div>
+
+												<div class="col-12 col-m-3">
+													<div class="input-icon right">
+														<i class="icon icon-calendar"></i>
+														<input type="text" name="label26" id="dado-label26" class="form-style required mask-date datepicker" placeholder="Ex: 15/08/2015">
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Data Limite</label>
+
+													<div class="icon-question tooltip">
+														<p>Descreva brevemente do que se trata esta demanda.</p>
+														<p>Exemplos:</p>
+														<ul>
+															<li><p><strong>Construção de quadra na praça São José</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+															<li><p><strong>Compra de ambulância para prefeitura.</strong></p></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="col-12 col-m-3">
+													<div class="input-icon right">
+														<i class="icon icon-calendar"></i>
+														<input type="text" name="label27" id="dado-label27" class="form-style required mask-date datepicker" placeholder="Ex: 15/08/2015">
+													</div>
+												</div>
+											</div>
+
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
+													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="block__collapse" data-closeothers="true">
+							<div class="row">
+								<div class="col-12 col-m-4">
+									<div class="block__collapse--title">
+										<a href="#this"><i class="bullet bullet-num border-blue">2</i> Tipo de demanda</a>
+									</div>
+								</div>
+
+								<div class="col-12 col-m-8">
+									<div class="block__collapse--content">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Tipo</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<select name="label17" id="dado-label17" class="form-style required">
+														<option value="">Selecione</option>
+														<option>Valor 1</option>
+														<option>Valor 2</option>
+														<option>Valor 3</option>
+													</select>
+
+													<a href="#this" class="btn-more">+ Incluir novo tipo</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Área de interesse</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<select name="label18" id="dado-label18" class="form-style required">
+														<option value="">Selecione</option>
+														<option>Valor 1</option>
+														<option>Valor 2</option>
+														<option>Valor 3</option>
+													</select>
+
+													<a href="#this" class="btn-more">+ Incluir nova área de interesse</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Orgão responsável</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<select name="label19" id="dado-label19" class="form-style required">
+														<option value="">Selecione</option>
+														<option>Valor 1</option>
+														<option>Valor 2</option>
+														<option>Valor 3</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label class="no-margin-top">Finalidade do recurso</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<div class="radio">
+														<input type="radio" name="tipo" id="dado-aquisicao" checked="checked">
+														<label for="dado-aquisicao" class="sublabel">Aquisição de bens</label>
+													</div>
+
+													<div class="radio">
+														<input type="radio" name="tipo" id="dado-projetos">
+														<label for="dado-projetos" class="sublabel">Projetos e obras</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Valor do recurso</label>
+												</div>
+
+												<div class="col-12 col-m-3">
+													<input type="text" class="form-style mask-money required" placeholder="">
+												</div>
+											</div>
+
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
+													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="block__collapse" data-closeothers="true">
+							<div class="row">
+								<div class="col-12 col-m-4">
+									<div class="block__collapse--title">
+										<a href="#this"><i class="bullet bullet-num border-blue">3</i> Solicitante</a>
+									</div>
+								</div>
+
+								<div class="col-12 col-m-8">
+									<div class="block__collapse--content">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Solicitante</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
+
+													<a href="#this" class="btn-more">+ Adicionar novo solicitante</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Município</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Interessado</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
+
+													<a href="#this" class="btn-more">+ Adicionar novo interessado</a>
+												</div>
+											</div>
+
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
+													<button type="submit" class="btn btn-blue btn-full btn-next"><i class="icon icon-arrow-bottom-b"></i>Continuar</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="block__collapse" data-closeothers="true">
+							<div class="row">
+								<div class="col-12 col-m-4">
+									<div class="block__collapse--title">
+										<a href="#this"><i class="bullet bullet-num border-blue">4</i> Informações adicionais</a>
+									</div>
+								</div>
+
+								<div class="col-12 col-m-8">
+									<div class="block__collapse--content">
+										<form class="validate" action="#url" method="POST" data-ajax="true" data-callfn="registerChangeStep">
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Responsável</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<input type="text" class="form-style required" placeholder="">
+
+													<a href="#this" class="btn-more">+ Adicionar outro responsável</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Informações adicionais</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<textarea class="form-style" col="5" row="10"></textarea>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-m-3">
+													<label>Anexos</label>
+												</div>
+
+												<div class="col-12 col-m-7">
+													<div class="block__list--archives">
+														<ul>
+															<li>
+																<div class="block__list--archives-item">
+																	<div class="col-2 col-m-2">
+																		<span class="block__list--archives-ext">DOC</span>
+																	</div>
+
+																	<div class="col-9 col-m-9">
+																		<p class="block__list--archives-name">nome-do-arquivo.doc</p>
+																	</div>
+
+																	<div class="col-1 col-m-1">
+																		<a href="#this" class="btn btn-link btn-icon btn-remove"><i class="icon icon-close-b"></i></a>
+																	</div>
+																</div>
+															</li>
+
+															<li>
+																<div class="block__list--archives-item">
+																	<div class="col-2 col-m-2">
+																		<span class="block__list--archives-ext">PDF</span>
+																	</div>
+
+																	<div class="col-9 col-m-9">
+																		<p class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</p>
+																	</div>
+
+																	<div class="col-1 col-m-1">
+																		<a href="#this" class="btn btn-link btn-icon btn-remove"><i class="icon icon-close-b"></i></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+
+													<a href="#this" class="btn-more">+ Anexar novo arquivo</a>
+												</div>
+											</div>
+
+											<div class="row row-relative">
+												<div class="message-to-save col-m-3">
+													<p>Aperte Enter</p>
+												</div>
+												<div class="col-12 col-m-3">
+													<button type="submit" class="btn btn-blue btn-full btn-save"><i class="icon icon-check"></i>Salvar</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="center">
+					<div class="row">
+						<div class="col-6">
+							<h2 class="footer__logo">
+								<a href="#this">
+									<i class="icon icon-clip-active"></i> 
+									<img src="img/lgo/footer__logo.png" alt="NossoGabinete">
+								</a>
+							</h2>
+						</div>
+
+						<div class="col-6 align-right">
+							<a href="inc/modal-default-2.php" class="btn btn-link btn-modal">Precisa de ajuda?</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="loading"></div>
+		<div id="overlay"></div>
+
+		<a href="inc/modal-default-3.php" rel="modal__introduction" class="btn-introduction btn-modal"></a>
+
+		<script>
+			base_url = "/";
+		</script>
+
+		<script src="js/plugins/module.js"></script>
+		<script src="js/plugins/jQuery-1.11.0.min.js"></script>
+
+		<!-- PLUGINS -->
+		<script src="js/plugins/jQuery.maskinput.js"></script>
+		<script src="js/plugins/jQuery.onlyNumber.js"></script>
+		<script src="js/plugins/jQuery.maskMoney.js"></script>
+		<script src="js/plugins/jQuery.upgradebrowsers.min.js"></script>
+		<script src="js/plugins/jQuery.validate.js"></script>
+		<script src="js/plugins/jQuery.form.js"></script>
+		<script src="js/plugins/jQuery.rwd-table.js"></script>
+		<script src="js/plugins/jQuery.ui-autocomplete.js"></script>
+		<script src="js/plugins/jQuery.ui-datepicker.js"></script>
+		<script src="js/plugins/jQuery.tooltipster.min.js"></script>
+		<script src="js/plugins/jQuery.owl.carousel.js"></script>
+		<!-- END PLUGINS -->
+		
+		<script src="js/Modulos/MM.Mascarar.js"></script>
+		<script src="js/Modulos/MM.Mensagem.js"></script>
+		<script src="js/Modulos/MM.Modal.js"></script>
+		<script src="js/Modulos/MM.VerificarNavegador.js"></script>
+		<script src="js/Modulos/MM.ValidarFormularios.js"></script>
+		<script src="js/Modulos/MM.Collapsible.js"></script>
+		<script src="js/Modulos/MM.Feedback.js"></script>
+		<script src="js/Modulos/MM.BlockFilterForm.js"></script>
+		<script src="js/Modulos/MM.ResponsiveTables.js"></script>
+		<script src="js/Modulos/MM.InputMultipleSelect.js"></script>
+		<script src="js/Modulos/MM.Datepicker.js"></script>
+		<script src="js/Modulos/MM.Menu.js"></script>
+		<script src="js/Modulos/MM.Tooltip.js"></script>
+		<script src="js/Modulos/MM.Dropdown.js"></script>
+		<script src="js/Modulos/MM.Carousel.js"></script>
+
+		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('input[placeholder], textarea[placeholder]').placeholder();
+			});
+		</script><![endif]-->
+
+		<script src="js/base.js"></script>
+	</body>
+</html>

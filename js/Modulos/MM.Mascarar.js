@@ -20,6 +20,7 @@ Module('MM.Mascarar', function(Mascarar){
 		});
 
 		if($.mask === undefined){
+			console.log(base_url + "js/plugins/jQuery.maskinput.js");
 			$.when(
 				$.getScript(base_url + "js/plugins/jQuery.maskinput.js"),
 				$.getScript(base_url + "js/plugins/jQuery.onlyNumber.js"),

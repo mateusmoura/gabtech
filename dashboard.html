@@ -1,0 +1,707 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-br" class="no-js lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>NossoGabinete</title>
+		
+		<!-- meta -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/ico/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="img/ico/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/ico/manifest.json">
+		<link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'>
+		<meta name="description" content="">
+		<meta name="author" content="https://br.linkedin.com/in/mateusmouraprofile" />
+		<link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon" />
+
+		<!-- PARA QUE A MEDIA QUERIES FUNCIONE NO IE8 -->
+		<!--[if lt IE 9]>
+		<script src="js/plugins/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/rwd-table.css">
+		<link rel="stylesheet" href="css/jQuery.ui-autocomplete.css">
+		<link rel="stylesheet" href="css/jQuery.ui-datepicker.css">
+		<link rel="stylesheet" href="css/jQuery.tooltipster.css">
+		<link rel="stylesheet" href="css/jQuery.owl.carousel.css">
+		<link rel="stylesheet" href="css/base.css" media="screen" />
+		<!--[if IE]><link rel="stylesheet" href="css/ie.css" media="screen" /><![endif]-->
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+		<![endif]-->
+	</head>
+<!--[if !IE]>  -->
+	<body>
+<!-- <![endif]-->
+<!--[if IE 9]>
+	<body class="ie9">
+<![endif]-->
+<!--[if IE 10]>
+	<body class="ie10">
+<![endif]-->
+		<div id="global">
+			<header class="header">
+				<div class="center">
+					<div class="row">
+						<div class="col-6 col-m-8">
+							<h1 class="header__logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<i class="icon icon-clip-active"></i>
+									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
+								</a>
+							</h1>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links">
+									<a href="dashboard.php">Visão Geral</a>
+									<a href="#this">Demandas</a>
+									<a href="#this">Municípios</a>
+									<a href="#this">Contatos</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this">Mais <i class="icon icon-arrow-bottom"></i> <i class="icon icon-arrow-top-active"></i></a>
+
+										<ul>
+											<li><a href="#this">Ligações</a></li>
+											<li><a href="#this">Visitas</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+
+						<div class="col-6 col-m-4 align-right">
+							<button type="button" class="btn btn-menu"><span>Menu</span></button>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links block__menu--links-avatar">
+									<a href="#this"><i class="icon icon-person"></i> Gerenciar gabinete</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this" class="block__menu--avatar">
+											<img src="img/fke/user-avatar.png">
+										</a>
+
+										<ul>
+											<li><a href="#this">Editar conta</a></li>
+											<li><a href="#this" class="red">Sair</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block__menu">
+					<div class="block__menu--wrap">
+						<div class="block__menu--header">
+							<h4 class="block__menu--logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<img src="img/lgo/menu__logo.svg" alt="NossoGabinete">
+								</a>
+							</h4>
+						</div>
+
+						<div class="block__menu--content">
+							<nav class="block__menu--links">
+								<a href="#this">Visão Geral</a>
+								<a href="#this">Demandas</a>
+								<a href="#this">Municípios</a>
+								<a href="#this">Contatos</a>
+								<a href="#this">Ligações</a>
+								<a href="#this">Visitas</a>
+							</nav>
+						</div>
+
+						<div class="block__menu--footer">
+							<figure class="block__menu--avatar">
+								<img src="img/fke/user-avatar.png">
+							</figure>
+
+							<nav class="block__menu--links">
+								<a href="#this">Gerenciar gabinete</a>
+								<a href="#this">Editar conta</a>
+								<a href="#this">Sair</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main role="main" class="page__dash">
+				<div class="page__header">
+					<div class="page__title">
+						<div class="center">
+							<div class="row">
+								<div class="col-12 col-m-10">
+									<a href="#this" class="block__menu--avatar">
+										<img src="img/fke/user-avatar.png">
+									</a>
+									<h2>Bom dia, Gustavo!</h2>
+								</div>
+
+								<div class="col-12 col-m-2">
+									<div class="block__dropdown">
+										<a href="#this" class="btn btn-success btn-dropdown btn-add">Adicionar</a>
+
+										<div class="block__dropdown--options">
+											<ul>
+												<li><a href="#this">Demanda</a></li>
+												<li><a href="#this">Município</a></li>
+												<li><a href="#this">Contato</a></li>
+												<li><a href="#this">Ligação</a></li>
+												<li><a href="#this">Visita</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page__overview">
+					<div class="center">
+						<div class="row">
+							<div class="col-12 col-overflow-scroll">
+								<div class="block__overview">
+									<div class="block__overview--item block__overview--item-green">
+										<span>528</span>
+										<p>Demandas cadastradas</p>
+										<i class="icon icon-sheet-c"></i>
+									</div>
+
+									<div class="block__overview--item block__overview--item-black">
+										<span>698</span>
+										<p>Contatos Cadastrados</p>
+										<i class="icon icon-person-b"></i>
+									</div>
+
+									<div class="block__overview--item block__overview--item-purple">
+										<span>528</span>
+										<p>Arquivos Anexados</p>
+										<i class="icon icon-clip-c"></i>
+									</div>
+
+									<div class="block__overview--item block__overview--item-blue">
+										<span>529</span>
+										<p>Etiquetas Geradas</p>
+										<i class="icon icon-sheet-d"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page__content">
+					<div class="block__view">
+						<div class="center">
+							<div class="row">
+							<div class="col-12 col-m-9">
+								<div class="block__notes">
+									<div class="block__notes--title">
+										<h3>Informações Gerais</h3>
+									</div>
+
+									<div class="block__notes--form">
+										<form action="" method="">
+											<div class="row">
+												<div class="col-12">
+													<label>Para quem?</label>
+
+													<div class="block__notes--avatars">
+														<div class="block__notes--avatars-fixed">
+															<a href="#this" class="block__menu--avatar">
+																<img src="img/fke/user-avatar.png">
+															</a>
+														</div>
+
+														<div class="block__notes--avatars-scrolling">
+															<ul>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																	<span>DEP</span>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar block__menu--avatar-selected tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+																<li>
+																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12">
+													<label>Mensagem</label>
+
+													<textarea class="form-style" col="5" row="10"></textarea>
+												</div>
+
+												<div class="col-5 col-m-3">
+													<button type="submit" class="btn btn-full btn-blue">Criar lembrete</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="block__notes--list">
+										<div class="block__panel">
+											<div class="block__panel--empty">
+												<div>
+													<i class="icon icon-reminder-b"></i>
+												</div>
+
+												<p>Nenhum lembrete cadastrado</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="block__notes--list">
+										<div class="block__notes--list-head">
+											<div class="row">
+												<div class="col-7">
+													<a href="#this" class="block__menu--avatar">
+														<img src="img/fke/user-avatar.png">
+													</a>
+
+													<h4>03/11/2015</h4>
+
+													<span class="badge">NOVO</span>
+												</div>
+
+												<div class="col-5 align-right">
+													<a href="#this" class="btn btn-link">Arquivar</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="block__notes--list-content">
+											<div class="row">
+												<div class="col-12">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="block__notes--list">
+										<div class="block__notes--list-head">
+											<div class="row">
+												<div class="col-7">
+													<a href="#this" class="block__menu--avatar">
+														<img src="img/fke/user-avatar.png">
+													</a>
+
+													<h4>03/11/2015</h4>
+												</div>
+
+												<div class="col-5 align-right">
+													<a href="#this" class="btn btn-link">Editar</a>
+													<a href="#this" class="btn btn-link">Arquivar</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="block__notes--list-content">
+											<div class="row">
+												<div class="col-12">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="block__notes--list block__notes--list-last">
+										<div class="block__notes--list-head">
+											<div class="row">
+												<div class="col-7">
+													<a href="#this" class="block__menu--avatar">
+														<img src="img/fke/user-avatar.png">
+													</a>
+
+													<h4>03/11/2015</h4>
+												</div>
+
+												<div class="col-5 align-right">
+													<a href="#this" class="btn btn-link">Editar</a>
+													<a href="#this" class="btn btn-link">Arquivar</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="block__notes--list-content">
+											<div class="row">
+												<div class="col-12">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button type="button" class="btn btn-gray btn-full">Mostar lembretes arquivados</button>
+								</div>
+							</div>
+
+							<div class="col-12 col-m-3">
+								<aside class="block__aside">
+									<div class="block__notes--title">
+										<h3>Ferramentas</h3>
+									</div>
+
+									<div class="block__links">
+										<a href="inc/modal-default-1.html" class="btn btn-gray btn-icon btn-modal"><i class="icon icon-sheet-e"></i> Demandas</a>
+										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-marker"></i> Municípios</a>
+										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-person-c"></i> Contatos</a>
+										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-phone-b"></i> Ligações</a>
+										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-door"></i> Visitas</a>
+
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-archive"></i> Arquivos <span class="badge">Em desenvolvimento</span></a>
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-email"></i> Email marketing <span class="badge">Em breve</span></a>
+										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-send"></i> Envio de sms <span class="badge">Em breve</span></a>
+									</div>
+								</aside>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="center">
+					<div class="row">
+						<div class="col-6">
+							<h2 class="footer__logo">
+								<a href="#this">
+									<i class="icon icon-clip-active"></i> 
+									<img src="img/lgo/footer__logo.png" alt="NossoGabinete">
+								</a>
+							</h2>
+						</div>
+
+						<div class="col-6 align-right">
+							<a href="inc/modal-default-2.html" class="btn btn-link btn-modal">Precisa de ajuda?</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="modal" class="modal">
+			<div class="modal__container">
+				<div class="modal__default modal__default--1">
+					<div class="modal__head">
+						<div class="row">
+							<div class="col-10">
+								<h2>Suporte</h2>
+							</div>
+
+							<div class="col-2 align-right">
+								<a href="#this" class="btn btn-icon btn-close"><i class="icon icon-close-f"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal__content">
+						<div class="row">
+							<div class="col-12 align-center col-m-8 central">
+								<div class="modal__content--intro">
+									<h1><strong>238</strong> destinatários válidos</h1>
+
+									<p>Dos 266 contatos selecionados, 28 estão com o cadastro incompleto e serão desconsiderados para evitar etiquetas em branco.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-m-6 central">
+								<div class="modal__content--form">
+									<span>Deseja gerar etiquetas de  remetente?</span>
+
+									<form action="">
+										<div class="block__list--bordered">
+											<div class="block__list--bordered-item">
+												<div class="radio">
+													<input type="radio" name="etiqueta" id="dado-tipo1" checked="checked">
+													<label for="dado-tipo1" class="sublabel">Não, somente destinatário.</label>
+												</div>
+											</div>
+											<div class="block__list--bordered-item">
+												<div class="radio">
+													<input type="radio" name="etiqueta" id="dado-tipo2" checked="checked">
+													<label for="dado-tipo2" class="sublabel">Gabinete de Brasília</label>
+												</div>
+											</div>
+											<div class="block__list--bordered-item">
+												<div class="radio">
+													<input type="radio" name="etiqueta" id="dado-tipo3" checked="checked">
+													<label for="dado-tipo3" class="sublabel">Gabinete de Curitiba</label>
+												</div>
+											</div>
+										</div>
+
+										<button type="submit" class="btn btn-success btn-full">Gerar etiquetas</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal__default modal__default--2">
+					<div class="modal__head">
+						<div class="row">
+							<div class="col-10">
+								<h2>Suporte</h2>
+							</div>
+
+							<div class="col-2 align-right">
+								<a href="#this" class="btn btn-icon btn-close"><i class="icon icon-close-f"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal__content">
+						<div class="row">
+							<div class="col-12 align-center col-m-10 central">
+								<div class="modal__content--intro">
+									<h1>Surgiu alguma dúvida ou problema?</h1>
+
+									<p>Envie uma mensagem abaixo ou entre em contato através do nosso email <a href="mailto:suporte@nossogabinete.com.br">suporte@nossogabinete.com.br</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-m-8 central">
+								<div class="modal__content--form">
+									<form class="validate" action="#url" method="POST" data-ajax="true">
+										<div class="row">
+											<div class="col-12">
+												<label>Nome</label>
+												<input type="text" class="form-style required" placeholder="">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Email</label>
+												<input type="text" class="form-style email required" placeholder="">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Telefone</label>
+												<input type="text" class="form-style mask-phone required" placeholder="">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Mensagem</label>
+												<textarea class="form-style required" col="5" row="10"></textarea>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12 col-m-4">
+												<button type="submit" class="btn btn-blue btn-full">Enviar</button>
+											</div>
+
+											<div class="col-12 col-m-6">
+												<p>Todos os campos são obrigatórios.</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal__default modal__default--3">
+					<div class="modal__head">
+						<div class="row">
+							<div class="col-10">
+								<h2>Introdução</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal__content">
+						<div class="row">
+							<div class="col-12">
+								<div class="modal__content--carousel">
+									<div class="item">
+										<div class="modal__content--carousel-image">
+											<img src="img/fke/step-1.png" alt="Passo 1">
+										</div>
+
+										<div class="modal__content--carousel-info">
+											<h2>Seja bem vindo ao NossoGabinete</h2>
+
+											<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur.</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="modal__content--carousel-image">
+											<img src="img/fke/step-1.png" alt="Passo 2">
+										</div>
+
+										<div class="modal__content--carousel-info">
+											<h2>Seja bem vindo ao NossoGabinete</h2>
+
+											<p>2 Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur.</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="modal__content--carousel-image">
+											<img src="img/fke/step-1.png" alt="Passo 3">
+										</div>
+
+										<div class="modal__content--carousel-info">
+											<h2>Seja bem vindo ao NossoGabinete</h2>
+
+											<p>3 Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur.</p>
+										</div>
+									</div>
+								</div>
+
+								<a href="#this" class="btn btn-link btn-close btn-jump">Pular</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="loading"></div>
+		<div id="overlay"></div>
+
+		<!-- <a href="#this" rel="modal__default--3" data-cached="true" class="btn-introduction btn-modal">Ver modal de introdução</a> -->
+
+		<script>
+			base_url = "";
+		</script>
+
+		<script src="js/plugins/module.js"></script>
+		<script src="js/plugins/jQuery-1.11.0.min.js"></script>
+
+		<!-- PLUGINS -->
+		<script src="js/plugins/jQuery.maskinput.js"></script>
+		<script src="js/plugins/jQuery.onlyNumber.js"></script>
+		<script src="js/plugins/jQuery.maskMoney.js"></script>
+		<script src="js/plugins/jQuery.upgradebrowsers.min.js"></script>
+		<script src="js/plugins/jQuery.validate.js"></script>
+		<script src="js/plugins/jQuery.form.js"></script>
+		<script src="js/plugins/jQuery.rwd-table.js"></script>
+		<script src="js/plugins/jQuery.ui-autocomplete.js"></script>
+		<script src="js/plugins/jQuery.ui-datepicker.js"></script>
+		<script src="js/plugins/jQuery.tooltipster.min.js"></script>
+		<script src="js/plugins/jQuery.owl.carousel.js"></script>
+		<!-- END PLUGINS -->
+		
+		<script src="js/Modulos/MM.Mascarar.js"></script>
+		<script src="js/Modulos/MM.Mensagem.js"></script>
+		<script src="js/Modulos/MM.Modal.js"></script>
+		<script src="js/Modulos/MM.VerificarNavegador.js"></script>
+		<script src="js/Modulos/MM.ValidarFormularios.js"></script>
+		<script src="js/Modulos/MM.Collapsible.js"></script>
+		<script src="js/Modulos/MM.Feedback.js"></script>
+		<script src="js/Modulos/MM.BlockFilterForm.js"></script>
+		<script src="js/Modulos/MM.ResponsiveTables.js"></script>
+		<script src="js/Modulos/MM.InputMultipleSelect.js"></script>
+		<script src="js/Modulos/MM.Datepicker.js"></script>
+		<script src="js/Modulos/MM.Menu.js"></script>
+		<script src="js/Modulos/MM.Tooltip.js"></script>
+		<script src="js/Modulos/MM.Dropdown.js"></script>
+		<script src="js/Modulos/MM.Carousel.js"></script>
+
+		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('input[placeholder], textarea[placeholder]').placeholder();
+			});
+		</script><![endif]-->
+
+		<script src="js/base.js"></script>
+	</body>
+</html>

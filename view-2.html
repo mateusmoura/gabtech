@@ -1,0 +1,636 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-br" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-br" class="no-js lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>NossoGabinete</title>
+		
+		<!-- meta -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/ico/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="img/ico/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/ico/manifest.json">
+		<link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'>
+		<meta name="description" content="">
+		<meta name="author" content="https://br.linkedin.com/in/mateusmouraprofile" />
+		<link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon" />
+
+		<!-- PARA QUE A MEDIA QUERIES FUNCIONE NO IE8 -->
+		<!--[if lt IE 9]>
+		<script src="js/plugins/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/rwd-table.css">
+		<link rel="stylesheet" href="css/jQuery.ui-autocomplete.css">
+		<link rel="stylesheet" href="css/jQuery.ui-datepicker.css">
+		<link rel="stylesheet" href="css/jQuery.tooltipster.css">
+		<link rel="stylesheet" href="css/jQuery.owl.carousel.css">
+		<link rel="stylesheet" href="css/base.css" media="screen" />
+		<!--[if IE]><link rel="stylesheet" href="css/ie.css" media="screen" /><![endif]-->
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+		<![endif]-->
+	</head>
+<!--[if !IE]>  -->
+	<body>
+<!-- <![endif]-->
+<!--[if IE 9]>
+	<body class="ie9">
+<![endif]-->
+<!--[if IE 10]>
+	<body class="ie10">
+<![endif]-->
+		<div id="global">
+			<header class="header">
+				<div class="center">
+					<div class="row">
+						<div class="col-6 col-m-8">
+							<h1 class="header__logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<i class="icon icon-clip-active"></i>
+									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
+								</a>
+							</h1>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links">
+									<a href="dashboard.php">Visão Geral</a>
+									<a href="#this">Demandas</a>
+									<a href="#this">Municípios</a>
+									<a href="#this">Contatos</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this">Mais <i class="icon icon-arrow-bottom"></i> <i class="icon icon-arrow-top-active"></i></a>
+
+										<ul>
+											<li><a href="#this">Ligações</a></li>
+											<li><a href="#this">Visitas</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+
+						<div class="col-6 col-m-4 align-right">
+							<button type="button" class="btn btn-menu"><span>Menu</span></button>
+
+							<div class="block__menu--desktop">
+								<nav class="block__menu--links block__menu--links-avatar">
+									<a href="#this"><i class="icon icon-person"></i> Gerenciar gabinete</a>
+									<div class="dropdown dropdown__center">
+										<a href="#this" class="block__menu--avatar">
+											<img src="img/fke/user-avatar.png">
+										</a>
+
+										<ul>
+											<li><a href="#this">Editar conta</a></li>
+											<li><a href="#this" class="red">Sair</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block__menu">
+					<div class="block__menu--wrap">
+						<div class="block__menu--header">
+							<h4 class="block__menu--logo">
+								<a href="#this">
+									<i class="icon icon-clip"></i>
+									<img src="img/lgo/menu__logo.svg" alt="NossoGabinete">
+								</a>
+							</h4>
+						</div>
+
+						<div class="block__menu--content">
+							<nav class="block__menu--links">
+								<a href="#this">Visão Geral</a>
+								<a href="#this">Demandas</a>
+								<a href="#this">Municípios</a>
+								<a href="#this">Contatos</a>
+								<a href="#this">Ligações</a>
+								<a href="#this">Visitas</a>
+							</nav>
+						</div>
+
+						<div class="block__menu--footer">
+							<figure class="block__menu--avatar">
+								<img src="img/fke/user-avatar.png">
+							</figure>
+
+							<nav class="block__menu--links">
+								<a href="#this">Gerenciar gabinete</a>
+								<a href="#this">Editar conta</a>
+								<a href="#this">Sair</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main role="main" class="page__view">
+				<div class="page__header">
+					<div class="page__title">
+						<div class="center">
+							<div class="row">
+								<div class="col-10 col-m-9">
+									<a href="#this" class="block__menu--avatar">
+										<img src="img/fke/user-avatar.png">
+									</a>
+									<h2>Marcelo Oliveira da Costa</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="center">
+						<div class="page__menu">
+							<a href="#" class="page__menu--item page__menu--item-active">Detalhes</a>
+							<a href="#" class="page__menu--item">Demandas</a>
+							<a href="#" class="page__menu--item">Utilidaes</a>
+							<a href="#" class="page__menu--item">Visitas</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="page__content">
+					<div class="center">
+						<div class="block__view">
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Táxi</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo táxi</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-car"></i> BarraTáxi</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Telefone</dt>
+													<dd><a href="tel:+551133445566" class="block__number">(11) 3344-5566 <i class="icon icon-phone"></i></a></dd>
+													<dt>Telefone</dt>
+													<dd><a href="tel:+551133445566" class="block__number">(11) 3344-5566 <i class="icon icon-phone"></i></a></dd>
+													<dt>Email</dt>
+													<dd>barrataxi@gmail.com</dd>
+													<dt>Site</dt>
+													<dd><a href="#this">www.barrataxi.com.br</a></dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Táxi</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo táxi</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-car-b"></i>
+											</div>
+
+											<p>Nenhum táxi cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Hotel</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hotel</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-hotel"></i> Carlton Hotel</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Endereço</dt>
+													<dd>Setor Hoteleiro Sul - Q.5 - Bloco G </dd>
+													<dt>Telefone</dt>
+													<dd><a href="tel:+551133445566" class="block__number">(11) 3344-5566 <i class="icon icon-phone"></i></a></dd>
+													<dt>Email</dt>
+													<dd>reserva@carltonhotel.com.br</dd>
+													<dt>Site</dt>
+													<dd><a href="#this">www.carltonhotel.com.br</a></dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Hotel</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hotel</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-hotel-b"></i>
+											</div>
+
+											<p>Nenhum hotel cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Restaurante</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo restaurante</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-restaurant"></i> Churrascaria Potência do Sul</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Endereço</dt>
+													<dd>Setor Hoteleiro Sul - Q.5 - Bloco G </dd>
+													<dt>Telefone</dt>
+													<dd><a href="tel:+551133445566" class="block__number">(11) 3344-5566 <i class="icon icon-phone"></i></a></dd>
+													<dt>Email</dt>
+													<dd>reserva@carltonhotel.com.br</dd>
+													<dt>Site</dt>
+													<dd><a href="#this">www.carltonhotel.com.br</a></dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Restaurante</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo restaurante</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-restaurant-b"></i>
+											</div>
+
+											<p>Nenhum restaurante cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Hospital</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hospital</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-hospital"></i> Hospital Santa Lúcia</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Endereço</dt>
+													<dd>Setor Hoteleiro Sul - Q.5 - Bloco G </dd>
+													<dt>Telefone</dt>
+													<dd><a href="tel:+551133445566" class="block__number">(11) 3344-5566 <i class="icon icon-phone"></i></a></dd>
+													<dt>Email</dt>
+													<dd>reserva@carltonhotel.com.br</dd>
+													<dt>Site</dt>
+													<dd><a href="#this">www.carltonhotel.com.br</a></dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Hospital</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo hospital</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-hospital-b"></i>
+											</div>
+
+											<p>Nenhum hospital cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Andamentos</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo andamento</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-sheet"></i> 27/08/2015</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Por</dt>
+													<dd><a href="#this">Oscar Moura</a></dd>
+													<dt>Situação</dt>
+													<dd>Deferido</dd>
+													<dt>Título</dt>
+													<dd>Conversar com o Prefeito sobre a nova obra da praça</dd>
+													<dt>Descrição</dt>
+													<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus.</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Andamentos</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo andamentos</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-sheet-b"></i>
+											</div>
+
+											<p>Nenhum andamento cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Lembretes</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo lembrete</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--heading">
+											<div class="col-8">
+												<h4 class="block__panel--title"><i class="icon icon-reminder"></i> 27/08/2015</h4>
+											</div>
+
+											<div class="col-4 align-right">
+												<a href="#this" class="btn btn-link">Editar</a>
+											</div>
+										</div>
+
+										<div class="block__panel--body">
+											<div class="block__list">
+												<dl>
+													<dt>Por</dt>
+													<dd><a href="#this">Oscar Moura</a></dd>
+													<dt>Título</dt>
+													<dd>Conversar com o Prefeito sobre a nova obra da praça</dd>
+													<dt>Descrição</dt>
+													<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus.</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="block__view--title borderline">
+										<div class="col-6 col-m-5">
+											<h3>Lembretes</h3>
+										</div>
+
+										<div class="col-6 col-m-7 align-right">
+											<a href="#this" class="btn btn-blue btn-sm">Novo lembrete</a>
+										</div>
+									</div>
+
+									<div class="block__panel">
+										<div class="block__panel--empty">
+											<div>
+												<i class="icon icon-reminder-b"></i>
+											</div>
+
+											<p>Nenhum lembrete cadastrado</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="center">
+					<div class="row">
+						<div class="col-6">
+							<h2 class="footer__logo">
+								<a href="#this">
+									<i class="icon icon-clip-active"></i> 
+									<img src="img/lgo/footer__logo.png" alt="NossoGabinete">
+								</a>
+							</h2>
+						</div>
+
+						<div class="col-6 align-right">
+							<a href="inc/modal-default-2.php" class="btn btn-link btn-modal">Precisa de ajuda?</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="loading"></div>
+		<div id="overlay"></div>
+
+		<a href="inc/modal-default-3.php" rel="modal__introduction" class="btn-introduction btn-modal"></a>
+
+		<script>
+			base_url = "";
+		</script>
+
+		<script src="js/plugins/module.js"></script>
+		<script src="js/plugins/jQuery-1.11.0.min.js"></script>
+
+		<!-- PLUGINS -->
+		<script src="js/plugins/jQuery.maskinput.js"></script>
+		<script src="js/plugins/jQuery.onlyNumber.js"></script>
+		<script src="js/plugins/jQuery.maskMoney.js"></script>
+		<script src="js/plugins/jQuery.upgradebrowsers.min.js"></script>
+		<script src="js/plugins/jQuery.validate.js"></script>
+		<script src="js/plugins/jQuery.form.js"></script>
+		<script src="js/plugins/jQuery.rwd-table.js"></script>
+		<script src="js/plugins/jQuery.ui-autocomplete.js"></script>
+		<script src="js/plugins/jQuery.ui-datepicker.js"></script>
+		<script src="js/plugins/jQuery.tooltipster.min.js"></script>
+		<script src="js/plugins/jQuery.owl.carousel.js"></script>
+		<!-- END PLUGINS -->
+		
+		<script src="js/Modulos/MM.Mascarar.js"></script>
+		<script src="js/Modulos/MM.Mensagem.js"></script>
+		<script src="js/Modulos/MM.Modal.js"></script>
+		<script src="js/Modulos/MM.VerificarNavegador.js"></script>
+		<script src="js/Modulos/MM.ValidarFormularios.js"></script>
+		<script src="js/Modulos/MM.Collapsible.js"></script>
+		<script src="js/Modulos/MM.Feedback.js"></script>
+		<script src="js/Modulos/MM.BlockFilterForm.js"></script>
+		<script src="js/Modulos/MM.ResponsiveTables.js"></script>
+		<script src="js/Modulos/MM.InputMultipleSelect.js"></script>
+		<script src="js/Modulos/MM.Datepicker.js"></script>
+		<script src="js/Modulos/MM.Menu.js"></script>
+		<script src="js/Modulos/MM.Tooltip.js"></script>
+		<script src="js/Modulos/MM.Dropdown.js"></script>
+		<script src="js/Modulos/MM.Carousel.js"></script>
+
+		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('input[placeholder], textarea[placeholder]').placeholder();
+			});
+		</script><![endif]-->
+
+		<script src="js/base.js"></script>
+	</body>
+</html>

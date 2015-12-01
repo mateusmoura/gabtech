@@ -48,6 +48,8 @@ Module('MM.Modal', function (Modal) {
 	* Centraliza a MODAL na página
 	*/
 	Modal.fn.posicionarModal = function ($evt, $m) {
+		console.log($evt, $m);
+
 		var _modal = $m != undefined ? $m : this.modal,
 			_left =  $(window).width() - _modal.width(),
 			_top = $evt.pageY - (_modal.height() + 50);
@@ -55,6 +57,12 @@ Module('MM.Modal', function (Modal) {
 		_left = _left/2;
 
 		this.modal.addClass(this.modalClass);
+
+		if($evt.currentTarget.dataset.cached === "true") {
+			$('div.modal__container > div', this.modal).hide();
+			console.log('div.modal__container div.' + $evt.currentTarget.rel)
+			$('div.modal__container div.' + $evt.currentTarget.rel, this.modal).show();
+		}
 
 		_modal.css({
 			left: _left,
@@ -84,9 +92,9 @@ Module('MM.Modal', function (Modal) {
 	Modal.fn.onButtonClick = function(event){
 		this.modalClass = event.currentTarget.rel;
 
-		if(event.currentTarget.rel != "" && event.currentTarget.cached == true){
+		if(event.currentTarget.rel != "" && event.currentTarget.dataset.cached == "true"){
 			this.overlay.fadeIn();
-			this.posicionarModal(event, $('div.modal.' + this.rel));
+			this.posicionarModal(event, this.modal);
 		}else{
 			this.ajax(event.currentTarget.href, event);
 		}
