@@ -67,7 +67,11 @@ Module('MM.Modal', function (Modal) {
 		_modal.css({
 			left: _left,
 			top: isNaN(top) ? 15 : _top + 35
-		}).fadeIn();
+		}).fadeIn(function () {
+			if( $evt.currentTarget.rel === 'modal__default--3' ) {
+				MM.Carousel($('#modal .modal__content--carousel'));
+			}
+		});
 
 		$("html, body").animate({
 			scrollTop: _top

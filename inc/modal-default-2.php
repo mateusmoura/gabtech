@@ -78,8 +78,4 @@
 				callback			= _formValidate.data('callfn');
 
 			MM.ValidarFormularios(_formValidate, obj_temp, callback);
-
-			$('form.validate').each(function(index, el) {
-				
-			});
 		</script>

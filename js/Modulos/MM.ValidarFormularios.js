@@ -256,8 +256,6 @@ Module('MM.ValidarFormularios', function (ValidarFormularios) {
 			showErrors: function (errors) {
 				var $elem = this.currentElements;
 
-				console.log($elem);
-
 				// if(!$elem.siblings('div.error').length){
 				// 	$elem.parent().siblings('div.error').css('top', $elem[0].offsetParent.offsetTop);
 				// }

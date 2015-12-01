@@ -94,8 +94,6 @@ var site = {
 		this.closeMessages();
 		this.selectAvatar();
 
-		MM.Carousel($('#modal .modal__content--carousel'));
-
 		//$('.btn-introduction').trigger('click');
 	},
 	/*
