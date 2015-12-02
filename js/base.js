@@ -141,8 +141,8 @@ var site = {
 				event.preventDefault();
 				/* Act on the event */
 
-				$('.block__menu--avatar-selected', _block__notesAvatars).removeClass('block__menu--avatar-selected');
-				$(this).addClass('block__menu--avatar-selected');
+				//$('.block__menu--avatar-selected', _block__notesAvatars).removeClass('block__menu--avatar-selected');
+				$(this).toggleClass('block__menu--avatar-selected');
 			});
 	}
 }
