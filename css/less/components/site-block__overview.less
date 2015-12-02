@@ -14,6 +14,12 @@ ________________________________________________________________________________
 	.flex-flow('row');
 	width: (165px * 4px);
 
+	&--showoverlay {
+		.block__overview--overlay {
+			display: block;
+		}
+	}
+
 	.desktop({
 		width: 100%;
 	});
@@ -120,5 +126,16 @@ ________________________________________________________________________________
 		&-blue {
 			background-color: #64beea;
 		}
+	}
+
+	&--overlay {
+		background-color: fade(#000, 60%);
+		bottom: 0;
+		display: none;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;;
+		z-index: 100;
 	}
 }

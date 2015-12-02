@@ -41,24 +41,28 @@
 										<span>528</span>
 										<p>Demandas cadastradas</p>
 										<i class="icon icon-sheet-c"></i>
+										<div class="block__overview--overlay"></div>
 									</div>
 
 									<div class="block__overview--item block__overview--item-black">
 										<span>698</span>
 										<p>Contatos Cadastrados</p>
 										<i class="icon icon-person-b"></i>
+										<div class="block__overview--overlay"></div>
 									</div>
 
 									<div class="block__overview--item block__overview--item-purple">
 										<span>528</span>
 										<p>Arquivos Anexados</p>
 										<i class="icon icon-clip-c"></i>
+										<div class="block__overview--overlay"></div>
 									</div>
 
 									<div class="block__overview--item block__overview--item-blue">
 										<span>529</span>
 										<p>Etiquetas Geradas</p>
 										<i class="icon icon-sheet-d"></i>
+										<div class="block__overview--overlay"></div>
 									</div>
 								</div>
 							</div>

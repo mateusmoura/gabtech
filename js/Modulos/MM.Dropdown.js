@@ -33,6 +33,8 @@ Module('MM.Dropdown', function (Dropdown) {
 	Dropdown.fn.toggleOpenDrop = function (event) {
 		if(isMobile || $(window).width() < 1024) {
 			this.overlay.fadeToggle(this.fadeTimeStamp);
+		} else {
+			$('.page__dash .block__overview').toggleClass('block__overview--showoverlay');
 		}
 		this.block__options.fadeToggle(this.fadeTimeStamp);
 		this.container.toggleClass('block__dropdown--open');
