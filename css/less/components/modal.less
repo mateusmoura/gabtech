@@ -154,9 +154,15 @@ ________________________________________________________________ */
 			}
 
 			label {
+				color: #4c5761;
 				display: inline-block;
+				font-family: @font-family-gotham-medium;
 				font-size: 14px;
 				margin-bottom: 15px;
+
+				.desktop({
+					margin-bottom: 6px;
+				});
 			}
 
 			span.error {
@@ -288,6 +294,10 @@ ________________________________________________________________ */
 
 		.btn-blue {
 			margin-top: 0;
+
+			.desktop({
+				padding: 14px 10px;
+			});
 		}
 	}
 
