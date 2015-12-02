@@ -68,10 +68,12 @@ Module('MM.Modal', function (Modal) {
 			left: _left,
 			top: isNaN(top) ? 15 : _top + 35
 		}).fadeIn(function () {
+			// Tempory
 			if( $evt.currentTarget.rel === 'modal__default--3' ) {
 				MM.Carousel($('#modal .modal__content--carousel'));
+				this.modal.addClass('modal__introduction');
 			}
-		});
+		}.bind(this));
 
 		$("html, body").animate({
 			scrollTop: _top
@@ -112,6 +114,7 @@ Module('MM.Modal', function (Modal) {
 		this.modal.fadeOut(function(){
 			this.overlay.fadeOut();
 			this.modal.removeClass(this.modalClass);
+			this.modal.removeClass('modal__introduction');
 		}.bind(this));
 
 		return false;
