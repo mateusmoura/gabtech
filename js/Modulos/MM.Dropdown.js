@@ -10,6 +10,7 @@ Module('MM.Dropdown', function (Dropdown) {
 		this.button 						= $('.btn-dropdown', this.container);
 		this.block__options					= $('.block__dropdown--options', this.container);
 		this.overlay						= $('#overlay');
+		this.fadeTimeStamp					= 200;
 
 		this.addEventListeners();
 	};
@@ -31,9 +32,9 @@ Module('MM.Dropdown', function (Dropdown) {
 	*/
 	Dropdown.fn.toggleOpenDrop = function (event) {
 		if(isMobile || $(window).width() < 1024) {
-			this.overlay.fadeToggle();
+			this.overlay.fadeToggle(this.fadeTimeStamp);
 		}
-		this.block__options.fadeToggle();
+		this.block__options.fadeToggle(this.fadeTimeStamp);
 		this.container.toggleClass('block__dropdown--open');
 
 		return false;
@@ -44,9 +45,9 @@ Module('MM.Dropdown', function (Dropdown) {
 	Dropdown.fn.closeDrop = function (event) {
 		if(this.container.hasClass('block__dropdown--open')) {
 			if(isMobile || $(window).width() < 1024){
-				this.overlay.fadeOut();
+				this.overlay.fadeOut(this.fadeTimeStamp);
 			}
-			this.block__options.fadeOut();
+			this.block__options.fadeOut(this.fadeTimeStamp);
 			this.container.removeClass('block__dropdown--open');
 		}
 	};
