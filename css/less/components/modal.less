@@ -179,11 +179,11 @@ ________________________________________________________________ */
 				});
 
 				.owl-prev, .owl-next {
-					.transform(translateY(-50%));
+					//.transform(translateY(-50%));
 					.text-hide !important;
 					background: no-repeat transparent !important;
 					position: absolute;
-					top: 50%;
+					top: 40%;
 				}
 
 				.owl-prev {
@@ -233,7 +233,7 @@ ________________________________________________________________ */
 
 				.desktop({
 					margin: 0 auto 50px;
-					width: 490px;
+					width: 520px;
 				});
 
 				h1, h2, h3, h4 {
@@ -241,12 +241,21 @@ ________________________________________________________________ */
 					font-family: @font-family-gotham-light;
 					font-size: 21px;
 					margin: 0 0 20px 0;
+
+					.desktop({
+						font-size: 30px;
+						margin-bottom: 18px;
+					});
 				}
 
 				p {
 					color: #56606b;
 					font-size: 14px;
 					font-weight: 400;
+
+					.desktop({
+						font-size: 16px;
+					});
 				}
 			}
 		}
