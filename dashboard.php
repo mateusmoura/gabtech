@@ -184,7 +184,7 @@
 									<div class="block__notes--list">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-7">
+												<div class="col-8">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -194,7 +194,7 @@
 													<span class="badge">NOVO</span>
 												</div>
 
-												<div class="col-5 align-right">
+												<div class="col-4 align-right">
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
 											</div>
@@ -212,7 +212,7 @@
 									<div class="block__notes--list">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-7">
+												<div class="col-6">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -220,7 +220,7 @@
 													<h4>03/11/2015</h4>
 												</div>
 
-												<div class="col-5 align-right">
+												<div class="col-6 align-right">
 													<a href="#this" class="btn btn-link">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
@@ -239,7 +239,7 @@
 									<div class="block__notes--list block__notes--list-last">
 										<div class="block__notes--list-head">
 											<div class="row">
-												<div class="col-7">
+												<div class="col-6">
 													<a href="#this" class="block__menu--avatar">
 														<img src="img/fke/user-avatar.png">
 													</a>
@@ -247,7 +247,7 @@
 													<h4>03/11/2015</h4>
 												</div>
 
-												<div class="col-5 align-right">
+												<div class="col-6 align-right">
 													<a href="#this" class="btn btn-link">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
