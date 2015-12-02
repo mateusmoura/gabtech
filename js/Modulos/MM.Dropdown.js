@@ -48,6 +48,8 @@ Module('MM.Dropdown', function (Dropdown) {
 		if(this.container.hasClass('block__dropdown--open')) {
 			if(isMobile || $(window).width() < 1024){
 				this.overlay.fadeOut(this.fadeTimeStamp);
+			} else {
+				$('.page__dash .block__overview').removeClass('block__overview--showoverlay');
 			}
 			this.block__options.fadeOut(this.fadeTimeStamp);
 			this.container.removeClass('block__dropdown--open');
