@@ -93,7 +93,9 @@ var site = {
 
 		this.closeMessages();
 		this.selectAvatar();
+		//Simulators
 		this.editNotes();
+		this.showFormPanel();
 
 		//$('.btn-introduction').trigger('click');
 	},
@@ -167,6 +169,55 @@ var site = {
 
 				$('.block__notes--list-edit', _parent).fadeOut(300, function () {
 					$('.block__notes--list-head, .block__notes--list-content', _parent).fadeIn(300);
+				});
+			});
+	},
+	/*
+	* Funcionalidade para mostrar formulário para editar ou novo item na página de view. block__panel.
+	*/
+	showFormPanel: function () {
+		$('.block__view--title .btn-new')
+			.on('click', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+				var _parent = $(this).parents('.block__view--title:first'),
+						_emptyBlock = $('.block__panel--empty:visible', _parent.siblings('.block__panel'));
+
+				if(_emptyBlock.length) {
+					_emptyBlock.parent().fadeOut(300, function() {
+						_parent.siblings('.block__panel--new').fadeIn(300);
+					});
+				} else {
+					_parent.siblings('.block__panel--new').fadeIn(300);
+				}
+			});
+
+		$('.block__panel--new')
+			.on('click', '.btn-cancel', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+				$(this).parents('.block__panel--new').fadeOut(300);
+			});
+
+		$('.block__panel--heading')
+			.on('click', '.btn-edit', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+				var _parent = $(this).parents('.block__panel:first');
+
+				_parent.fadeOut(300, function() {
+					_parent.siblings('.block__panel--edit').fadeIn(300);
+				});
+			});
+
+		$('.block__panel--edit')
+			.on('click', '.btn-cancel', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+				var _parent = $(this).parents('.block__panel:first');
+
+				$(this).parents('.block__panel--edit').fadeOut(300, function () {
+					_parent.siblings('.block__panel:not(.block__panel--new):not(.block__panel--edit)').fadeIn(300);
 				});
 			});
 	}
