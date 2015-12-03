@@ -16,7 +16,8 @@ ________________________________________________________________________________
 
 	&--showoverlay {
 		.block__overview--overlay {
-			display: block;
+			.opacity(1.0);
+			visibility: visible;
 		}
 	}
 
@@ -129,13 +130,15 @@ ________________________________________________________________________________
 	}
 
 	&--overlay {
+		.transition(all 0.2s ease-in-out 0s);
+		.opacity(0.0);
 		background-color: fade(#000, 60%);
 		bottom: 0;
-		display: none;
 		left: 0;
 		position: absolute;
 		right: 0;
-		top: 0;;
+		top: 0;
+		visibility: hidden;
 		z-index: 100;
 	}
 }
