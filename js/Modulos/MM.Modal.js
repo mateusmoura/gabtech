@@ -55,7 +55,9 @@ Module('MM.Modal', function (Modal) {
 
 		var _modal = $m != undefined ? $m : this.modal,
 			_left =  $(window).width() - _modal.width(),
-			_top = $evt.pageY - (_modal.height() + 50);
+			_top = Math.abs($evt.pageY - (_modal.height() + 50));
+
+		console.log($evt.pageY, _modal.height() + 50);
 
 		_left = _left/2;
 
