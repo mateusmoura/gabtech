@@ -221,7 +221,7 @@
 												</div>
 
 												<div class="col-6 align-right">
-													<a href="#this" class="btn btn-link">Editar</a>
+													<a href="#this" class="btn btn-link btn-edit">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
 											</div>
@@ -232,6 +232,99 @@
 												<div class="col-12">
 													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
 												</div>
+											</div>
+										</div>
+
+										<div class="block__notes--list-edit">
+											<div class="block__notes--form">
+												<form action="" method="">
+													<div class="row">
+														<div class="col-12">
+															<label>Para quem?</label>
+
+															<button type="button" class="btn btn-link btn-cancel">Cancelar</button>
+
+															<div class="block__notes--avatars">
+																<div class="block__notes--avatars-fixed">
+																	<a href="#this" class="block__menu--avatar">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</div>
+
+																<div class="block__notes--avatars-scrolling">
+																	<ul>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																			<span>DEP</span>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar block__menu--avatar-selected tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-12">
+															<label>Mensagem</label>
+
+															<textarea class="form-style" col="5" row="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</textarea>
+														</div>
+
+														<div class="col-5 col-m-3">
+															<button type="submit" class="btn btn-full btn-blue">Salvar</button>
+														</div>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -248,7 +341,7 @@
 												</div>
 
 												<div class="col-6 align-right">
-													<a href="#this" class="btn btn-link">Editar</a>
+													<a href="#this" class="btn btn-link btn-edit">Editar</a>
 													<a href="#this" class="btn btn-link">Arquivar</a>
 												</div>
 											</div>
@@ -259,6 +352,99 @@
 												<div class="col-12">
 													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
 												</div>
+											</div>
+										</div>
+
+										<div class="block__notes--list-edit">
+											<div class="block__notes--form">
+												<form action="" method="">
+													<div class="row">
+														<div class="col-12">
+															<label>Para quem?</label>
+
+															<button type="button" class="btn btn-link btn-cancel">Cancelar</button>
+
+															<div class="block__notes--avatars">
+																<div class="block__notes--avatars-fixed">
+																	<a href="#this" class="block__menu--avatar">
+																		<img src="img/fke/user-avatar.png">
+																	</a>
+																</div>
+
+																<div class="block__notes--avatars-scrolling">
+																	<ul>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																			<span>DEP</span>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar block__menu--avatar-selected tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
+																				<img src="img/fke/user-avatar.png">
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-12">
+															<label>Mensagem</label>
+
+															<textarea class="form-style" col="5" row="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</textarea>
+														</div>
+
+														<div class="col-5 col-m-3">
+															<button type="submit" class="btn btn-full btn-blue">Salvar</button>
+														</div>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>

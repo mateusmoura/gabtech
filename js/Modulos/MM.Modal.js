@@ -48,8 +48,6 @@ Module('MM.Modal', function (Modal) {
 	* Centraliza a MODAL na página
 	*/
 	Modal.fn.posicionarModal = function ($evt, $m) {
-		console.log($evt, $m);
-
 		var _modal = $m != undefined ? $m : this.modal,
 			_left =  $(window).width() - _modal.width(),
 			_top = $evt.pageY - (_modal.height() + 50);
@@ -66,7 +64,7 @@ Module('MM.Modal', function (Modal) {
 
 		_modal.css({
 			left: _left,
-			top: isNaN(top) ? 15 : _top + 35
+			top: isNaN(_top) ? 15 : _top + 35
 		}).fadeIn(function () {
 			// Tempory
 			if( $evt.currentTarget.rel === 'modal__default--3' ) {

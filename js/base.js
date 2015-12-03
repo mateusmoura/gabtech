@@ -93,6 +93,7 @@ var site = {
 
 		this.closeMessages();
 		this.selectAvatar();
+		this.editNotes();
 
 		//$('.btn-introduction').trigger('click');
 	},
@@ -143,6 +144,30 @@ var site = {
 
 				//$('.block__menu--avatar-selected', _block__notesAvatars).removeClass('block__menu--avatar-selected');
 				$(this).toggleClass('block__menu--avatar-selected');
+			});
+	},
+	/*
+	* Funcionalidade para mostrar formulário para editar o lembrete. block__notes--list-edit.
+	*/
+	editNotes: function () {
+		$('.block__notes--list')
+			.on('click', '.btn-edit', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				var _parent = $(this).parents('.block__notes--list:first');
+
+				$('.block__notes--list-head, .block__notes--list-content', _parent).fadeOut(300, function () {
+					$('.block__notes--list-edit', _parent).fadeIn(300);
+				});
+			})
+			.on('click', '.btn-cancel', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				var _parent = $(this).parents('.block__notes--list:first');
+
+				$('.block__notes--list-edit', _parent).fadeOut(300, function () {
+					$('.block__notes--list-head, .block__notes--list-content', _parent).fadeIn(300);
+				});
 			});
 	}
 }
