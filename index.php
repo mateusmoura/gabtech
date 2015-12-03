@@ -262,7 +262,7 @@
 								<ul class="list-none">
 									<li>
 										<div class="checkbox">
-											<input type="checkbox" name="label60" id="dado-label60">
+											<input type="checkbox" class="selectAll" name="label60" id="dado-label60">
 											<label for="dado-label60">&nbsp;</label>
 										</div>
 									</li>
@@ -285,8 +285,8 @@
 									<thead>
 										<tr>
 											<th></th>
-											<th data-priority="1" >Protocolo</th>
-											<th data-priority="1">Título</th>
+											<th data-priority="">Título</th>
+											<th data-priority="1">Protocolo</th>
 											<th data-priority="1">Tipo</th>
 											<th data-priority="3">Solicitante</th>
 											<th data-priority="3">Município</th>
@@ -301,8 +301,8 @@
 													<label for="dado-label1">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Recurso</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
@@ -316,8 +316,8 @@
 													<label for="dado-label2">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Outros</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
@@ -330,23 +330,23 @@
 													<label for="dado-label3">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Recurso</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
 											<td>25/09/2015</td>
 										</tr>
 
-										<tr>
+										<!-- <tr>
 											<td>
 												<div class="checkbox">
 													<input type="checkbox" name="label4" id="dado-label4">
 													<label for="dado-label4">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Outros</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
@@ -359,8 +359,8 @@
 													<label for="dado-label5">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Recurso</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
@@ -374,13 +374,13 @@
 													<label for="dado-label6">&nbsp;</label>
 												</div>
 											</td>
-											<td>0001-15</td>
 											<td>Construção da quadra de futebol na...</td>
+											<td>0001-15</td>
 											<td>Outros</td>
 											<td>Prefeito José Eduardo asd asasdfasdf asdfasdf</td>
 											<td>São Bernardo do Campos asdfasdf asdfasdf</td>
 											<td>25/09/2015</td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>
