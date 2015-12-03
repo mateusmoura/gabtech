@@ -280,6 +280,32 @@
 								</ul>
 							</div>
 
+							<div class="block__table--simulate-stripe">
+								<table>
+									<thead></thead>
+									<tbody>
+										<tr>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
 							<div class="table-responsive">
 								<table cellspacing="0" id="tech-companies-1" class="table table-small-font table-bordered table-striped">
 									<thead>
