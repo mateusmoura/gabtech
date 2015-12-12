@@ -67,19 +67,14 @@
 			<header class="header">
 				<div class="center">
 					<div class="row">
-						<div class="col- col-m-8">
-							<h1 class="header__logo--form">
-								<a href="#this">
-									<i class="icon icon-clip"></i>
-									<i class="icon icon-clip-active"></i>
-									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
-								</a>
-							</h1>
+						<div class="col-12 col-m-8">
+							<div class="header__text">
+								<p>Nosso lançamento será em Janeiro. Para celebrar, os 20 primeiros gabinetes ganharão <strong>instalação grátis.</strong></p>
+							</div>
 						</div>
 
-						<div class="col-6 col-m-4 align-right">
-							<label class="header__saved"><i class="icon icon-check-b"></i> Salvo automáticamento</label>
-							<button type="button" class="btn btn-link btn-icon btn-close-b"><i class="icon icon-close-b"></i></button>
+						<div class="col-m-4 align-right mobile--hidden">
+							<label class="header__message"><i class="icon icon-check-b"></i> Solicite uma demonstração.</label>
 						</div>
 					</div>
 				</div>
