@@ -61,7 +61,7 @@ var site = {
 		if(MM.Datepicker) {
 			MM.Datepicker();
 		}
-		if(MM.modal) {
+		if(MM.Modal) {
 			MM.Modal();
 		}
 		if(MM.ResponsiveTables) {

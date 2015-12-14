@@ -23,8 +23,6 @@
 		<div id="loading"></div>
 		<div id="overlay"></div>
 
-		<a href="inc/modal-default-3.php" rel="modal__introduction" class="btn-introduction btn-modal"></a>
-
 		<script>
 			base_url = "";
 		</script>

@@ -57,8 +57,6 @@ Module('MM.Modal', function (Modal) {
 			_left =  $(window).width() - _modal.width(),
 			_top = Math.abs($evt.pageY - (_modal.height() + 50));
 
-		console.log($evt.pageY, _modal.height() + 50);
-
 		_left = _left/2;
 
 		this.modal.addClass(this.modalClass);
@@ -82,6 +80,8 @@ Module('MM.Modal', function (Modal) {
 	* Adiciona os eventos necessários.
 	*/
 	Modal.fn.addEventListeners = function(){
+		console.log($('.btn-modal'));
+
 		$('.btn-modal')
 			.on('click', this.onButtonClick.bind(this));
 
