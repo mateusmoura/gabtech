@@ -62,14 +62,14 @@
 							<div class="modal__content">
 								<div class="modal__content--form">
 									<form action="#url" class="validate" method="POST" data-ajax="true" data-callfn="fnCallBack">
-										<div class="row">
+										<div class="row form--normal">
 											<div class="col-12">
 												<label>Email</label>
 												<input type="text" class="form-style required email" name="email" placeholder="">
 											</div>
 										</div>
 
-										<div class="row">
+										<div class="row form--normal">
 											<div class="col-12">
 												<label>Senha</label>
 												<input type="password" class="form-style required" name="senha" placeholder="">

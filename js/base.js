@@ -55,13 +55,21 @@ var site = {
 			_dropdown				= $('.block__dropdown'),
 			_carousel				= $('.block__carousel');
 
-		MM.Mascarar();
-		MM.Datepicker();
-		MM.Modal();
-		MM.ResponsiveTables({
-			addFocusBtn					: false,
-			addDisplayAllBtn			: false
-		});
+		if(MM.Mascarar) {
+			MM.Mascarar();
+		}
+		if(MM.Datepicker) {
+			MM.Datepicker();
+		}
+		if(MM.modal) {
+			MM.Modal();
+		}
+		if(MM.ResponsiveTables) {
+			MM.ResponsiveTables({
+				addFocusBtn					: false,
+				addDisplayAllBtn			: false
+			});
+		}
 
 		for (var i = _collapse.length - 1; i >= 0; i--) {
 			MM.Collapsible(_collapse.eq(i), _collapse.eq(i).data('closeothers'));
@@ -94,7 +102,9 @@ var site = {
 			MM.ValidarFormularios($(el), obj_temp, callback);
 		});
 
-		MM.Menu($('header'));
+		if(MM.Menu) {
+			MM.Menu($('header'));
+		}
 
 		this.closeMessages();
 		this.selectAvatar();

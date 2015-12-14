@@ -207,8 +207,8 @@ Module('MM.ValidarFormularios', function (ValidarFormularios) {
 				var _maskValue		= element.data().mask,
 					_label			= [];
 
-				if(element.parents('.row:first').find('div.col-12 label').length) {
-					_label			= element.parents('.row:first').find('div.col-12 label');
+				if(element.parents('.row:first:not(.form--normal)').find('div.col-12 label').length) {
+					_label			= element.parents('.row:first:not(.form--normal)').find('div.col-12 label');
 					$('span', _label).remove();
 				} else {
 					_label			= element.parent();
