@@ -11,6 +11,7 @@ ________________________________________________________________________________
 
 .block__table {
 	padding-top: 23px;
+	position: relative;
 
 	.desktop({
 		padding-top: 30px;
@@ -123,8 +124,20 @@ ________________________________________________________________________________
 		}
 	}
 
+	&--simulate {
+		&-stripe {
+			position: absolute;
+			top: 128px;
+			width: 100%;
+
+			table {
+				width: 100%;
+			}
+		}
+	}
+
 	table {
-		width: 100%;
+		//width: 100%;
 
 		thead {
 			text-align: left;

@@ -56,6 +56,11 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 		$('.checkbox input', this.container)
 			.unbind().on('click', this.toggleActive);
 
+		$('.block__table--actions .selectAll')
+			.on('click', function(event) {
+				$('table .checkbox input', this.container).trigger('click');
+			});
+
 		$('.block__table')
 			.on('click', '.dropdown-toggle', function (event) {
 				if(isMobile || $(window).width() <= 1024){

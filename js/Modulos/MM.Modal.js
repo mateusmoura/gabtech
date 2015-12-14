@@ -48,25 +48,24 @@ Module('MM.Modal', function (Modal) {
 	* Centraliza a MODAL na página
 	*/
 	Modal.fn.posicionarModal = function ($evt, $m) {
-		console.log($evt, $m);
+		if($evt.currentTarget.dataset.cached === "true") {
+			$('div.modal__container > div', this.modal).hide();
+			$('div.modal__container div.' + $evt.currentTarget.rel, this.modal).show();
+		}
 
 		var _modal = $m != undefined ? $m : this.modal,
 			_left =  $(window).width() - _modal.width(),
-			_top = $evt.pageY - (_modal.height() + 50);
+			_top = Math.abs($evt.pageY - (_modal.height() + 50));
+
+		console.log($evt.pageY, _modal.height() + 50);
 
 		_left = _left/2;
 
 		this.modal.addClass(this.modalClass);
 
-		if($evt.currentTarget.dataset.cached === "true") {
-			$('div.modal__container > div', this.modal).hide();
-			console.log('div.modal__container div.' + $evt.currentTarget.rel)
-			$('div.modal__container div.' + $evt.currentTarget.rel, this.modal).show();
-		}
-
 		_modal.css({
 			left: _left,
-			top: isNaN(top) ? 15 : _top + 35
+			top: isNaN(_top) ? 15 : _top + 35
 		}).fadeIn(function () {
 			// Tempory
 			if( $evt.currentTarget.rel === 'modal__default--3' ) {

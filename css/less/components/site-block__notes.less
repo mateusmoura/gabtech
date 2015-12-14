@@ -50,6 +50,29 @@ ________________________________________________________________________________
 			});
 		}
 
+		.btn-link {
+			color: #2e7bb6;
+			font-family: @font-family-gotham-book;
+			font-size: 13px;
+			padding: 0 5px;
+			margin-top: 10px;
+
+			.desktop({
+				font-size: 15px;
+			});
+
+			&:hover, &:focus, &:active {
+				border-color: #b7c3c5;
+				color: #2e7bb6;
+			}
+		}
+
+		.btn-cancel {
+			float: right;
+			position: relative;
+			top: -8px;
+		}
+
 		textarea {
 			background-color: @cor-branco;
 			margin-bottom: 20px;
@@ -186,6 +209,7 @@ ________________________________________________________________________________
 			.block__menu--avatar {
 				height: 36px;
 				margin: 0 7px 0 0;
+				padding: 0;
 				float: left;
 				width: 36px;
 
@@ -256,6 +280,15 @@ ________________________________________________________________________________
 				.desktop({
 					font-size: 15px;
 				});
+			}
+		}
+
+		&-edit {
+			display: none;
+
+			.block__notes--form {
+				border-bottom: 0;
+				padding: 0;
 			}
 		}
 	}
