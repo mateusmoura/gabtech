@@ -205,9 +205,14 @@ Module('MM.ValidarFormularios', function (ValidarFormularios) {
 			},
 			errorPlacement: function (error, element) {
 				var _maskValue		= element.data().mask,
-					_label			= element.parents('.row:first').find('div.col-12 label');
+					_label			= [];
 
-				$('span', _label).remove();
+				if(element.parents('.row:first').find('div.col-12 label').length) {
+					_label			= element.parents('.row:first').find('div.col-12 label');
+					$('span', _label).remove();
+				} else {
+					_label			= element.parent();
+				}
 
 				//error.css('top', element[0].offsetTop).hide().appendTo(_label);
 				error.hide().appendTo(_label);

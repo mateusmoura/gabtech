@@ -1,0 +1,62 @@
+/**
+* Arquivo responsavel pelo estilo dos Bloco Demonstration
+*
+* @version:  1.0
+*
+* Copyright(c) Todos os direitos reservados 
+*/
+
+/* Componente BLOCK__DEMONSTRATION
+____________________________________________________________________________________ */
+
+.block__demonstration {
+	text-align: center;
+
+	h1 {
+		color: @cor-branco;
+		font-family: @font-family-gotham-light;
+		font-size: 40px;
+		margin: 0 0 18px 0;
+	}
+
+	p {
+		color: @cor-branco;
+		font-family: OpenSans;
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 45px;
+	}
+
+	&--form {
+		text-align: left;
+
+		span {
+			color: #b0c8ac;
+			display: block;
+			font-family: @font-family-gotham-light;
+			font-size: 13px;
+			margin-bottom: 11px;
+			text-align: center;
+		}
+
+		form {
+			.border-radius(10px);
+			background-color: #485d64;
+			padding: 10px;
+
+			input {
+				margin-bottom: 10px;
+			}
+
+			span.error {
+				color: #f4676b;
+				margin-bottom: 14px;
+			}
+		}
+
+		.btn-send {
+			font-size: 16px;
+			padding: 17px 10px;
+		}
+	}
+}

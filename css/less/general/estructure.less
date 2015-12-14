@@ -112,6 +112,22 @@ iframe{
 	margin-bottom: 25px;
 }
 
+.mobile--hidden {
+	display: none !important;
+
+	.desktop({
+		display: block !important;
+	});
+}
+
+.desktop--hidden {
+	display: block !important;
+
+	.desktop({
+		display: none !important;
+	});
+}
+
 /* RESET
 	>> Imagens
 ________________________________________________________________ */

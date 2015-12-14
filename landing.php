@@ -5,16 +5,15 @@
 					<div class="center">
 						<div class="row">
 							<div class="col-7 col-m-6">
-								<h1 class="header__logo--form">
+								<h1 class="header__logo--form-active">
 									<a href="#this">
-										<i class="icon icon-clip"></i>
 										<i class="icon icon-clip-active"></i>
 										<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
 									</a>
 								</h1>
 							</div>
 
-							<div class="col-5 col-m-4 align-right">
+							<div class="col-5 col-m-6 align-right">
 								<button type="button" class="btn btn-link btn-support mobile--hidden">Suporte</button>
 								<button type="button" class="btn btn-blue btn-radius btn-login">Login</button>
 							</div>
@@ -29,26 +28,26 @@
 									<div class="block__demonstration--form">
 										<span>Solicite uma demonstração</span>
 
-										<form class="validate" method="POST" data-ajax="true" action="#url">
+										<form class="validate" method="POST" data-ajax="true" action="#url" data-calfn="saveRequest">
 											<div class="row">
 												<div class="col-12 col-m-6">
-													<input type="text" class="form-style required" placeholder="Nome">
+													<input type="text" name="nome" class="form-style required" placeholder="Nome">
 												</div>
 
 												<div class="col-12 col-m-6">
-													<input type="number" class="form-style mask-phone required" placeholder="Telefone">
+													<input type="text" name="telefone" class="form-style mask-phone numeros required" placeholder="Telefone">
 												</div>
 											</div>
 
 											<div class="row">
 												<div class="col-12">
-													<input type="text" class="form-style email required" placeholder="Email">
+													<input type="text" name="email" class="form-style email required" placeholder="Email">
 												</div>
 											</div>
 
 											<div class="row">
 												<div class="col-12">
-													<button type="submit" class="btn btn-green btn-full btn-send">Enviar</button>
+													<button type="submit" class="btn btn-success btn-full btn-send">Enviar</button>
 												</div>
 											</div>
 										</form>
@@ -73,10 +72,12 @@
 						<hr>
 
 						<div class="row">
-							<div class="col-12">
+							<div class="col-12 col-m-5">
 								<div class="block__text">
 									<h3>Tudo ao seu alcance.</h3>
 									<p>Gerencie as demandas feitas ao gabinete, organize contatos e municípios, monitore ligações e visitas recebidas, arquive documentos importantes de uma maneira simples e rápida.</p>
+
+									<img src="img/fke/page__intro--notebook-mobile.png" alt="Figure" class="page__intro--image desktop--hidden">
 								</div>
 
 								<div class="block__features mobile--hidden">
@@ -109,7 +110,7 @@
 						</div>
 					</div>
 
-					<img src="#image" alt="Figure" class="page__intro--image">
+					<img src="img/fke/page__intro--notebook-desktop.png" alt="Figure" class="page__intro--image-desktop mobile--hidden">
 				</section>
 
 				<section class="page__timer">
@@ -124,7 +125,7 @@
 									<p>Economize várias horas de trabalho na criação de etiquetas.</p>
 
 									<div class="block__text--table">
-										<div class="row">
+										<div class="row block__text--table-head">
 											<div class="col-6">
 												<p>Preenchimento manual</p>
 											</div>
@@ -134,7 +135,7 @@
 											</div>
 										</div>
 
-										<div class="row">
+										<div class="row block__text--table-body">
 											<div class="col-6">
 												<strong>13 horas</strong>
 											</div>
@@ -144,233 +145,170 @@
 										</div>
 									</div>
 
-									<span>Cálculo baseado na criação de mil etiquetas</span>
+									<span class="legend">Cálculo baseado na criação de mil etiquetas</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<div class="page__content">
-					<div class="block__view">
-						<div class="center">
-							<div class="row">
-							<div class="col-12 col-m-9">
-								<div class="block__notes">
-									<div class="block__notes--title">
-										<h3>Informações Gerais</h3>
-									</div>
+				<section class="page__compatibility">
+					<div class="center">
+						<div class="row">
+							<div class="col-12 col-m-5">
+								<div class="block__text">
+									<h3>Em qualquer lugar.</h3>
+									<p>Não importa se você está no gabinete, na rua ou até mesmo em outro estado. Tenha acesso completo a todas as funções em qualquer lugar ou dispositivo.</p>
+									<span>Disponível para todos os dispositivos.</span>
 
-									<div class="block__notes--form">
-										<form action="" method="">
+									<div class="block__text--table mobile--hidden">
+										<div class="row block__text--table-body">
+											<div class="col-4">
+												<figure>
+													<img src="img/ico/icon-desktop.svg" alt="DESKTOP E NOTEBOOK">
+
+													<figcaption>
+														DESKTOP E NOTEBOOK
+													</figcaption>
+												</figure>
+											</div>
+
+											<div class="col-4">
+												<figure>
+													<img src="img/ico/icon-tablet.svg" alt="TABLETS">
+
+													<figcaption>
+														TABLETS
+													</figcaption>
+												</figure>
+											</div>
+
+											<div class="col-4">
+												<figure>
+													<img src="img/ico/icon-mobile.svg" alt="SMARTPHONES">
+
+													<figcaption>
+														SMARTPHONES
+													</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-m-7">
+								<img src="img/fke/page__compatibility--mobile.png" alt="Imagem Mobile" class="desktop--hidden">
+							</div>
+
+
+							<img src="img/fke/page__compatibility--desktop.png" alt="Imagem Desktop" class="page__compatibility--image-desktop mobile--hidden">
+						</div>
+					</div>
+				</section>
+
+				<section class="page__safety">
+					<div class="center">
+						<div class="row">
+							<div class="col-12 col-m-5 col-m-emp-7">
+								<div class="block__text">
+									<h3>Segurança levada a sério.</h3>
+									<p>Para garantir a segurança das informações, os nossos servidores são certificados e utilizamos um dos protocolos de segurança mais avançados do mercado, o mesmo utilizado por bancos e instituições financeiras. </p>
+
+									<img src="img/fke/page__safety--ssl.png" class="page__safety--ssl" alt="Active SSL">
+									<img src="img/fke/page__safety--iso.png" class="page__safety--iso" alt="ISO 27017">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__testimony">
+					<div class="row">
+						<div class="col-12">
+							<h3>Depoimentos</h3>
+
+							<div class="block__carousel">
+								<div class="item">
+									<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
+
+									<div class="center">
+										<div class="block__carousel--content">
+											<p>Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+
+											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="img/fke/block__carousel--image-2.png" class="block__carousel--image" alt="Imagem fundo">
+
+									<div class="center">
+										<div class="block__carousel--content">
+											<p>2 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+
+											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
+
+									<div class="center">
+										<div class="block__carousel--content">
+											<p>3 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+
+											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__register">
+					<div class="center">
+						<div class="row">
+							<div class="col-12 col-m-5 col-m-emp-4">
+								<div class="block__demonstration">
+									<p>Junte-se aos 53 gabinetes que já estão usando o <strong>NossoGabinete.</strong></p>
+
+									<div class="block__demonstration--form">
+										<span>Solicite uma demonstração</span>
+
+										<form class="validate" method="POST" data-ajax="true" action="#url" data-calfn="saveRequest">
+											<div class="row">
+												<div class="col-12 col-m-6">
+													<input type="text" name="nome" class="form-style required" placeholder="Nome">
+												</div>
+
+												<div class="col-12 col-m-6">
+													<input type="text" name="telefone" class="form-style mask-phone numeros required" placeholder="Telefone">
+												</div>
+											</div>
+
 											<div class="row">
 												<div class="col-12">
-													<label>Para quem?</label>
-
-													<div class="block__notes--avatars">
-														<div class="block__notes--avatars-fixed">
-															<a href="#this" class="block__menu--avatar">
-																<img src="img/fke/user-avatar.png">
-															</a>
-														</div>
-
-														<div class="block__notes--avatars-scrolling">
-															<ul>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																	<span>DEP</span>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar block__menu--avatar-selected tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-																<li>
-																	<a href="#this" class="block__menu--avatar tooltip__title" title="Nome do usuário">
-																		<img src="img/fke/user-avatar.png">
-																	</a>
-																</li>
-															</ul>
-														</div>
-													</div>
+													<input type="text" name="email" class="form-style email required" placeholder="Email">
 												</div>
+											</div>
 
+											<div class="row">
 												<div class="col-12">
-													<label>Mensagem</label>
-
-													<textarea class="form-style" col="5" row="10"></textarea>
-												</div>
-
-												<div class="col-5 col-m-3">
-													<button type="submit" class="btn btn-full btn-blue">Criar lembrete</button>
+													<button type="submit" class="btn btn-success btn-full btn-send">Enviar</button>
 												</div>
 											</div>
 										</form>
 									</div>
-
-									<div class="block__notes--list">
-										<div class="block__panel">
-											<div class="block__panel--empty">
-												<div>
-													<i class="icon icon-reminder-b"></i>
-												</div>
-
-												<p>Nenhum lembrete cadastrado</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="block__notes--list">
-										<div class="block__notes--list-head">
-											<div class="row">
-												<div class="col-8">
-													<a href="#this" class="block__menu--avatar">
-														<img src="img/fke/user-avatar.png">
-													</a>
-
-													<h4>03/11/2015</h4>
-
-													<span class="badge">NOVO</span>
-												</div>
-
-												<div class="col-4 align-right">
-													<a href="#this" class="btn btn-link">Arquivar</a>
-												</div>
-											</div>
-										</div>
-
-										<div class="block__notes--list-content">
-											<div class="row">
-												<div class="col-12">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="block__notes--list">
-										<div class="block__notes--list-head">
-											<div class="row">
-												<div class="col-6">
-													<a href="#this" class="block__menu--avatar">
-														<img src="img/fke/user-avatar.png">
-													</a>
-
-													<h4>03/11/2015</h4>
-												</div>
-
-												<div class="col-6 align-right">
-													<a href="#this" class="btn btn-link">Editar</a>
-													<a href="#this" class="btn btn-link">Arquivar</a>
-												</div>
-											</div>
-										</div>
-
-										<div class="block__notes--list-content">
-											<div class="row">
-												<div class="col-12">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="block__notes--list block__notes--list-last">
-										<div class="block__notes--list-head">
-											<div class="row">
-												<div class="col-6">
-													<a href="#this" class="block__menu--avatar">
-														<img src="img/fke/user-avatar.png">
-													</a>
-
-													<h4>03/11/2015</h4>
-												</div>
-
-												<div class="col-6 align-right">
-													<a href="#this" class="btn btn-link">Editar</a>
-													<a href="#this" class="btn btn-link">Arquivar</a>
-												</div>
-											</div>
-										</div>
-
-										<div class="block__notes--list-content">
-											<div class="row">
-												<div class="col-12">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore .</p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-gray btn-full">Mostar lembretes arquivados</button>
 								</div>
 							</div>
-
-							<div class="col-12 col-m-3">
-								<aside class="block__aside">
-									<div class="block__notes--title">
-										<h3>Ferramentas</h3>
-									</div>
-
-									<div class="block__links">
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-sheet-e"></i> Demandas</a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-marker"></i> Municípios</a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-person-c"></i> Contatos</a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-phone-b"></i> Ligações</a>
-										<a href="#this" class="btn btn-gray btn-icon"><i class="icon icon-door"></i> Visitas</a>
-
-										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-archive"></i> Arquivos <span class="badge">Em desenvolvimento</span></a>
-										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-email"></i> Email marketing <span class="badge">Em breve</span></a>
-										<a href="#this" class="btn btn-gray btn-icon btn-disabled"><i class="icon icon-send"></i> Envio de sms <span class="badge">Em breve</span></a>
-									</div>
-								</aside>
-							</div>
-						</div>
 						</div>
 					</div>
-				</div>
+				</section>
+
 			</main>
 
 <?php include("inc/footer.php"); ?>

@@ -12,7 +12,7 @@ ________________________________________________________________ */
 .header {
 	background-color: @cor-header;
 
-	&__logo, &__logo--form {
+	&__logo, &__logo--form, &__logo--form-active {
 		overflow: hidden;
 		margin-bottom: 78px;
 
@@ -60,6 +60,12 @@ ________________________________________________________________ */
 
 	&__logo--form {
 		margin-bottom: 22px;
+	}
+
+	&__logo--form-active {
+		.icon-clip-active {
+			display: inline-block;
+		}
 	}
 
 	.btn-menu {
@@ -185,5 +191,35 @@ ________________________________________________________________ */
 			position: relative;
 			top: 4px;
 		}
+	}
+
+	&__text {
+		padding: 25px 40px;
+		text-align: center;
+
+		.desktop({
+			text-align: left;
+			padding: 40px 0;
+		});
+
+		p {
+			color: @cor-branco;
+			font-family: @font-family-gotham-medium;
+			font-size: 14px;
+			margin-bottom: 0;
+
+			strong {
+				color: #39e28e;
+				font-family: @font-family-gotham-medium;
+				font-weight: normal;
+			}
+		}
+	}
+
+	&__message {
+		color: #688195;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 40px 0;
 	}
 }

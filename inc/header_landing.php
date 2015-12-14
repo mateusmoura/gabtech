@@ -42,10 +42,7 @@
 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="css/rwd-table.css">
-		<link rel="stylesheet" href="css/jQuery.ui-autocomplete.css">
-		<link rel="stylesheet" href="css/jQuery.ui-datepicker.css">
-		<link rel="stylesheet" href="css/jQuery.tooltipster.css">
+		<link rel="stylesheet" href="css/jQuery.owl.carousel.css">
 		<link rel="stylesheet" href="css/base.css" media="screen" />
 		<!--[if IE]><link rel="stylesheet" href="css/ie.css" media="screen" /><![endif]-->
 
@@ -74,7 +71,7 @@
 						</div>
 
 						<div class="col-m-4 align-right mobile--hidden">
-							<label class="header__message"><i class="icon icon-check-b"></i> Solicite uma demonstração.</label>
+							<label class="header__message">Solicite uma demonstração.</label>
 						</div>
 					</div>
 				</div>
