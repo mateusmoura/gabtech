@@ -37,64 +37,57 @@
 <!--[if IE 10]>
 	<body class="ie10">
 <![endif]-->
-		<div id="global" class="">
-			<main role="main" class="login">
-				<div class="unicelular">
-					<div class="linha">
-						<div class="col-8 bloco-esquerda">
-							<h1>
-								<a href="#this" title="GabTech" class="btn-fecharMenu"><span>Gab</span>Tech</a>
+		<div id="global" class="height__full">
+			<main role="main" class="page__login">
+				<div class="row">
+					<div class="col-12">
+						<div class="align-center">
+							<h1 class="header__logo--form-active">
+								<a href="#this">
+									<i class="icon icon-clip-active"></i>
+									<img src="img/lgo/header__logo.svg" alt="NossoGabinete">
+								</a>
 							</h1>
-							<p>Lorem ipsum dolor sit amet</p>
 						</div>
 
-						<div class="col-4 bloco-direita">
-							<form action="contato.php" method="POST">
-								<div class="linha box">
+						<div class="modal__default">
+							<div class="modal__head">
+								<div class="row">
 									<div class="col-12">
-										<h3 class="h3">Acesse sua conta</h3>
-										<p>Se você já possui uma conta, faça o login abaixo.</p>
-									</div>
-								</div>
-
-								<div class="linha box">
-									<div class="col-12">
-										<label for="dado-email">Email</label>
-										<input type="text" name="email" id="dado-email">
-									</div>
-								</div>
-
-								<div class="linha box">
-									<div class="col-12">
-										<label for="dado-senha">Senha</label>
-										<input type="password" name="senha" id="dado-senha">
-									</div>
-								</div>
-
-								<div class="linha box">
-									<div class="col-12">
-										<button type="submit" class="btn btn-verde">Entrar</button>
-									</div>
-								</div>
-
-								<div class="linha box">
-									<div class="col-12">
-										<a href="#this" class="cor-verde2">Esqueci minha senha</a>
-									</div>
-								</div>
-							</form>
-
-							<div class="footer">
-								<div class="linha">
-									<div class="col-6">
-										<p>&copy; 2014 GabTech</p>
-									</div>
-
-									<div class="col-6 texto-direita">
-										<a href="#this" class="cor-verde2">Fale conosco</a>
+										<h2>Entre com sua conta</h2>
 									</div>
 								</div>
 							</div>
+
+							<div class="modal__content">
+								<div class="modal__content--form">
+									<form action="#url" class="validate" method="POST" data-ajax="true" data-callfn="fnCallBack">
+										<div class="row">
+											<div class="col-12">
+												<label>Email</label>
+												<input type="text" class="form-style required email" name="email" placeholder="">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<label>Senha</label>
+												<input type="password" class="form-style required" name="senha" placeholder="">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<button type="submit" class="btn btn-full btn-success btn-enter"><i class="icon icon-lock"></i> Entrar</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="align-center">
+							<a href="#this" class="btn btn-link btn-white">Esqueceu sua senha?</a>
 						</div>
 					</div>
 				</div>
@@ -107,20 +100,14 @@
 			var base_url = '';
 		</script>
 
-		<script src="js/base.min.js"></script>
-		
-		<!-- <script src="js/plugins/module.js"></script>
+		<script src="js/plugins/module.js"></script>
 		<script src="js/plugins/jQuery-1.11.0.min.js"></script>
-		<script src="js/Modulos/GabTech.ValidarFormularios.js"></script>
-
-	 <script src="js/Modulos/Sebrae.VerificarNavegador.js"></script>
-		<script src="js/Modulos/Sebrae.CustomizarTabela.js"></script>
-		<script src="js/Modulos/Sebrae.CustomizarChecks.js"></script>
 		
-		<script src="js/Modulos/Sebrae.SelecionarResposta.js"></script>
-		<script src="js/Modulos/Sebrae.Tooltip.js"></script>
-		<script src="js/Modulos/Sebrae.Modal.js"></script>
-		<script src="js/Modulos/Sebrae.Datepicker.js"></script> -->
+		<script src="js/Modulos/MM.Mensagem.js"></script>
+		<script src="js/Modulos/MM.VerificarNavegador.js"></script>
+		<script src="js/Modulos/MM.ValidarFormularios.js"></script>
+		<script src="js/Modulos/MM.Feedback.js"></script>
+		<script src="js/Modulos/MM.Tooltip.js"></script>
 
 		<!--[if lte IE 9]><script src="js/plugins/jQuery.placeholder.js"></script>
 		<script>
