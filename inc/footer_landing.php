@@ -1,7 +1,7 @@
 			<footer class="footer">
 				<div class="center">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-8">
 							<h2 class="footer__logo">
 								<a href="#this">
 									<i class="icon icon-clip-active"></i> 
@@ -12,7 +12,7 @@
 							<p class="footer__copyright">Copyright © 2015 NossoGabinete. Todos os direitos reservados.</p>
 						</div>
 
-						<div class="col-6 align-right">
+						<div class="col-4 align-right">
 							<a href="inc/modal-default-2.php" class="btn btn-link btn-modal">Suporte</a>
 						</div>
 					</div>

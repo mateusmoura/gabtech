@@ -463,6 +463,11 @@ ________________________________________________________________________________
 				padding: 40px 0;
 			});
 
+			.tablet({
+				.background-size(auto auto);
+				background-position: right top;
+			});
+
 			.header__logo--form-active {
 				margin: 14px 0 60px 0;
 
@@ -580,6 +585,10 @@ ________________________________________________________________________________
 				position: absolute;
 				right: 0;
 				bottom: -12px;
+
+				.tablet({
+					width: 613px;
+				});
 			}
 
 			.block__features {
@@ -630,6 +639,10 @@ ________________________________________________________________________________
 
 			.desktop({
 				background: #00b86f url('@{bkg}/page__landing--timer.png') no-repeat left center;
+			});
+
+			.tablet({
+				.background-size(517px 392px);
 			});
 		}
 
@@ -705,6 +718,14 @@ ________________________________________________________________________________
 				position: absolute;
 				top: 50%;
 				right: 0;
+
+				.desktop({
+					width: auto;
+				});
+
+				.tablet({
+					width: 539px;
+				});
 			}
 		}
 
@@ -721,6 +742,10 @@ ________________________________________________________________________________
 				background: #002133 url('@{bkg}/page__safety.png') no-repeat left center;
 				padding: 155px 0;
 				text-align: left;
+			});
+
+			.tablet({
+				//.background-size(820px 538px);
 			});
 
 			.block__text {
@@ -890,7 +915,7 @@ ________________________________________________________________________________
 					margin-top: 70px;
 
 					.desktop({
-						margin-top: -60px;
+						margin-top: 0;
 					});
 				}
 
@@ -992,17 +1017,17 @@ ________________________________________________________________________________
 
 	&__login {
 		background-color: #002133;
-		padding: 54px 10px;
+		padding: 56px 10px;
 		min-height: 100%;
 
 		.desktop({
 			background: #002133 url('@{bkg}/page__login--image.png') no-repeat 0 0;
-			padding: 56px 10px;
 			.backgroundCover;
+			height: 100vh;
 		});
 
 		.header__logo--form-active {
-			margin: 0 auto 61px;
+			margin: 0 auto 60px;
 			height: 25px;
 			width: 168px;
 
@@ -1047,6 +1072,12 @@ ________________________________________________________________________________
 
 					.icon {
 						top: 2px;
+					}
+				}
+
+				&--form {
+					label {
+						margin-bottom: 0;
 					}
 				}
 			}
