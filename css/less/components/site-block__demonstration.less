@@ -12,11 +12,19 @@ ________________________________________________________________________________
 .block__demonstration {
 	text-align: center;
 
+	.desktop({
+		text-align: left;
+	});
+
 	h1 {
 		color: @cor-branco;
 		font-family: @font-family-gotham-light;
 		font-size: 40px;
 		margin: 0 0 18px 0;
+
+		.desktop({
+			font-size: 38px;
+		});
 	}
 
 	p {
@@ -41,7 +49,7 @@ ________________________________________________________________________________
 
 		form {
 			.border-radius(10px);
-			background-color: #485d64;
+			background-color: fade(#21242e, 30%);
 			padding: 10px;
 
 			input {

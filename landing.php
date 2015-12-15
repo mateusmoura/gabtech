@@ -224,45 +224,41 @@
 				</section>
 
 				<section class="page__testimony">
-					<div class="row">
-						<div class="col-12">
-							<h3>Depoimentos</h3>
+					<h3>Depoimentos</h3>
 
-							<div class="block__carousel">
-								<div class="item">
-									<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
+					<div class="block__carousel">
+						<div class="item">
+							<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
 
-									<div class="center">
-										<div class="block__carousel--content">
-											<p>Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+							<div class="center">
+								<div class="block__carousel--content">
+									<p>Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
 
-											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
-										</div>
-									</div>
+									<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
 								</div>
+							</div>
+						</div>
 
-								<div class="item">
-									<img src="img/fke/block__carousel--image-2.png" class="block__carousel--image" alt="Imagem fundo">
+						<div class="item">
+							<img src="img/fke/block__carousel--image-2.png" class="block__carousel--image" alt="Imagem fundo">
 
-									<div class="center">
-										<div class="block__carousel--content">
-											<p>2 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+							<div class="center">
+								<div class="block__carousel--content">
+									<p>2 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
 
-											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
-										</div>
-									</div>
+									<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
 								</div>
+							</div>
+						</div>
 
-								<div class="item">
-									<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
+						<div class="item">
+							<img src="img/fke/block__carousel--image-1.png" class="block__carousel--image" alt="Imagem fundo">
 
-									<div class="center">
-										<div class="block__carousel--content">
-											<p>3 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
+							<div class="center">
+								<div class="block__carousel--content">
+									<p>3 Agora eu fico tranquilo sabendo que os nossos documentos  estão seguros.</p>
 
-											<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
-										</div>
-									</div>
+									<span>OSCAR MOURA <strong>- CHEFE DE GABINETE</strong></span>
 								</div>
 							</div>
 						</div>

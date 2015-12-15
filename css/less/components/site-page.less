@@ -465,6 +465,21 @@ ________________________________________________________________________________
 
 			.header__logo--form-active {
 				margin: 14px 0 60px 0;
+
+				.icon-clip-active {
+					.desktop({
+						height: 26px;
+						width: 14px;
+					});
+				}
+
+				img {
+					.desktop({
+						position: relative;
+						top: 4px;
+						width: 150px;
+					});
+				}
 			}
 
 			.btn-login {
@@ -481,7 +496,7 @@ ________________________________________________________________________________
 					color: @cor-branco;
 					display: inline-block !important;
 					margin: 0 30px 0 0;
-					font-family: @font-family-gotham-medium;
+					font-family: @font-family-gotham-book;
 					font-size: 14px;
 				});
 			}
@@ -490,6 +505,10 @@ ________________________________________________________________________________
 		.page__intro {
 			padding: 63px 0 0;
 			position: relative;
+
+			.desktop({
+				padding-top: 80px;
+			});
 
 			[class*="col-"] {
 				position: relative;
@@ -500,6 +519,10 @@ ________________________________________________________________________________
 				padding-top: 0;
 				padding-bottom: 60px;
 				text-align: center;
+
+				.desktop({
+					padding-bottom: 80px;
+				});
 
 				p {
 					.desktop({
@@ -691,7 +714,7 @@ ________________________________________________________________________________
 
 			.desktop({
 				background: #002133 url('@{bkg}/page__safety.png') no-repeat left center;
-				padding: 170px 0;
+				padding: 155px 0;
 				text-align: left;
 			});
 
@@ -740,35 +763,6 @@ ________________________________________________________________________________
 			}
 		}
 
-		.page__register {
-			padding: 76px 0;
-
-			[class*="col-"] {
-				position: relative;
-			}
-
-			.block__demonstration {
-				p {
-					color: #40464d;
-					font-family: @font-family-gotham-light;
-					font-size: 26px;
-					line-height: inherit;
-					margin: 0 0 61px 0;
-
-					strong {
-						color: #34bc78;
-						font-family: @font-family-gotham-medium;
-					}
-				}
-
-				&--form {
-					form {
-						background-color: #e1e8ec;
-					}
-				}
-			}
-		}
-
 		.page__testimony {
 			background-color: #00b86f;
 			padding: 51px 0;
@@ -810,12 +804,14 @@ ________________________________________________________________________________
 						.opacity(0.0);
 						visibility: hidden;
 						display: block;
+						height: 100%;
 						position: absolute;
 						top: 0;
 						bottom: 0;
 						left: 0;
 						right: 0;
 						z-index: 1;
+						width: 100%;
 					});
 				}
 
@@ -852,6 +848,7 @@ ________________________________________________________________________________
 						.background-size(20px 15px);
 						position: absolute;
 						top: 50%;
+						left: 4%;
 						width: 530px;
 					});
 
@@ -920,9 +917,16 @@ ________________________________________________________________________________
 					}
 				}
 
+				.owl-dots {
+					.desktop({
+						bottom: 52px;
+						position: absolute;
+						width: 100%;
+					});
+				}
+
 				.owl-dot {
 					.desktop({
-						position: relative;
 						z-index: 3;
 					});
 
@@ -938,6 +942,43 @@ ________________________________________________________________________________
 						span {
 							background-color: #fff;
 						}
+					}
+				}
+			}
+		}
+
+		.page__register {
+			padding: 76px 0;
+
+			[class*="col-"] {
+				position: relative;
+			}
+
+			.block__demonstration {
+				p {
+					color: #40464d;
+					font-family: @font-family-gotham-light;
+					font-size: 26px;
+					line-height: inherit;
+					margin: 0 0 61px 0;
+
+					strong {
+						color: #34bc78;
+						font-family: @font-family-gotham-medium;
+					}
+				}
+
+				&--form {
+					form {
+						background-color: #e1e8ec;
+
+						.form-style {
+							background-color: @cor-branco;
+						}
+					}
+
+					span {
+						color: #a3b1c0;
 					}
 				}
 			}
