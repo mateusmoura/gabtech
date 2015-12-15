@@ -58,7 +58,7 @@
 <!--[if IE 10]>
 	<body class="ie10">
 <![endif]-->
-		<div id="global" class="height__full">
+		<div id="global">
 			<main role="main" class="page__login">
 				<div class="row">
 					<div class="col-12">
