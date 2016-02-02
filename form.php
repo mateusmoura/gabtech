@@ -330,11 +330,11 @@
 														<ul>
 															<li>
 																<div class="block__list--archives-item">
-																	<div class="col-2 col-m-2">
-																		<span class="block__list--archives-ext">DOC</span>
+																	<div class="col-3 col-m-2">
+																		<span class="block__list--archives-ext">DOCX</span>
 																	</div>
 
-																	<div class="col-9 col-m-9">
+																	<div class="col-8 col-m-9">
 																		<p class="block__list--archives-name">nome-do-arquivo.doc</p>
 																	</div>
 
@@ -346,11 +346,11 @@
 
 															<li>
 																<div class="block__list--archives-item">
-																	<div class="col-2 col-m-2">
+																	<div class="col-3 col-m-2">
 																		<span class="block__list--archives-ext">PDF</span>
 																	</div>
 
-																	<div class="col-9 col-m-9">
+																	<div class="col-8 col-m-9">
 																		<p class="block__list--archives-name">nome-do-arquivo-grande-tem-que-colocar-pontos-via-css</p>
 																	</div>
 
