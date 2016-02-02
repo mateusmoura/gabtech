@@ -19,9 +19,9 @@ Module('MM.Feedback', function(Feedback){
 	Feedback.fn.config = function(){
 		var _tipo = this.tipo == null ? "" : this.tipo;
 
-		if( _tipo === 'sucesso' ){
+		if( _tipo === 'sucess' ){
 			this.feedback = $('<div class="feedback success"><p>'+this.texto+'</p></div>').appendTo($('main'));
-		}else if (_tipo === 'erro') {
+		}else if (_tipo === 'error') {
 			this.feedback =  $('<div class="feedback error"><p>'+this.texto+'</p><a href="'+this.url+'">Ajuda</a></div>').appendTo($('main'));
 		}else{
 			this.feedback =  $('<div class="feedback alert"><p>'+this.texto+'</p><a href="'+this.url+'">Desfazer</a></div>').appendTo($('main'));
