@@ -50,7 +50,7 @@ ________________________________________________________________________________
 			border-left: 0;
 			padding: 0;
 			margin: 0;
-			width: 50px;
+			min-width: 50px;
 			text-align: center;
 
 			.desktop({
@@ -81,6 +81,15 @@ ________________________________________________________________________________
 
 				.icon {
 					.opacity(1);
+				}
+			}
+
+			&.btn-link {
+				color: #b7c4c8;
+				padding: 0 5px;
+
+				&:hover {
+					color: @text-color;
 				}
 			}
 		}
