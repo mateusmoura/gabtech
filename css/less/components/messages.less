@@ -125,8 +125,9 @@ ________________________________________________________________ */
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 2000;
 
-	&.sucesso{
+	&.success{
 		background-color: @cor-verde-claro;
 		border-color: @cor-verde;
 
@@ -135,7 +136,7 @@ ________________________________________________________________ */
 		}
 	}
 
-	&.erro{
+	&.error{
 		background-color: lighten(@cor-erro, 18.9%);
 		border-color: @cor-erro;
 
@@ -144,7 +145,7 @@ ________________________________________________________________ */
 		}
 	}
 
-	&.alerta{ /// Pensar e cores que são variadas dela mesma se possivel.
+	&.alert{ /// Pensar e cores que são variadas dela mesma se possivel.
 		background-color: #f8f4cf;
 		border-color: @cor-alerta;
 

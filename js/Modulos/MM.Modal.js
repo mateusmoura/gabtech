@@ -80,8 +80,6 @@ Module('MM.Modal', function (Modal) {
 	* Adiciona os eventos necessários.
 	*/
 	Modal.fn.addEventListeners = function(){
-		console.log($('.btn-modal'));
-
 		$('.btn-modal')
 			.on('click', this.onButtonClick.bind(this));
 
