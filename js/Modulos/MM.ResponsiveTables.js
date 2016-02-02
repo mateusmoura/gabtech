@@ -47,6 +47,8 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 
 		this.container.responsiveTable(settings);
 
+		this.block__tableSimulateStripe = this.container.parents('div.table-wrapper').siblings('.block__table--simulate-stripe');
+
 		this.addEventListeners();
 	};
 	/**
@@ -55,6 +57,11 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 	ResponsiveTables.fn.addEventListeners = function () {
 		$('.checkbox input', this.container)
 			.unbind().on('click', this.toggleActive);
+
+		console.log($('> table tr', this.container));
+
+		$('> table tbody tr', this.container)
+			.unbind().on('mouseenter mouseleave', this.toggleHover);
 
 		$('.block__table--actions .selectAll')
 			.on('click', function(event) {
@@ -80,6 +87,28 @@ Module('MM.ResponsiveTables', function (ResponsiveTables) {
 	* Funcionalidade para ativar linha selecionada.
 	*/
 	ResponsiveTables.fn.toggleActive = function () {
-		$(this).parents('tr').toggleClass('active');
+		var _parent = $(this).parents('tr'),
+			_block__tableSimulateStripe = _parent.parents('div.table-wrapper').siblings('.block__table--simulate-stripe');
+
+		_parent.toggleClass('active');
+
+		if(_block__tableSimulateStripe) {
+			var _index = $('tr', _parent.parents('table')).index(_parent);
+
+			$('table tr', _block__tableSimulateStripe).eq(_index - 1).toggleClass('active');
+		}
+	};
+	/**
+	* Funcionalidade para hover de uma linha.
+	*/
+	ResponsiveTables.fn.toggleHover = function (event) {
+		var _parent = $(this),
+			_block__tableSimulateStripe = _parent.parents('div.table-wrapper').siblings('.block__table--simulate-stripe');
+
+		if(_block__tableSimulateStripe) {
+			var _index = $('tr', _parent.parents('table')).index(_parent);
+
+			$('table tr', _block__tableSimulateStripe).eq(_index-1).toggleClass('hover');
+		}
 	};
 });
