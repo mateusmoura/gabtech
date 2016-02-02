@@ -64,10 +64,10 @@
 	<body class="ie10">
 <![endif]-->
 		<div id="global">
-			<header class="header">
+			<header class="header header__form">
 				<div class="center">
 					<div class="row">
-						<div class="col- col-m-8">
+						<div class="col-6 col-m-8">
 							<h1 class="header__logo--form">
 								<a href="#this">
 									<i class="icon icon-clip"></i>
