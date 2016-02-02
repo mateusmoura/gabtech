@@ -72,7 +72,7 @@
 												</div>
 
 												<div class="col-12 col-m-7">
-													<input type="text" class="form-style required" placeholder="">
+													<input type="text" class="form-style autocomplete required" placeholder="">
 												</div>
 											</div>
 

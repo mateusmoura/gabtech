@@ -242,7 +242,7 @@ Module('MM.ValidarFormularios', function (ValidarFormularios) {
 
 					var resposta = '<div class="block__collapse--form-data">\
 											<ul>\
-												<li><p><strong>Tipo de recurso:</strong> Recurso</p></li>\
+												<li><p><strong>Tipo de recurso:</strong> Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p></li>\
 												<li><p><strong>Título:</strong> Construção da Quadra</p></li>\
 												<li><p><strong>Data de entrada:</strong> 27/03/2015</p></li>\
 												<li><p><strong>Data de entrada:</strong> 27/03/2015</p></li>\
