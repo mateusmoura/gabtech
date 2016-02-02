@@ -54,16 +54,21 @@ ________________________________________________________________________________
 			text-align: center;
 
 			.desktop({
-				width: 70px;
+				min-width: 70px;
 			});
 
 			&:first-child {
-				.border-radius(@border-radius-base 0 0 @border-radius-base);
+				//.border-radius(@border-radius-base auto auto @border-radius-base);
+				border-top-left-radius: @border-radius-base;
+				border-bottom-left-radius: @border-radius-base;
 				border-left: solid 1px #d0d9db;
 			}
 
 			&:last-child {
-				.border-radius( 0 @border-radius-base @border-radius-base 0);
+				//.border-radius( auto @border-radius-base @border-radius-base auto);
+				border-top-right-radius: @border-radius-base;
+				border-bottom-right-radius: @border-radius-base;
+
 			}
 		}
 
@@ -92,6 +97,10 @@ ________________________________________________________________________________
 					color: @text-color;
 				}
 			}
+		}
+
+		a.btn-link {
+			line-height: 27px;
 		}
 
 		.checkbox {
